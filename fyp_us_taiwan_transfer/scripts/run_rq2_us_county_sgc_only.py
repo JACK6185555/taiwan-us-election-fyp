@@ -179,7 +179,7 @@ def main():
         "models":"PreviousShare; NonSpatial Ridge/RF; SGC L1/L2 + Ridge/RF (RF skipped on dist_decay*)",
         "trainable_gcn":"deferred — see gcn_partial_note.json",
         "graphs":meta,
-        "note":"Do not mix into Taiwan Family A / rq2_county tables.",
+        "note":"Do not mix into Taiwan Core specification / rq2_county tables.",
     }
     (OUT/"rq2_us_county_protocol.json").write_text(json.dumps(protocol,indent=2),encoding="utf-8")
 

@@ -3,10 +3,10 @@
 **日期：** 2026-10-30（Asia/Hong_Kong, UTC+8）  
 **學生專案：** US–Taiwan Election Forecasting FYP  
 **定位：** 方法論補充章——**不是**勝選機率產品，**不是**政治轉移結論，**不是**已校準的選舉信心區間產品。  
-**主數字釘死（勿改）：** TW Family A Prev MAE **0.0793**；US Core Prev **0.0345**。Importance ≠ 因果；Prev 贏＝地理慣性，唔等於「選民只跟上屆」嘅因果宣稱。  
+**主數字釘死（勿改）：** TW Core specification Prev MAE **0.0793**；US Core Prev **0.0345**。Importance ≠ 因果；Prev 贏＝地理慣性，唔等於「選民只跟上屆」嘅因果宣稱。  
 **資料範圍：** 公開開票／社經 PROXY；**未申請** TEDS／ANES。
 
-> 本檔係老師進度報告同口試用嘅**誠實框住**版。細表／腳本仍以各子目錄 CSV／JSON 為準；唔好把子集、DA、Conformal 數字同 Family A 主表混報。
+> 本檔係老師進度報告同口試用嘅**誠實框住**版。細表／腳本仍以各子目錄 CSV／JSON 為準；唔好把子集、DA、Conformal 數字同 Core specification 主表混報。
 
 ---
 
@@ -19,7 +19,7 @@
 | 項目 | 內容 | 路徑 |
 |------|------|------|
 | 共同協議 | 測試年 2012／2016／2020／2024；expanding（train year &lt; test）；SEED=42 | `docs/RQ2_美台空間.md` |
-| 臺灣 | 22 縣市；Family A 歷史特徵；Queen／k-NN／距離衰減；SGC＋可訓練 GCN／GAT | `fyp_taiwan_spatial_gnn/rq2_county/` |
+| 臺灣 | 22 縣市；Core specification 歷史特徵；Queen／k-NN／距離衰減；SGC＋可訓練 GCN／GAT | `fyp_taiwan_spatial_gnn/rq2_county/` |
 | 美國全縣 | 3111 counties；SGC＋NonSpatial＋Prev；Queen≈9072 邊 | `fyp_us_taiwan_transfer/rq2_us_county/` |
 | 美國全縣 trainable GCN | **DEFERRED**（runtime）；部分 2012 數字僅診斷 | `docs/US_GCN_DEFERRED.md`、`gcn_partial_note.json` |
 | NE pilot | New England 67 縣；標籤 `us_gcn_pilot` | `results/us_gcn_pilot/` |
@@ -163,7 +163,7 @@ MMD 診斷（特徵空間距離）US→TW 各測試年 mmd² ≈ 0.35–0.40（`
 coverage ≈ **0.008**（目標 0.90）、avg_width ≈ 0.217 —— 喺分布大變年（2024 三腳督等）下，**經典 split conformal 可完全失效**。
 
 **去均值補充（總統 DPP 2024；`conformal_demeaned_meta.csv`）**  
-empirical coverage ≈ **0.848**（名義 0.90）、half-width ≈ 0.141 —— 較接近，但仍屬探索、單位係 demeaned，**唔入 Family A 主結論**。
+empirical coverage ≈ **0.848**（名義 0.90）、half-width ≈ 0.141 —— 較接近，但仍屬探索、單位係 demeaned，**唔入 Core specification 主結論**。
 
 ### 3.3 限制（必須講）
 
@@ -171,7 +171,7 @@ empirical coverage ≈ **0.848**（名義 0.90）、half-width ≈ 0.141 —— 
 2. 覆蓋率**跨年波動大**（美 2016 欠覆蓋、2020 過覆蓋）；TW 2024 部分協議欠覆蓋、部分協議區間闊到冇用。  
 3. 選舉有**結構斷裂／分布轉移**（三腳督、全國衝擊）時，exchangeability 假設易破，conformal **可能嚴重誤校準**。  
 4. 區間寬度往往 ≥0.15–0.30 份額（甚至 &gt;1），對縣市實務決策幫助有限。  
-5. 唔好把 RQ4 覆蓋率當「模型準唔準」嘅替代——準確度仍以 Family A／US Core **MAE** 為主。  
+5. 唔好把 RQ4 覆蓋率當「模型準唔準」嘅替代——準確度仍以 Core specification／US Core **MAE** 為主。  
 6. Guide 狀態：**I-I PARTIAL**（有產物、未達產品級）。
 
 ---
@@ -184,7 +184,7 @@ empirical coverage ≈ **0.848**（名義 0.90）、half-width ≈ 0.141 —— 
 | **RQ3 轉移** | 管線＋DA 已測；薄特徵上 DA 未必贏；構念唔同 | 「證明美台政治可轉移」 |
 | **RQ4 不確定性** | 有 coverage／width 表；跨年不穩；探索 | 「已校準 90% 選舉信心產品」 |
 
-**與主結果關係：** 三節**不改** Family A Prev **0.0793**／US Core Prev **0.0345**；唔同 Family A 訓練模型 MAE（RF 0.1041／HGB 0.1189／Ridge 0.1786）混報。
+**與主結果關係：** 三節**不改** Core specification Prev **0.0793**／US Core Prev **0.0345**；唔同 Core specification 訓練模型 MAE（RF 0.1041／HGB 0.1189／Ridge 0.1786）混報。
 
 ---
 

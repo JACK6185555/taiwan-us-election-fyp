@@ -5,7 +5,7 @@
 **完成度總表：** [`GUIDE_COMPLETION_STATUS.md`](GUIDE_COMPLETION_STATUS.md)  
 **定位：** 方法論研究（OOT 區域得票份額）——**不是**勝選預測或因果歸因。
 
-**主結果釘死（家族 A／RQ1）：** Previous-election **0.0793** ＜ RF **0.1041** ＜ HGB **0.1189** ＜ Ridge **0.1786**（2026-10-30 乾淨重跑）。
+**主結果釘死（核心設定／RQ1）：** Previous-election **0.0793** ＜ RF **0.1041** ＜ HGB **0.1189** ＜ Ridge **0.1786**（2026-10-30 乾淨重跑）。
 
 ---
 
@@ -14,11 +14,11 @@
 | Issue ID | Guide 對應 | 2026-10-27 | **2026-10-30** | 證據／動作 |
 |---|---|---|---|---|
 | **I-A** | RQ1；§6；§19 | 敘事待收斂 | **DONE** | README／SUBMISSION_AUDIT／老師報告：4 屆／88 region-year；歷史方法比較 |
-| **I-B** | §3；§6.2 | 長表起步 | **PARTIAL** | Extension 政綱長表＋ablation 已入包；未進 Family A；verified 未齊 |
+| **I-B** | §3；§6.2 | 長表起步 | **PARTIAL** | Extension 政綱長表＋ablation 已入包；未進 Core specification；verified 未齊 |
 | **I-C** | Demo 5；§19 | 易誤讀 | **DONE** | 一律 model dependence；禁因果／勝選因素 |
 | **I-D** | §19 scenario | 需降級 | **DONE** | 2026／地方標補充；非主結果 |
 | **I-E** | 民調構念 | 可比性文件 | **PARTIAL** | Extension 全國 poll；無縣市面板；不把 poll＝標籤準確率 |
-| **I-F** | Core vs Extension | 多線易混 | **DONE** | 單一家族 A 入口；數字 0.1041 定稿 |
+| **I-F** | Core vs Extension | 多線易混 | **DONE** | 單一核心設定 入口；數字 0.1041 定稿 |
 | **I-G** | 可重現 | 無 .git | **PARTIAL** | 本地 git init；Core 可重跑對齊四位；無 remote |
 | **I-H** | RQ3；Demo 1／7 | 無美國面板 | **DONE** | 合成 harness＋MEDSL 真實 US；country-only／joint／transfer |
 | **I-I** | RQ4；Demo 6 | 覆蓋 2.9–13.6% | **PARTIAL** | improved protocols＋US ~0.91 Ridge；**仍標探索** |
@@ -50,7 +50,7 @@
 | model dependence | 「某政策造成勝選」 |
 | calibration／empirical coverage（誠實報失敗） | 未校準卻稱可靠區間 |
 | transfer、joint vs country-only | 假設美台構念完全相同 |
-| scenario／補充 | 補充 MAE 與家族 A 混表 |
+| scenario／補充 | 補充 MAE 與核心設定 混表 |
 
 ---
 
@@ -65,4 +65,4 @@
 | 全縣 trainable US GCN | **DEFERRED** |
 
 ### Teacher feedback (2026-10-30 16:32 Asia/Hong_Kong (UTC+8))
-Reorganized teacher report; edu/econ/media factor Extension at `results/factor_importance_edu_econ_media/`; citations in intro/lit/analysis; prediction after §4. Family A unchanged.
+Reorganized teacher report; edu/econ/media factor Extension at `results/factor_importance_edu_econ_media/`; citations in intro/lit/analysis; prediction after §4. Core specification unchanged.

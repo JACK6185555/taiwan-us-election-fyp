@@ -1,4 +1,4 @@
-# US Family A — County Presidential Core
+# US Core specification — County Presidential Core
 
 | Item | Value |
 |---|---|

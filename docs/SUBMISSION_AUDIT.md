@@ -1,13 +1,13 @@
-# 提交前數字核對：分析家族與主結果路徑（I-F／I-A／I-C）
+# 提交前數字核對：分析規格與主結果路徑（I-F／I-A／I-C）
 
 核對日期：2026-10-30  
 範圍：`taiwan-election-github/`（本交付包）與 `/workspace/taiwan-election-data/` 鏡像
 
 ## 為什麼需要這份文件
 
-本包並行保留鄉鎮三黨、立委、improved／r2、空間共邊、美台 transfer、香港／政綱／中間選民等多條線。若混用「基準 MAE」而不標家族，評審會把不同切分／單位的數字放在同一張表比較。**唯一主結果路徑 = 家族 A**；其餘一律標「補充／Extensions」。
+本包並行保留鄉鎮三黨、立委、improved／r2、空間共邊、美台 transfer、香港／政綱／中間選民等多條線。若混用「基準 MAE」而不標規格，評審會把不同切分／單位的數字放在同一張表比較。**唯一主結果路徑 = 核心設定**；其餘一律標「補充／Extensions」。
 
-## 一、分析家族（本包）
+## 一、分析規格（本包）
 
 | 代號 | 分析 | 資料 | 切分 | 樣本 | 目標 | 代表數字 | 狀態 |
 |---|---|---|---|---|---|---|---|
@@ -18,7 +18,7 @@
 | 美台 RQ3 | MEDSL＋TW 縣市 | `docs/美台對照_RQ3.md`、`results/us_taiwan_transfer` | country-only／joint／transfer | 美縣市 N 主導 | 主要政黨份額 | TW Prev≈0.0793 量級 | **補充（RQ3）** |
 | HK／政綱／中間選民 | 敘事＋內容編碼 | `docs/*`、`data/hongkong_factor` 等 | — | — | — | 無鄉鎮因果係數 | **補充敘事** |
 
-## 二、家族 A 定稿表（2026-10-30 乾淨重跑）
+## 二、核心設定 定稿表（2026-10-30 乾淨重跑）
 
 來源：`results/family_a_county_presidential/`（鏡像 `analysis/taiwan_core/`）  
 腳本：`scripts/taiwan_core_backtest.py`  
@@ -44,12 +44,12 @@
 
 ## 四、提交前檢查清單
 
-- [x] README 開頭有單一家族 A 主結果表；其餘標題含「補充」或 Extensions  
+- [x] README 開頭有單一核心設定 主結果表；其餘標題含「補充」或 Extensions  
 - [x] 每個對外主 MAE 附：資料集＋切分＋測試樣本（4 屆／88 列／縣市）  
-- [x] 不把鄉鎮 0.149 與縣市家族 A 0.0793 混稱同一個「基準」  
+- [x] 不把鄉鎮 0.149 與縣市核心設定 0.0793 混稱同一個「基準」  
 - [x] importance／ablation 旁有非因果 caution（老師報告＋圖標題）  
 - [x] conformal／區間標「未校準／探索」，不進主貢獻  
-- [x] 美台／空間／HK／政綱標補充，不與家族 A 混報  
+- [x] 美台／空間／HK／政綱標補充，不與核心設定 混報  
 - [x] `summary.json`／`family_a_mean_metrics.csv` 與 README／老師報告數字一致（4 位）  
 - [x] 可重跑：`python scripts/taiwan_core_backtest.py`
 - [x] 文獻脈絡兩條線＋申請資料未取得說明（`docs/文獻脈絡路線.md`／`申請資料未取得時之報告說明.md`）
@@ -59,10 +59,10 @@
 
 | 數字 | 是什麼 | 不是什麼 |
 |---|---|---|
-| **0.0793** | 家族 A：縣市 DPP、4 屆 OOT、Previous baseline | 不是鄉鎮 PreviousShare |
-| **0.1041** | 家族 A RF（本重跑定稿） | 舊稿 0.1040 已作廢 |
-| ~0.149 | 鄉鎮 DPP 2024 PreviousShare（三黨補充線） | 不是家族 A 四屆平均 |
-| improved Ridge ~0.04x DPP swing | 補充線＋ESC 全國 PROXY | 不是家族 A 主結果 |
+| **0.0793** | 核心設定：縣市 DPP、4 屆 OOT、Previous baseline | 不是鄉鎮 PreviousShare |
+| **0.1041** | 核心設定 RF（本重跑定稿） | 舊稿 0.1040 已作廢 |
+| ~0.149 | 鄉鎮 DPP 2024 PreviousShare（三黨補充線） | 不是核心設定 四屆平均 |
+| improved Ridge ~0.04x DPP swing | 補充線＋ESC 全國 PROXY | 不是核心設定 主結果 |
 | US→TW HGB ~0.07 | RQ3 探索 transfer | 不可當政治轉移結論 |
 
 ## 六、重跑指令
@@ -79,6 +79,6 @@
 - 設計：`docs/文獻脈絡路線.md`  
 - 缺申請資料時可貼：`docs/申請資料未取得時之報告說明.md`  
 - 老師報告已加 §五-B  
-- **無新主 MAE**：未因本輪改動家族 A／A+ 定稿數字（Prev 0.0793；A+ Ridge 0.1425）  
+- **無新主 MAE**：未因本輪改動核心設定／A+ 定稿數字（Prev 0.0793；A+ Ridge 0.1425）  
 - 公開探查客家 CSV → 全國 only → DATA_GAPS；不入模  
-- 檢查：不把解釋線文獻係數寫進家族 A 權重表；不因缺 TEDS 捏造個人效應  
+- 檢查：不把解釋線文獻係數寫進核心設定 權重表；不因缺 TEDS 捏造個人效應  

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Fill must-have checklist Extension layer from PUBLIC / in-repo data.
-Does NOT modify Family A locked features or MAE.
+Does NOT modify Core specification locked features or MAE.
 Asia/Hong_Kong timestamps in notes.
 """
 from __future__ import annotations
@@ -643,7 +643,7 @@ Files:
 - `simple_poll_and_turnout_sketch.csv` — simple averages + toy poll×turnout
 - `monte_carlo_winprob_DEMO.csv` — P(2p share > 0.5) from 20k draws
 
-Family A untouched.
+Core specification untouched.
 """,
         encoding="utf-8",
     )
@@ -655,7 +655,7 @@ def write_docs(status: dict) -> None:
         f"""# 必備數據補齊說明
 
 **日期：** {NOW}  
-**規則：** 只用公開／repo 內資料；**唔改 Family A** 鎖定特徵同 MAE。
+**規則：** 只用公開／repo 內資料；**唔改 Core specification** 鎖定特徵同 MAE。
 
 ## 本輪做咗咩
 
@@ -675,7 +675,7 @@ def write_docs(status: dict) -> None:
 
 ### 3. 人口（Demographics）
 - **TW 年齡結構 PROXY**：MOI 村里 `edu_age_marital_105/107` 加總 → 全國年齡帶比例（**唔係**選年縣面板）：`tw_national_age_structure_proxy_moi.csv`
-- **教育**：US Family A 已有；TW A+／Extension 已有（唔入 Family A）
+- **教育**：US Core specification 已有；TW A+／Extension 已有（唔入 Core specification）
 - **新登記選民 PROXY**：全國 `electorate` 較上屆 % 變動（**唔等於**首投族名冊）：`tw_national_turnout_electorate_proxy.csv`
 - **US ACS 年齡縣面板／族群**：**仍缺**
 
@@ -696,7 +696,7 @@ def write_docs(status: dict) -> None:
 - TEDS／ANES 微資料；新選民名冊；TW 滿意度／CCI／CPI 長序列（本輪下載失敗）
 - US 選前 Gallup approval 全歷史；州選舉人團相關結構 Monte Carlo
 
-## Family A
+## Core specification
 **未改。** Prev MAE 仍以既有鎖定結果為準（唔喺呢輪重跑）。
 """,
         encoding="utf-8",
@@ -708,15 +708,15 @@ def write_docs(status: dict) -> None:
         f"""# 必備預測數據對照清單
 
 **日期：** {NOW}  
-**用途：** 將「預測模型應有嘅數據」對照而家 repo：**Family A 已有／Extension 已有／公開可補／申請或缺**。  
-**規則：** 唔改 Family A MAE；公開可補優先入 Extension；唔捏造。  
+**用途：** 將「預測模型應有嘅數據」對照而家 repo：**Core specification 已有／Extension 已有／公開可補／申請或缺**。  
+**規則：** 唔改 Core specification MAE；公開可補優先入 Extension；唔捏造。  
 **補齊說明：** 見 `必備數據補齊說明.md`。
 
 分類代碼：
 
 | 代碼 | 意思 |
 |------|------|
-| **Family A已有** | 已入縣／鄉鎮鎖定特徵或開票 prev 主線 |
+| **Core specification已有** | 已入縣／鄉鎮鎖定特徵或開票 prev 主線 |
 | **Extension已有** | 全國／PROXY／試點層，報告可寫、唔併主表 MAE |
 | **公開可補** | 公開來源存在，尚未下載或未入模 |
 | **申請或缺** | 要申請、訂閱、或公開亦無穩定歷史面板 |
@@ -733,7 +733,7 @@ def write_docs(status: dict) -> None:
 | House effects（民調機構偏差） | **Extension已有（草圖）** | TW `tw_house_effects_sketch_*.csv`；正式模型未建 |
 | 未表態／undecided | **Extension已有（TW）**；**US 缺** | TW 已入 averages；US 538 歷史平均無穩定欄 |
 | Bayesian poll average | **公開可補**（處理層） | 而家係簡單平均／538；未自建 Bayesian |
-| 均勻民調擺動（UniformPollSwing） | **Extension已有** | 民調 ablation；**禁止**寫入 Family A 主表 |
+| 均勻民調擺動（UniformPollSwing） | **Extension已有** | 民調 ablation；**禁止**寫入 Core specification 主表 |
 
 ---
 
@@ -741,8 +741,8 @@ def write_docs(status: dict) -> None:
 
 | 項目 | 狀態 | 路徑／說明 |
 |------|------|------------|
-| 政黨基本盤／floor | **Extension已有**（由 Family A 票推） | `tw_county_partisan_floor_turnout.csv`；`us_county_partisan_floor.csv` — 過去屆 min share |
-| 歷史票 prev／prev2 | **Family A已有** | TW／US county panel |
+| 政黨基本盤／floor | **Extension已有**（由 Core specification 票推） | `tw_county_partisan_floor_turnout.csv`；`us_county_partisan_floor.csv` — 過去屆 min share |
+| 歷史票 prev／prev2 | **Core specification已有** | TW／US county panel |
 | 歷史投票率（總統） | **Extension已有** | TW CEC；US VEP 近似（fundamentals） |
 | 其他選舉類型投票率長面板 | **公開可補／部分缺** | 地方／中期另表未建 |
 | 在任／incumbency | **Extension已有** | enriched fundamentals coder flags |
@@ -756,7 +756,7 @@ def write_docs(status: dict) -> None:
 |------|------|------------|
 | 年齡／世代 | **Extension已有（TW PROXY）**；**US 缺** | TW MOI 105/107 全國年齡帶；US ACS 縣選年面板未建 |
 | 性別 | **申請或缺** | 縣選年面板未建 |
-| 教育 | **US Family A已有**；**TW Extension／A+** | US `education_rate`；TW `lag_education_rate` 未入 Family A |
+| 教育 | **US Core specification已有**；**TW Extension／A+** | US `education_rate`；TW `lag_education_rate` 未入 Core specification |
 | 族群／籍貫／種族 | **申請或缺** | TW 外省／本省縣市長面板無；US race ACS 未逐年入模 |
 | 新登記選民 | **Extension PROXY（TW）** | 選民人數 % 變動；**唔等於**首投族名冊；US 缺 |
 
@@ -768,7 +768,7 @@ def write_docs(status: dict) -> None:
 |------|------|------------|
 | 總統／執政滿意度 | **Extension部分（US Trump 2020）**；**TW 缺** | datahub 538 Trump topline；Biden／歷史 Gallup 選前序列未齊；TW 滿意度未抽序列 |
 | CPI／通膨 | **Extension已有（US）**；**TW 缺** | FRED CPIAUCSL；TW DGBAS／MOL 本輪下載失敗 |
-| 失業 | **Family A已有（縣滯後）**＋**Extension 全國** | TW 全國 `taiwan_area_pct`；US FRED UNRATE |
+| 失業 | **Core specification已有（縣滯後）**＋**Extension 全國** | TW 全國 `taiwan_area_pct`；US FRED UNRATE |
 | 薪資 | **申請或缺／公開可補失敗** | US FRED／TW MOL 本輪擋 |
 | 消費者信心 CCI／ICS | **Extension已有（US）**；**TW 缺** | FRED UMCSENT |
 | 極化（polarization） | **Extension PROXY** | `polarization_proxy_national_by_year.csv` — 地理邊際，概念異於情感極化 |
@@ -806,7 +806,7 @@ def write_docs(status: dict) -> None:
 3. `results/must_have_processing_demo/` — 簡單平均／turnout sketch／MC DEMO  
 4. `docs/必備數據補齊說明.md`
 
-**未改 Family A。**
+**未改 Core specification。**
 
 ---
 

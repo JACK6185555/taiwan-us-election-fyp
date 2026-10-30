@@ -1,7 +1,7 @@
 # 全縣可訓練 US GCN：DEFERRED（＋ New England pilot）
 
 **日期：** 2026-10-30（Asia/Hong_Kong, UTC+8）  
-**標籤：** `us_gcn_pilot` ≠ 全縣可訓練 GCN；**唔好**同 Family A／全縣 RQ2 MAE 混報。  
+**標籤：** `us_gcn_pilot` ≠ 全縣可訓練 GCN；**唔好**同 Core specification／全縣 RQ2 MAE 混報。  
 **綜合框住：** `docs/RQ2_RQ3_RQ4_誠實框住.md` §一（空間）。
 
 ## 點解全縣 trainable GCN deferred

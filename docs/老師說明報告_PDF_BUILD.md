@@ -23,3 +23,12 @@
 ## 2026-10-30 老師回饋後重產
 
 來源：重組後 `docs/老師說明報告.md` → HTML → LibreOffice PDF；docx 由 python-docx 重生。因素表：`results/factor_importance_edu_econ_media/`。
+
+
+## 2026-10-30 RQ2/3/4 誠實框住重產
+
+來源：`docs/老師說明報告.md`（新第 6 節）→ HTML → LibreOffice PDF；docx 由 python-docx 重生。綜合檔：`docs/RQ2_RQ3_RQ4_誠實框住.md`。
+
+## 2026-10-30 Core specification 用語統一重產
+
+來源：`docs/老師說明報告.md`（「家族 A／Family A」→「核心設定／Core specification」）→ HTML → LibreOffice PDF；docx 由 python-docx 重生。路徑 `results/family_a_*` 未改。

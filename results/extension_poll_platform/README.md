@@ -1,12 +1,12 @@
-# Extension：全國選前民調／政綱 ablation（非家族 A）
+# Extension：全國選前民調／政綱 ablation（非核心設定）
 
 **日期：** 2026-10-30（UTC+8）  
-**定位：** Guide §3／§6.2 polling／議題特徵的 **Extension** 探索；**不是** Family A 主結果。  
+**定位：** Guide §3／§6.2 polling／議題特徵的 **Extension** 探索；**不是** Core specification 主結果。  
 **來源：** 自 `/workspace/tw2` 既有產物複製入本交付包（Wikipedia／二次引用民調表＋政綱長表；見 provenance）。
 
 ## 重要警告
 
-1. **勿與家族 A MAE 混報。** 家族 A 定稿 PreviousShare **0.0793**／RF **0.1041**／HGB **0.1189**／Ridge **0.1786**。
+1. **勿與核心設定 MAE 混報。** 核心設定 定稿 PreviousShare **0.0793**／RF **0.1041**／HGB **0.1189**／Ridge **0.1786**。
 2. 民調為**全國**層級（同屆所有縣市同一 poll swing）；**無**縣市民調面板。
 3. UniformPollSwing／History+Poll 的低 MAE 屬**探索**：僅 4 個測試屆、來源未全面人工覆核、2004 稀疏；**不可**當產品預測或勝選機率。
 4. 政綱為內容編碼／詞頻代理，來源不齊（公報 OCR 限制）；**非因果**。

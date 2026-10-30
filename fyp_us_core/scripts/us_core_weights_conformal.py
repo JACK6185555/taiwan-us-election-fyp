@@ -138,7 +138,7 @@ def main():
         for _, r in df.head(k).iterrows():
             lines.append(f"- **{r.feature_label}** (`{r.feature}`): weight={r.weight:.4g}, |w| share={r.normalized_abs:.1%}")
         return "\n".join(lines)
-    md = ["# US Family A — Feature weights (model dependence, not causal)\n",
+    md = ["# US Core specification — Feature weights (model dependence, not causal)\n",
           "Not causal. Socio may be wave-static. No county `poll_index` (Guide gap — document only).\n",
           "## Ridge standardized coefficients (signed, train < 2024)\n",
           tops(ridge_s.sort_values("abs_weight", ascending=False)),
@@ -155,7 +155,7 @@ def main():
     fig, ax = plt.subplots(figsize=(8,5.5))
     d = ridge_s.sort_values("weight")
     ax.barh(d.feature_label, d.weight, color=["#c0392b" if v<0 else "#2878B5" for v in d.weight])
-    ax.axvline(0, color="#333", lw=.8); ax.set_title("Ridge standardized coefficients (signed) — US Family A", loc="left")
+    ax.axvline(0, color="#333", lw=.8); ax.set_title("Ridge standardized coefficients (signed) — US Core specification", loc="left")
     ax.set_xlabel("Standardized coefficient"); ax.grid(axis="x", color="#e5e5e5"); ax.set_axisbelow(True)
     ax.spines[["top","right"]].set_visible(False); plt.tight_layout(); plt.savefig(CH/"feature_weights_ridge_signed.png", dpi=180); plt.close()
 
@@ -247,7 +247,7 @@ def main():
 
     cov_mean = conf.groupby("model")["empirical_coverage"].mean()
     payload = {
-        "family":"US Family A", "target":TARGET, "unit":"US county; Dem two-party share",
+        "family":"US Core specification", "target":TARGET, "unit":"US county; Dem two-party share",
         "test_years":TEST_YEARS, "mean_metrics": mean_metrics.to_dict("records"),
         "conformal_mean_coverage": cov_mean.to_dict(),
         "poll_index":"NOT AVAILABLE — no county poll series; gap documented (do not invent)",
@@ -258,7 +258,7 @@ def main():
     # README
     mm = mean_metrics.set_index("model")
     conf_lines = "\n".join(f"| {m} | {v:.4f} |" for m,v in cov_mean.items())
-    readme = f"""# US Family A — County Presidential Core
+    readme = f"""# US Core specification — County Presidential Core
 
 | Item | Value |
 |---|---|
@@ -292,7 +292,7 @@ See `FEATURE_WEIGHTS.md` + `results/feature_weights_*.csv`.
 Weights/ablation/importance = **model dependence**, not causal.
 """
     (OUT/"README.md").write_text(readme, encoding="utf-8")
-    (RES/"REPRODUCIBILITY.md").write_text("# US Family A\n\nScripts: us_core_backtest.py, us_core_weights_conformal.py\n", encoding="utf-8")
+    (RES/"REPRODUCIBILITY.md").write_text("# US Core specification\n\nScripts: us_core_backtest.py, us_core_weights_conformal.py\n", encoding="utf-8")
 
     # DATA_GAPS
     (OUT/"DATA_GAPS.md").write_text(

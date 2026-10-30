@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Factor-group importance: Education vs Economic vs Media (Extension tables).
 
-NOT Family A re-fit of locked headline MAE. Weights / ΔMAE = predictive dependence
+NOT Core specification re-fit of locked headline MAE. Weights / ΔMAE = predictive dependence
 in OOT / national leave-one-out — NOT causal.
 
 Groups
@@ -333,7 +333,7 @@ def national_media_and_fundamentals():
                 "spec": spec, "features": ",".join(feats),
                 "model": "baseline" if spec == "PreviousShare_only" else "Ridge_LOO",
                 "n_years": len(use), "mae_loo": float(np.mean(abs_errs)),
-                "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal",
+                "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Core specification; NOT causal",
             })
 
     assoc = pd.DataFrame(rows_assoc)
@@ -497,7 +497,7 @@ def main():
             "mean_mae": float(r["mae"]),
             "delta_vs_PreviousShare": float(r["delta_vs_prev"]) if pd.notna(r["delta_vs_prev"]) else np.nan,
             "PreviousShare_mae": np.nan,
-            "interpretation": "national leave-one-year; media tiny n; NOT Family A; NOT causal",
+            "interpretation": "national leave-one-year; media tiny n; NOT Core specification; NOT causal",
         })
     narr = pd.DataFrame(narrative)
     narr.to_csv(OUT / "factor_importance_summary_table.csv", index=False)
@@ -507,7 +507,7 @@ def main():
     ranking_md.append("# Education vs Economic vs Media — factor importance (Extension)\n")
     ranking_md.append(f"Built: {NOW}\n")
     ranking_md.append("**Weights / ΔMAE = predictive dependence in OOT or national LOO — NOT causal.**\n")
-    ranking_md.append("Family A locked headline (Prev MAE 0.0793) is **unchanged**; this folder is Extension analysis for teacher feedback.\n")
+    ranking_md.append("Core specification locked headline (Prev MAE 0.0793) is **unchanged**; this folder is Extension analysis for teacher feedback.\n")
 
     ranking_md.append("\n## 1. Taiwan county (OOT 2012–2024)\n")
     ranking_md.append("| spec | model | mean MAE | Δ vs PreviousShare |\n|---|---|---:|---:|\n")
@@ -568,7 +568,7 @@ def main():
         "2. Between **education** and **economic** county features added to PreviousShare: "
         "compare ΔMAE and group permutation in tables above — typically both add little "
         "vs PreviousShare alone; relative rank may differ by country.\n"
-        "3. **Media** is national Extension only; cannot enter county Family A; "
+        "3. **Media** is national Extension only; cannot enter county Core specification; "
         "n_years≤2 for camp gap → descriptive / pilot only "
         "(cf. Brito et al. social-media prediction caution).\n"
     )

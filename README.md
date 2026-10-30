@@ -1,12 +1,12 @@
-# 臺灣選舉預測 FYP（臺灣部分）— 主結果＝家族 A
+# 臺灣選舉預測 FYP（臺灣部分）— 主結果＝核心設定（Core specification）
 
-**English abstract.** Taiwan half of a US–Taiwan comparative election-forecasting FYP. **Primary result (Family A / RQ1):** county×year DPP presidential valid-vote share, expanding-window out-of-time tests on **2012／2016／2020／2024** (**88** region-years). Previous-election baseline beats Ridge／RF／HGB. Township multiparty, spatial, US transfer, HK／platforms／swing-voter notes are **Extensions only** — do not mix MAEs with Family A. Ecological features — **no TEDS**. Methods exercise, not advocacy.
+**English abstract.** Taiwan half of a US–Taiwan comparative election-forecasting FYP. **Primary result (**Core specification**, formerly “Family A” / RQ1):** county×year DPP presidential valid-vote share, expanding-window out-of-time tests on **2012／2016／2020／2024** (**88** region-years). Previous-election baseline beats Ridge／RF／HGB. Township multiparty, spatial, US transfer, HK／platforms／swing-voter notes are **Extensions only** — do not mix MAEs with Core specification. Ecological features — **no TEDS**. Methods exercise, not advocacy.
 
 **提交數字稽核：** [`docs/SUBMISSION_AUDIT.md`](docs/SUBMISSION_AUDIT.md)（I-F／I-A／I-C）
 
 ---
 
-## 主結果：家族 A（縣市 DPP 總統・嚴格時間外）
+## 主結果：核心設定（Core specification；舊稱「家族 A」）（縣市 DPP 總統・嚴格時間外）
 
 | 項目 | 內容 |
 |------|------|
@@ -59,7 +59,7 @@
 - **總表：** [`docs/GUIDE_COMPLETION_STATUS.md`](docs/GUIDE_COMPLETION_STATUS.md)（I-A…I-K、Demo 1–7）
 - **追蹤／問答：** [`docs/GUIDE_ALIGNED_ISSUE_TRACKER.md`](docs/GUIDE_ALIGNED_ISSUE_TRACKER.md)、[`docs/GUIDE_ANSWERS.md`](docs/GUIDE_ANSWERS.md)
 - **RQ4 Conformal：** 有實作與 improved protocols（`results/conformal_rq4_improved/`；美國 Core 見 `results/family_a_us_county_presidential/conformal_*`）——**標探索／未當不確定性產品**，不進主貢獻敘事。
-- **Extension 民調／政綱 ablation（非家族 A）：** [`results/extension_poll_platform/`](results/extension_poll_platform/)（例：UniformPollSwing 四屆平均 MAE **0.0266**；History+Poll Ridge **0.0611**）——全國 poll、來源未全面覆核；**勿與 0.0793 主表混報**。
+- **Extension 民調／政綱 ablation（非核心設定）：** [`results/extension_poll_platform/`](results/extension_poll_platform/)（例：UniformPollSwing 四屆平均 MAE **0.0266**；History+Poll Ridge **0.0611**）——全國 poll、來源未全面覆核；**勿與 0.0793 主表混報**。
 - **Demo 1／7 合成 US/TW：** `scripts/make_demo_us_tw_synthetic.py`、`scripts/run_demo_joint_synthetic.py`；真實 RQ3：`docs/美台對照_RQ3.md`。
 - **I-C：** importance／ablation／權重 = **model dependence in OOT**，**不是因果**、不是勝選因素。
 
@@ -96,13 +96,13 @@ taiwan-election-github/
 │   ├── national_share_verification.csv
 │   └── DATA_PROVENANCE.md
 ├── results/
-│   ├── family_a_county_presidential/  # ★ 主結果（家族 A）
+│   ├── family_a_county_presidential/  # ★ 主結果（核心設定）
 │   ├── parties/ / legislative/        # 補充：鄉鎮三黨
 │   ├── improved/ / improved_r2/       # 補充
 │   └── spatial_* / us_taiwan_transfer # 補充 RQ2／RQ3
-├── analysis/taiwan_core/              # 家族 A 鏡像
+├── analysis/taiwan_core/              # 核心設定 鏡像
 ├── scripts/
-│   ├── taiwan_core_backtest.py        # ★ 家族 A
+│   ├── taiwan_core_backtest.py        # ★ 核心設定
 │   └── run_taiwan_*.py                # 補充線
 └── docs/
     ├── SUBMISSION_AUDIT.md
@@ -120,7 +120,7 @@ taiwan-election-github/
 
 鄉鎮加總與 `data/cec_president_national_totals.csv` 差異 < 0.01pp（見 `national_share_verification.csv`）。
 
-## 補充：鄉鎮三黨結果（勿與家族 A 混報）
+## 補充：鄉鎮三黨結果（勿與核心設定 混報）
 
 ### 2024 Level MAE（鄉鎮；越小越好）
 
@@ -186,12 +186,12 @@ TPP 立委：RF 贏過 PreviousShare，但 impurity 上 **`tpp_contested` ≈ 0.
 
 詳見 `results/legislative/` 與老師報告「立委三黨」節。
 
-## 如何重跑（家族 A 優先）
+## 如何重跑（核心設定 優先）
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python scripts/taiwan_core_backtest.py     # 家族 A（主結果）
+python scripts/taiwan_core_backtest.py     # 核心設定（主結果）
 python scripts/run_taiwan_parties.py       # 補充：總統三黨鄉鎮
 python scripts/run_taiwan_legislative.py   # 補充：區域立委三黨
 # 或只讀 results/family_a_county_presidential/，不必重跑
@@ -297,5 +297,5 @@ Methodological country-only vs joint vs transfer OOT on synthetic + real MEDSL/C
 
 ## 美台資料對等
 
-TW／US 須同一資料層級。對等表：`docs/美台資料對等表.md`。美國 Extension 鏡像：`data/us_parity_extension/`（民調 PROXY、黨綱 metadata、MEDSL partisan lean）。**勿將 Extension MAE 併入 Family A。**
+TW／US 須同一資料層級。對等表：`docs/美台資料對等表.md`。美國 Extension 鏡像：`data/us_parity_extension/`（民調 PROXY、黨綱 metadata、MEDSL partisan lean）。**勿將 Extension MAE 併入 Core specification。**
 

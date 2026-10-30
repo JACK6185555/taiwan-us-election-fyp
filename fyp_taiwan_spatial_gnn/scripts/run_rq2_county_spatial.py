@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""RQ2 headline: county-level presidential spatial vs non-spatial, Family A window.
+"""RQ2 headline: county-level presidential spatial vs non-spatial, Core specification window.
 
 Same panel / features / expanding OOT (test years 2012/2016/2020/2024) as
-taiwan_core_backtest.py (Family A). Spatial graphs built by dissolving MOI
+taiwan_core_backtest.py (Core specification). Spatial graphs built by dissolving MOI
 township polygons to 22 counties.
 
 Comparisons (identical features & splits):
@@ -319,7 +319,7 @@ def predict_gnn(model, x, ei, ew):
 def load_panel():
     df = pd.read_csv(PANEL)
     df["target_KMT_vote_share"] = df["KMT_votes"] / df["valid_votes"]
-    # Family A completeness for DPP features; KMT target may still be present
+    # Core specification completeness for DPP features; KMT target may still be present
     frame = df.dropna(subset=["target_DPP_vote_share", *FEATURES]).copy()
     frame = frame.sort_values(["year", "region_name"]).reset_index(drop=True)
     return frame
@@ -364,7 +364,7 @@ def run_fold(frame, test_year, names, graphs, targets):
             continue
         ytr = tr[ycol].to_numpy()
         yte = te[ycol].to_numpy()
-        # NonSpatial uses row order of panel (not graph order) — same as Family A
+        # NonSpatial uses row order of panel (not graph order) — same as Core specification
         Xtr = tr[FEATURES].to_numpy()
         Xte = te[FEATURES].to_numpy()
 
@@ -647,7 +647,7 @@ def main():
             "residual": "ResidualGCN concatenates diffused hidden with raw input",
         },
         "graphs": meta,
-        "note": "Township MAE must not be mixed into Family A / this county RQ2 table.",
+        "note": "Township MAE must not be mixed into Core specification / this county RQ2 table.",
     }
     with open(OUT / "rq2_county_protocol.json", "w", encoding="utf-8") as f:
         json.dump(protocol, f, ensure_ascii=False, indent=2)

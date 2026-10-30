@@ -2,7 +2,7 @@
 """Build US Extension layers parallel to TW polls / platforms / ESC identity proxies.
 
 Public sources only; no login scrape; no invented poll numbers.
-Extension only — do NOT merge into Family A Core MAE.
+Extension only — do NOT merge into Core specification Core MAE.
 """
 from __future__ import annotations
 
@@ -501,7 +501,7 @@ for d in (OUT_DATA, OUT_GH):
     (d / "README.md").write_text(
         """# US parity Extension (parallel to TW Extension / ESC PROXY)
 
-Built for FYP **data-layer parity** with Taiwan — not for mixing into Family A Core MAE.
+Built for FYP **data-layer parity** with Taiwan — not for mixing into Core specification Core MAE.
 
 | File | Parallel to TW |
 |------|----------------|

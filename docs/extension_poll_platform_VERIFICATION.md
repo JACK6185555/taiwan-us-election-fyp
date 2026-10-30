@@ -2,7 +2,7 @@
 
 **日期：** 2026-10-30（Asia/Hong_Kong, UTC+8）  
 **範圍：** `data/extension_poll_platform/`＋`results/extension_poll_platform/`  
-**定位：** Extension only——**唔升格**入 Family A。
+**定位：** Extension only——**唔升格**入 Core specification。
 
 ## 政綱 `taiwan_platforms_long.csv`（510 列）
 
@@ -31,7 +31,7 @@
 | `field_start` 缺 | **7 個 poll_id／14 列**（多為 2004 blackout／二次引用）；**不捏造**開始日——註記於 note（`QA:field_end_approx`／`QA:secondary_cite`） |
 | 縣市民調 | **無** → `docs/縣市民調缺口說明.md` |
 
-## Ablation 數字（勿混報家族 A）
+## Ablation 數字（勿混報核心設定）
 
 見 `results/extension_poll_platform/README.md`：UniformPollSwing **0.0266**、History+Poll Ridge **0.0611** 等為 Extension 探索。
 
@@ -39,4 +39,4 @@
 
 - 新增本驗證狀態表＋縣市民調缺口說明。  
 - 確認 poll `region` 全 national；記錄 2004 `field_start` 缺口而不填假日期。  
-- **未**重跑 Wikipedia 爬蟲；**未**把 poll／platform 併入 Family A。
+- **未**重跑 Wikipedia 爬蟲；**未**把 poll／platform 併入 Core specification。

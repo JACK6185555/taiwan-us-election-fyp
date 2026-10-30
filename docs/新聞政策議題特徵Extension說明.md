@@ -1,7 +1,7 @@
 # 新聞／政策議題顯著度特徵 — Extension 說明
 
 **日期：** 2026-10-30（Asia/Hong_Kong, UTC+8）  
-**狀態：** **Extension 完成**；**唔改 Family A MAE／鎖定特徵集**  
+**狀態：** **Extension 完成**；**唔改 Core specification MAE／鎖定特徵集**  
 **問題來源：** 用戶認為新聞或政策議題容易影響中間選民投票意向，要求加入特徵。
 
 ---
@@ -15,7 +15,7 @@
 
 ---
 
-## 點解係 Extension（唔入 Family A）
+## 點解係 Extension（唔入 Core specification）
 
 | 理由 | 說明 |
 |------|------|
@@ -23,7 +23,7 @@
 | 觀測對象 | 睇到嘅係帖文／政綱標籤嘅議題注意力，**睇唔到**中間選民個人有冇轉向 |
 | 樣本偏誤 | X 活躍用戶 ≠ 選民；海外中文／極化帳號偏多；新聞媒體帳重複發佈 |
 | 理論角色 | 文獻上議題顯著度／議題所有權／Zaller RAS／MIP 同「弱黨性／中間選民可被說服」有關——呢度只提供 **氣候 PROXY**，唔做因果 ID |
-| 權重 | `results/feature_weights/extension_issue_news_national_associations.csv` 入面嘅數字＝描述性 volume／tone，**≠** Family A 迴歸權重、**≠**因果 |
+| 權重 | `results/feature_weights/extension_issue_news_national_associations.csv` 入面嘅數字＝描述性 volume／tone，**≠** Core specification 迴歸權重、**≠**因果 |
 
 → 同 `docs/X情緒特徵Extension說明.md`、民調／政綱 Extension 同一層：報告可寫「另開一層」；主表 MAE 不變（Prev **0.0793**）。
 

@@ -502,17 +502,17 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   <h2>美台選舉預測 FYP 總覽</h2>
   <p class="lede">呢個儀表板跟加拿大參考報告同一套介面（側欄、字體放大、朗讀、卡片、表同橫條圖），
   內容係台灣同美國總統選舉研究真實公開數據：歷屆得票、模型 MAE、人口結構 PROXY、經濟、X 情緒、教育／經濟／媒體因素。
-  <b>唔依賴 Chart.js</b>——離線都可以睇到全部內容。Family A（台灣縣市主模型）未改動。</p>
+  <b>唔依賴 Chart.js</b>——離線都可以睇到全部內容。Core specification（台灣縣市主模型）未改動。</p>
   <div class="stat-grid">
     <div class="stat-card"><div class="stat-num">9</div><div class="stat-label">個分析部分</div></div>
     <div class="stat-card"><div class="stat-num">2000–2024</div><div class="stat-label">歷屆總統選舉年份</div></div>
-    <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW Family A · Prev MAE</div></div>
+    <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW Core specification · Prev MAE</div></div>
     <div class="stat-card"><div class="stat-num">0.0345</div><div class="stat-label">US Core · Prev MAE</div></div>
   </div>
   <h3>目錄（撳左邊按鈕去睇每一 part）</h3>
   <ul class="toc-list">
     <li><b>歷屆選舉走勢</b> —— 台灣 22 縣市投票率／勝出政黨％；美國州級兩黨％</li>
-    <li><b>模型預測</b> —— Family A 同 US Core 嘅 MAE 比較（Prev 係基準）</li>
+    <li><b>模型預測</b> —— Core specification 同 US Core 嘅 MAE 比較（Prev 係基準）</li>
     <li><b>人口結構 PROXY</b> —— 年齡、客家調查、ESC 認同、美國 ACS 種族構成</li>
     <li><b>經濟概況</b> —— 美國 FRED 失業／CPI／信心；台灣 CPI／CCI PROXY</li>
     <li><b>社交媒體情緒</b> —— X（Twitter）實體淨情緒（Extension，全國小樣本）</li>
@@ -532,7 +532,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
 </div>
       <div class="table-wrap"><table><thead><tr><th>年</th><th>勝出</th><th>DPP%</th><th>KMT%</th><th>其他%</th><th>投票率</th></tr></thead>
       <tbody><tr><td>2000</td><td><span class="badge dpp">DPP</span></td><td>39.3%</td><td>23.1%</td><td>37.6%</td><td>82.7%</td></tr><tr><td>2004</td><td><span class="badge dpp">DPP</span></td><td>50.1%</td><td>49.9%</td><td>0.0%</td><td>80.3%</td></tr><tr><td>2008</td><td><span class="badge kmt">KMT</span></td><td>41.6%</td><td>58.4%</td><td>0.0%</td><td>76.3%</td></tr><tr><td>2012</td><td><span class="badge kmt">KMT</span></td><td>45.6%</td><td>51.6%</td><td>2.8%</td><td>74.4%</td></tr><tr><td>2016</td><td><span class="badge dpp">DPP</span></td><td>56.1%</td><td>31.0%</td><td>12.8%</td><td>66.3%</td></tr><tr><td>2020</td><td><span class="badge dpp">DPP</span></td><td>57.1%</td><td>38.6%</td><td>4.3%</td><td>74.9%</td></tr><tr><td>2024</td><td><span class="badge dpp">DPP</span></td><td>40.1%</td><td>33.5%</td><td>26.5%</td><td>71.9%</td></tr></tbody></table></div>
-      <p class="note">來源：中選會公開總統選舉縣市彙總（Family A 面板）。</p>
+      <p class="note">來源：中選會公開總統選舉縣市彙總（Core specification 面板）。</p>
     </div>
     <div class="card"><h3>美國全國 DEM 兩黨％（歷屆）</h3><div class="css-chart">
 <div class="row"><div class="lab">2000</div><div class="track"><div class="fill dem" style="width:50.30%"></div></div><div class="val">50.3%</div></div>
@@ -648,7 +648,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   <h2>模型預測（OOT MAE）</h2>
   <p class="lede">數字愈細愈準。Prev（上屆得票）係基準線；其他模型同因素係睇<strong>增量</strong>。</p>
   <div class="stat-grid">
-    <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW Family A Prev</div></div>
+    <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW Core specification Prev</div></div>
     <div class="stat-card"><div class="stat-num">0.0345</div><div class="stat-label">US Core Prev</div></div>
     <div class="stat-card"><div class="stat-num">0.0725</div><div class="stat-label">TW Prev+經濟 Ridge</div></div>
     <div class="stat-card"><div class="stat-num">0.089</div><div class="stat-label">TW Prev+教育 Ridge</div></div>
@@ -672,10 +672,10 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
 <div class="row"><div class="lab">Prev+Edu+Econ</div><div class="track"><div class="fill other" style="width:38.80%"></div></div><div class="val">0.1%</div></div>
 </div>
   <div class="table-wrap"><table><thead><tr><th>模型</th><th>MAE</th><th>說明</th></tr></thead><tbody>
-    <tr><td>TW Family A · Prev</td><td>0.0793</td><td>基準（地理慣性代理）</td></tr>
-    <tr><td>TW Family A · RF</td><td>0.1033</td><td>隨機森林</td></tr>
-    <tr><td>TW Family A · HGB</td><td>0.1189</td><td>直方圖梯度提升</td></tr>
-    <tr><td>TW Family A · Ridge</td><td>0.1786</td><td>線性 Ridge</td></tr>
+    <tr><td>TW Core specification · Prev</td><td>0.0793</td><td>基準（地理慣性代理）</td></tr>
+    <tr><td>TW Core specification · RF</td><td>0.1033</td><td>隨機森林</td></tr>
+    <tr><td>TW Core specification · HGB</td><td>0.1189</td><td>直方圖梯度提升</td></tr>
+    <tr><td>TW Core specification · Ridge</td><td>0.1786</td><td>線性 Ridge</td></tr>
     <tr><td>US Core · Prev</td><td>0.0345</td><td>基準</td></tr>
     <tr><td>US Core · RF</td><td>0.0525</td><td>隨機森林</td></tr>
     <tr><td>US Core · Ridge</td><td>0.0539</td><td>線性 Ridge</td></tr>
@@ -684,13 +684,13 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
     <tr><td>TW Prev+Edu Ridge</td><td>0.089</td><td>加教育後未改善</td></tr>
     <tr><td>TW Prev+Edu+Econ</td><td>0.0776</td><td>教育+經濟</td></tr>
   </tbody></table></div>
-  <p class="note">免責：predictive dependence / OOT MAE — NOT causal; Family A locked</p>
+  <p class="note">免責：predictive dependence / OOT MAE — NOT causal; Core specification locked</p>
 </section>
 
 
 <section class="panel" id="demographics">
   <h2>人口結構 PROXY</h2>
-  <p class="lede">年齡、族群／種族、台灣認同——全部嚟自公開統計；標 PROXY 嘅唔入 Family A 主模型。</p>
+  <p class="lede">年齡、族群／種族、台灣認同——全部嚟自公開統計；標 PROXY 嘅唔入 Core specification 主模型。</p>
   <h3>台灣年齡結構 PROXY · 2016</h3><div class="css-chart">
 <div class="row"><div class="lab">15_29</div><div class="track"><div class="fill dem" style="width:22.77%"></div></div><div class="val">22.8%</div></div>
 <div class="row"><div class="lab">30_44</div><div class="track"><div class="fill dem" style="width:27.67%"></div></div><div class="val">27.7%</div></div>
@@ -719,7 +719,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
 <div class="row"><div class="lab">AIAN alone</div><div class="track"><div class="fill gold" style="width:0.82%"></div></div><div class="val">0.8%</div></div>
 <div class="row"><div class="lab">Two or more</div><div class="track"><div class="fill kmt" style="width:5.21%"></div></div><div class="val">5.2%</div></div>
 </div>
-  <p class="note">來源：ACS 2020 5-year county file in repo (fyp_us_taiwan_transfer/raw/us/ACS2020_5year_county.csv) · Race alone categories; Hispanic origin not separately tabulated in this extract. NOT Family A.</p>
+  <p class="note">來源：ACS 2020 5-year county file in repo (fyp_us_taiwan_transfer/raw/us/ACS2020_5year_county.csv) · Race alone categories; Hispanic origin not separately tabulated in this extract. NOT Core specification.</p>
   <h3>美國各州種族（2020）</h3>
   <div class="table-wrap"><table><thead><tr>
     <th>州</th><th>人口</th><th>White%</th><th>Black%</th><th>Asian%</th><th>AIAN%</th><th>Two+</th>
@@ -821,7 +821,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
 
 <section class="panel" id="sentiment">
   <h2>社交媒體情緒（X Extension）</h2>
-  <p class="lede">公開 X 帖情緒代理；樣本細、無可靠地理標籤，<b>唔入 Family A</b>，只作全國 Extension。</p>
+  <p class="lede">公開 X 帖情緒代理；樣本細、無可靠地理標籤，<b>唔入 Core specification</b>，只作全國 Extension。</p>
   <div class="year-block"><h3>TW · 2020</h3>
     <div class="css-chart">
 <div class="row"><div class="lab">國民黨 正面%</div><div class="track"><div class="fill green" style="width:21.74%"></div></div><div class="val">21.7%</div></div>
@@ -918,7 +918,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   <ul class="toc-list">
     <li>TEDS／縣市民調微資料：唔申請；報告寫公開不可得。</li>
     <li>期望民調、正式機構效應、完整滿意度長歷史：兩邊缺口。</li>
-    <li>媒體／X 情緒：全國小樣本、無縣市 geo → 唔入 Family A。</li>
+    <li>媒體／X 情緒：全國小樣本、無縣市 geo → 唔入 Core specification。</li>
     <li>美國縣級投票率面板：本儀表板用州級兩黨％代替。</li>
     <li>Prev 強：文獻常見地理慣性；解釋選情變化靠經濟／議題／媒體增量。</li>
   </ul>

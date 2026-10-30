@@ -1,7 +1,7 @@
 # RQ2 美台空間對照（縣市／縣級總統票）
 
 > 主表分開：**臺灣** `fyp_taiwan_spatial_gnn/rq2_county/`；**美國** `fyp_us_taiwan_transfer/rq2_us_county/`。  
-> **唔好**把兩邊 MAE 寫入 Family A／對方表。數字以各目錄 CSV 為準（唔發明）。  
+> **唔好**把兩邊 MAE 寫入 Core specification／對方表。數字以各目錄 CSV 為準（唔發明）。  
 > **老師／口試誠實框住（含 RQ3／RQ4）：** `docs/RQ2_RQ3_RQ4_誠實框住.md`
 
 ## 共同協議
@@ -15,7 +15,7 @@
 
 ## 臺灣（已完成）
 
-- 單位：22 縣市；特徵 = Family A 16 個歷史特徵；目標 DPP share  
+- 單位：22 縣市；特徵 = Core specification 16 個歷史特徵；目標 DPP share  
 - Queen：33 邊，平均度 3.0  
 - **結論**：PreviousShare mean MAE **0.0793** 最好；最佳 SGC（dist_decay_bin + RF）**0.1029** 只略好過 NonSpatial RF 0.1043；trainable GCN／GAT mixed／多數更差。  
 - 詳見 `docs/空間共邊GCN.md`、`rq2_county_mean_mae_dpp.csv`

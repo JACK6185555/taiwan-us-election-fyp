@@ -1,4 +1,4 @@
-# TW education_rate Extension A+ (NOT Family A)
+# TW education_rate Extension A+ (NOT Core specification)
 
 **Built:** 2026-10-30 14:05 Asia/Hong_Kong (UTC+8)
 
@@ -30,10 +30,10 @@ family_a_electoral_only_rerun                      Ridge 0.178580 0.185480
 ```
 
 ## Locked published reference (unchanged)
-- Family A Prev MAE **0.0793**; Family A Ridge **0.1786**
-- Family A+ Ridge **0.1425** (published enriched)
+- Core specification Prev MAE **0.0793**; Core specification Ridge **0.1786**
+- Core+ (enriched) Ridge **0.1425** (published enriched)
 
 ## Caveats
 - 權重／係數**唔係**因果。
 - 教育率滯後對早期選舉覆蓋較佳（MOI 自民國86年起）；金門／連江亦有列。
-- **禁止**把本 Extension MAE 寫入 Family A 主表。
+- **禁止**把本 Extension MAE 寫入 Core specification 主表。

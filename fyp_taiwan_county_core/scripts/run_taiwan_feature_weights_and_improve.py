@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Taiwan Family A improve + data fill + feature weights + RQ4 conformal attempt.
+"""Taiwan Core specification improve + data fill + feature weights + RQ4 conformal attempt.
 
 - Adds lagged public socio/attitude features (unemployment, income, density, ESC national PROXY).
-- Refits electoral-only Family A and enriched Family A+.
+- Refits electoral-only Core specification and enriched Core+ (enriched).
 - Exports Ridge signed coefs, RF/HGB impurity+permutation importance, ablation ΔMAE.
 - Attempts improved conformal (train / calib year / test year).
 - Does NOT invent TEDS microdata; Kinmen/Lienchiang unemployment missing → train-fold median.
@@ -730,11 +730,11 @@ def write_summaries(ridge_elec, rf_elec, hgb_elec, ridge_enr, rf_enr, hgb_enr,
         "- Lagged national ESC PROXY identity + tongdu (public transcription; not official Excel / not TEDS)",
         "- Kinmen/Lienchiang unemployment missing in source → train-fold median imputation",
         "",
-        "## Family A electoral-only mean OOT MAE",
+        "## Core specification electoral-only mean OOT MAE",
         "",
         mean_elec.to_string(index=False),
         "",
-        "## Family A+ enriched mean OOT MAE",
+        "## Core+ (enriched) enriched mean OOT MAE",
         "",
         mean_enr.to_string(index=False),
         "",
@@ -785,7 +785,7 @@ def write_summaries(ridge_elec, rf_elec, hgb_elec, ridge_enr, rf_enr, hgb_enr,
     top_ridge = ridge_elec.head(10)
     top_rf = rf_elec.head(10)
     zh = []
-    zh.append("# 特徵權重說明（臺灣縣市總統票｜Family A）")
+    zh.append("# 特徵權重說明（臺灣縣市總統票｜Core specification）")
     zh.append("")
     zh.append("更新：2026-10-30（Asia/Hong_Kong）")
     zh.append("")
@@ -809,13 +809,13 @@ def write_summaries(ridge_elec, rf_elec, hgb_elec, ridge_enr, rf_enr, hgb_enr,
     zh.append("")
     zh.append("金門／連江失業率來源缺列 → **訓練折內中位數填補**（已記錄），唔係虛構民調。")
     zh.append("")
-    zh.append("## Family A（純選舉史）平均 OOT MAE")
+    zh.append("## Core specification（純選舉史）平均 OOT MAE")
     zh.append("")
     zh.append("```")
     zh.append(mean_elec.to_string(index=False))
     zh.append("```")
     zh.append("")
-    zh.append("## Family A+（加滯後社經／態度 PROXY）平均 OOT MAE")
+    zh.append("## Core+ (enriched)（加滯後社經／態度 PROXY）平均 OOT MAE")
     zh.append("")
     zh.append("```")
     zh.append(mean_enr.to_string(index=False))
@@ -923,7 +923,7 @@ def main():
     enriched, provenance = build_enriched_panel()
     print("Coverage sample:", {k: provenance["coverage"][k]["n_non_null"] for k in SOCIO})
 
-    print("Refitting Family A electoral...", flush=True)
+    print("Refitting Core specification electoral...", flush=True)
     frame_e, test_years, metrics_e, mean_e = run_backtest(
         enriched, ELECTORAL, OUT_FA, "family_a_electoral"
     )
@@ -934,15 +934,15 @@ def main():
     # also refresh family_a importance summary for compatibility
     # (permutation already in feature_weights; copy mean metrics note)
     (OUT_FA / "REPRODUCIBILITY.md").write_text(
-        "# Family A refresh\n\n"
+        "# Core specification refresh\n\n"
         "Refit by `scripts/run_taiwan_feature_weights_and_improve.py`.\n"
-        "Canonical electoral features unchanged; see also Family A+ in "
+        "Canonical electoral features unchanged; see also Core+ (enriched) in "
         "`results/family_a_plus_enriched/`.\n"
         "Feature weights: `results/feature_weights/`.\n",
         encoding="utf-8",
     )
 
-    print("Refitting Family A+ enriched...", flush=True)
+    print("Refitting Core+ (enriched) enriched...", flush=True)
     frame_p, test_years2, metrics_p, mean_p = run_backtest(
         enriched, ENRICHED, OUT_ENR, "family_a_plus_enriched"
     )

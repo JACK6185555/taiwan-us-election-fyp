@@ -1,4 +1,4 @@
-# US Family A — Feature weights (model dependence, not causal)
+# US Core specification — Feature weights (model dependence, not causal)
 
 Not causal. No county `poll_index` (Guide gap — not invented).
 

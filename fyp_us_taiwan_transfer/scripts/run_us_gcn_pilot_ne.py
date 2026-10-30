@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """US GCN pilot on New England counties only (~67 FIPS).
 
-Label: us_gcn_pilot — NOT full-US trainable GCN; NOT Family A.
+Label: us_gcn_pilot — NOT full-US trainable GCN; NOT Core specification.
 Compare PreviousShare / NonSpatial / SGC / TrainableGCN / ResidualGCN
 on the SAME New England subset only. SEED=42. No invented metrics.
 """

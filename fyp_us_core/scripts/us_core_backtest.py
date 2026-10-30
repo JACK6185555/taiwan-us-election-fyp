@@ -1,4 +1,4 @@
-"""US Family A county presidential Core — parity with Taiwan Family A.
+"""US Core specification county presidential Core — parity with Taiwan Core specification.
 
 Expanding-window leave-one-election-year-out for test years 2012/2016/2020/2024.
 Models: PreviousShare, Ridge, RandomForest, HistGradientBoosting.
@@ -154,7 +154,7 @@ def build_frame(raw: pd.DataFrame) -> pd.DataFrame:
         "log_total_votes": logv.values,
     })
     out["log_median_income"] = np.log(out["median_income"].clip(lower=1.0))
-    # Complete rows for Family A features
+    # Complete rows for Core specification features
     need = [TARGET, *FEATURES]
     before = len(out)
     out = out.dropna(subset=need).copy()
@@ -597,7 +597,7 @@ def main():
             lines.append(f"- **{r.feature_label}** (`{r.feature}`): weight={r.weight:.4g}, |w| share={r.normalized_abs:.1%}")
         return "\n".join(lines)
     md = []
-    md.append("# US Family A — Feature weights (model dependence, not causal)\n")
+    md.append("# US Core specification — Feature weights (model dependence, not causal)\n")
     md.append("Weights describe how each fitted model **uses** features in this OOT setup. They are **not** causal effects on voters.\n")
     md.append("## Ridge standardized coefficients (signed, train years < 2024)\n")
     md.append("Positive ⇒ higher feature value associated with higher predicted Dem two-party share (after z-scoring).\n")
@@ -622,7 +622,7 @@ def main():
     colors = ["#c0392b" if v < 0 else "#2878B5" for v in d.weight]
     ax.barh(d.feature_label, d.weight, color=colors)
     ax.axvline(0, color="#333", lw=0.8)
-    ax.set_title("Ridge standardized coefficients (signed) — US Family A", loc="left")
+    ax.set_title("Ridge standardized coefficients (signed) — US Core specification", loc="left")
     ax.set_xlabel("Standardized coefficient")
     ax.grid(axis="x", color="#e5e5e5"); ax.set_axisbelow(True)
     ax.spines[["top", "right"]].set_visible(False)
@@ -638,7 +638,7 @@ def main():
         "ACS2020/ERS2022) — not fully year-synchronized; treat as weak covariates."
     )
     payload = {
-        "family": "US Family A county presidential (Core parity with TW Family A)",
+        "family": "US Core specification county presidential (Core parity with TW Core specification)",
         "target": TARGET,
         "unit": "US county-year; Democratic two-party presidential share",
         "panel_years": [int(y) for y in years],
@@ -654,7 +654,7 @@ def main():
         "socio_gap": socio_note,
         "limitations": [
             "Unit is US county (~3100), not TW county/city (22) — MAE not directly comparable in magnitude alone.",
-            "Target is Dem two-party share; TW Family A uses DPP valid-vote share (multi-party).",
+            "Target is Dem two-party share; TW Core specification uses DPP valid-vote share (multi-party).",
             socio_note,
             "Permutation importance uses up to 800-county test subsample and 10 repeats for runtime.",
             "Importance/ablation describe model dependence in OOT — not causal.",
@@ -672,11 +672,11 @@ def main():
     if not conf.empty:
         for _, r in conf.groupby("model", as_index=False)["empirical_coverage"].mean().iterrows():
             conf_s += f"| {r['model']} | {r['empirical_coverage']:.4f} |\n"
-    readme = f"""# US Family A — County Presidential Core（美國家族 A）
+    readme = f"""# US Core specification — County Presidential Core（美國核心設定）
 
-**English:** Expanding-window out-of-time backtest for US counties, mirroring Taiwan Family A Core.
+**English:** Expanding-window out-of-time backtest for US counties, mirroring Taiwan Core specification Core.
 
-**中文：** 美國縣級總統票 Core 回測，結構對齊臺灣家族 A（PreviousShare／Ridge／RF／HGB、ablation、importance、conformal）。
+**中文：** 美國縣級總統票 Core 回測，結構對齊臺灣核心設定（PreviousShare／Ridge／RF／HGB、ablation、importance、conformal）。
 
 ## Setup
 
@@ -689,7 +689,7 @@ def main():
 | Features | {len(FEATURES)} history + socio (see gaps) |
 | Source panel | `fyp_us_taiwan_transfer/cleaned/us_county_presidential_panel.csv` |
 
-## Mean OOT MAE (Family A)
+## Mean OOT MAE (Core specification)
 
 | Model | MAE (4dp) | RMSE (4dp) |
 |---|---:|---:|
@@ -726,7 +726,7 @@ Outputs: `results/`, `charts/`, mirrored to `taiwan-election-github/results/fami
 """
     (OUT / "README.md").write_text(readme, encoding="utf-8")
     (RESULTS / "REPRODUCIBILITY.md").write_text(
-        f"""# US Family A reproducibility
+        f"""# US Core specification reproducibility
 
 - Script: `fyp_us_core/scripts/us_core_backtest.py`
 - Panel: `{PANEL}`
@@ -738,7 +738,7 @@ Outputs: `results/`, `charts/`, mirrored to `taiwan-election-github/results/fami
     )
 
     mirror_outputs()
-    print("US Family A mean MAE:")
+    print("US Core specification mean MAE:")
     print(mean_metrics.to_string(index=False))
     if not conf.empty:
         print("\nConformal mean coverage:")

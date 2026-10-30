@@ -6,7 +6,7 @@
 
 ## 給評審的總結
 
-台灣家族 A：四個總統測試屆（2012–2024，88 縣市×年）上，**Previous-election baseline 平均 MAE 0.0793** 優於 RF 0.1041／HGB 0.1189／Ridge 0.1786。美國縣級 Core：PreviousShare **0.0345** 同樣優於訓練模型。RQ2 總統同窗空間模型未改寫此結論。RQ3 已有合成 Demo 與真實 country-only／joint／transfer／DA，但**不作「美台表徵已證明可轉移」政治結論**。RQ4 conformal 有改進與美國接近 90% 的覆蓋，台灣整體仍標**探索、非產品**。
+台灣核心設定：四個總統測試屆（2012–2024，88 縣市×年）上，**Previous-election baseline 平均 MAE 0.0793** 優於 RF 0.1041／HGB 0.1189／Ridge 0.1786。美國縣級 Core：PreviousShare **0.0345** 同樣優於訓練模型。RQ2 總統同窗空間模型未改寫此結論。RQ3 已有合成 Demo 與真實 country-only／joint／transfer／DA，但**不作「美台表徵已證明可轉移」政治結論**。RQ4 conformal 有改進與美國接近 90% 的覆蓋，台灣整體仍標**探索、非產品**。
 
 ## 四個研究問題（更新答案）
 
@@ -34,7 +34,7 @@
 
 ## Extension 與 Demo（更新）
 
-見 `GUIDE_COMPLETION_STATUS.md` §三。重點：Demo 1／7 **已有**；民調／政綱 ablation 為 Extension（UniformPollSwing 0.0266 等**不可**取代家族 A 敘事）。
+見 `GUIDE_COMPLETION_STATUS.md` §三。重點：Demo 1／7 **已有**；民調／政綱 ablation 為 Extension（UniformPollSwing 0.0266 等**不可**取代核心設定 敘事）。
 
 ## 申請資料
 

@@ -90,16 +90,16 @@ cd /workspace/taiwan-election-data
 
 ---
 
-## RQ2 頭條：縣市層總統票同窗實驗（Family A 對齊）
+## RQ2 頭條：縣市層總統票同窗實驗（Core specification 對齊）
 
-**呢一節先係 RQ2 主表。** 鄉鎮 SGC／GCN／GAT 係補充線，**唔好把鄉鎮 MAE 寫入 Family A／呢張縣市表。**
+**呢一節先係 RQ2 主表。** 鄉鎮 SGC／GCN／GAT 係補充線，**唔好把鄉鎮 MAE 寫入 Core specification／呢張縣市表。**
 
 ### 設計
 
 | 項目 | 內容 |
 |---|---|
 | Panel | `data/county_panel_features_2000_2024.csv`（22 縣市） |
-| 特徵 | 與 Family A 相同 16 個歷史特徵（`FEATURES` in `taiwan_core_backtest.py`） |
+| 特徵 | 與 Core specification 相同 16 個歷史特徵（`FEATURES` in `taiwan_core_backtest.py`） |
 | Protocol | Expanding window：`train year < test_year`；測試年 **2012／2016／2020／2024** |
 | 目標 | `target_DPP_vote_share`（主）；`target_KMT_vote_share`（附） |
 | 圖 | 鄉鎮 GeoJSON dissolve→縣市；**Queen**（33 邊，平均度 3.0；澎湖／金門／連江離島）；**k-NN k=3**；**距離衰減** σ=80 km（EPSG:3826） |
@@ -139,7 +139,7 @@ cd /workspace/taiwan-election-data
 
 **混合／空間未穩定贏非空間；基準仍最好。**
 
-1. **Headline（對齊 Family A）**：縣市總統票 OOT 上，**PreviousShare（mean MAE 0.0793）最好**；空間模型唔改變呢個 Family A 故事。
+1. **Headline（對齊 Core specification）**：縣市總統票 OOT 上，**PreviousShare（mean MAE 0.0793）最好**；空間模型唔改變呢個 Core specification 故事。
 2. **SGC vs NonSpatial**：距離衰減／Queen 上嘅 **SGC+RF 平均 MAE ≈ 0.103，略好過 NonSpatial RF 0.104**（Δ ≈ −0.0015）——有微弱空間訊號，但幅度細，唔好誇大。
 3. **可訓練 GCN／GAT／ResidualGCN**：已用淺層＋殘差 skip 減 over-smoothing；**單年可以好靚**，但跨年平均同穩定性 **差過 NonSpatial／SGC**，唔建議當主結果。
 4. **邊類型**：Queen（真共邊）同 dist-decay／k-NN 結果接近；離島（澎湖／金門／連江）Queen 度數 0，dist／k-NN 可補連邊。

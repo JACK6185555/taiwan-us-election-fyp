@@ -1,4 +1,4 @@
-"""Finish US Family A after backtest metrics already written: charts, ablation (light),
+"""Finish US Core specification after backtest metrics already written: charts, ablation (light),
 feature weights, conformal, README, mirror."""
 from __future__ import annotations
 
@@ -223,7 +223,7 @@ def main():
         return "\n".join(lines)
 
     md = [
-        "# US Family A — Feature weights (model dependence, not causal)\n",
+        "# US Core specification — Feature weights (model dependence, not causal)\n",
         "Weights describe how each fitted model **uses** features. **Not** causal voter effects.\n",
         "## Ridge standardized coefficients (signed, train years < 2024)\n",
         "Positive ⇒ higher feature → higher predicted Dem two-party share (after z-scoring).\n",
@@ -258,7 +258,7 @@ def main():
     colors = ["#c0392b" if v < 0 else "#2878B5" for v in d.weight]
     ax.barh(d.feature_label, d.weight, color=colors)
     ax.axvline(0, color="#333", lw=0.8)
-    ax.set_title("Ridge standardized coefficients (signed) — US Family A", loc="left")
+    ax.set_title("Ridge standardized coefficients (signed) — US Core specification", loc="left")
     ax.set_xlabel("Standardized coefficient")
     ax.grid(axis="x", color="#e5e5e5"); ax.set_axisbelow(True)
     ax.spines[["top", "right"]].set_visible(False)
@@ -306,7 +306,7 @@ def main():
         "education/income/density largely wave-static ACS2020/ERS2022."
     )
     payload = {
-        "family": "US Family A county presidential (Core parity with TW Family A)",
+        "family": "US Core specification county presidential (Core parity with TW Core specification)",
         "target": TARGET,
         "unit": "US county-year; Democratic two-party presidential share",
         "panel_years": [int(y) for y in years],
@@ -340,11 +340,11 @@ def main():
         for model_name, cov in conf.groupby("model")["empirical_coverage"].mean().items():
             conf_s += f"| {model_name} | {cov:.4f} |\n"
 
-    readme = f"""# US Family A — County Presidential Core（美國家族 A）
+    readme = f"""# US Core specification — County Presidential Core（美國核心設定）
 
-**English:** Expanding-window OOT backtest for US counties, mirroring Taiwan Family A.
+**English:** Expanding-window OOT backtest for US counties, mirroring Taiwan Core specification.
 
-**中文：** 美國縣級總統票 Core，對齊臺灣家族 A（PreviousShare／Ridge／RF／HGB、ablation、importance／weights、conformal）。
+**中文：** 美國縣級總統票 Core，對齊臺灣核心設定（PreviousShare／Ridge／RF／HGB、ablation、importance／weights、conformal）。
 
 ## Setup
 
@@ -357,7 +357,7 @@ def main():
 | Features | {len(FEATURES)} history + socio |
 | Source | `fyp_us_taiwan_transfer/cleaned/us_county_presidential_panel.csv` |
 
-## Mean OOT MAE (Family A)
+## Mean OOT MAE (Core specification)
 
 | Model | MAE (4dp) | RMSE (4dp) |
 |---|---:|---:|
@@ -392,7 +392,7 @@ See `FEATURE_WEIGHTS.md` and `results/feature_weights_*.csv` (Ridge signed coefs
 """
     (OUT / "README.md").write_text(readme, encoding="utf-8")
     (RESULTS / "REPRODUCIBILITY.md").write_text(
-        "# US Family A reproducibility\n\n"
+        "# US Core specification reproducibility\n\n"
         "- Backtest: `us_core_backtest.py` → `family_a_us_mean_metrics.csv`\n"
         "- Finish: `us_core_finish.py` → ablation, weights, conformal\n"
         f"- Seed: {SEED}\n",

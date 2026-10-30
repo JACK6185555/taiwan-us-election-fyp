@@ -1,7 +1,7 @@
 # Education vs Economic vs Media — factor importance (Extension)
 Built: 2026-10-30 16:31 Asia/Hong_Kong (UTC+8)
 **Weights / ΔMAE = predictive dependence in OOT or national LOO — NOT causal.**
-Family A locked headline (Prev MAE 0.0793) is **unchanged**; this folder is Extension analysis for teacher feedback.
+Core specification locked headline (Prev MAE 0.0793) is **unchanged**; this folder is Extension analysis for teacher feedback.
 
 ## 1. Taiwan county (OOT 2012–2024)
 | spec | model | mean MAE | Δ vs PreviousShare |
@@ -87,4 +87,4 @@ Media uses official X search pilot samples (small n posts/years). Do **not** tre
 ## 4. Empirical ranking (honest)
 1. **Previous / partisan baseline** dominates county OOT in both TW and US (group permutation and |coef|).
 2. Between **education** and **economic** county features added to PreviousShare: compare ΔMAE and group permutation in tables above — typically both add little vs PreviousShare alone; relative rank may differ by country.
-3. **Media** is national Extension only; cannot enter county Family A; n_years≤2 for camp gap → descriptive / pilot only (cf. Brito et al. social-media prediction caution).
+3. **Media** is national Extension only; cannot enter county Core specification; n_years≤2 for camp gap → descriptive / pilot only (cf. Brito et al. social-media prediction caution).

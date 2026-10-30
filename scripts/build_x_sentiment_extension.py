@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Pilot: aggregate X (Twitter) public-search sentiment for TW/US election Extension.
-Does NOT touch Family A. Uses Grok Bot X MCP search_posts_all dumps only.
+Does NOT touch Core specification. Uses Grok Bot X MCP search_posts_all dumps only.
 """
 from __future__ import annotations
 import json, re, csv

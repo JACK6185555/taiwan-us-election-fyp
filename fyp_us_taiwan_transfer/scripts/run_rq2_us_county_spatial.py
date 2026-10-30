@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """RQ2 US side: county presidential OOT spatial vs non-spatial.
 
-Mirror Taiwan Family A window (test years 2012/2016/2020/2024), expanding
+Mirror Taiwan Core specification window (test years 2012/2016/2020/2024), expanding
 train year < test_year. Target = Dem two-party share (party_share_A).
 
 Adjacency:
@@ -514,7 +514,7 @@ def main():
             "note": "GCN_L1 + ResidualGCN_L1 on queen only (knn via SGC); max_epochs=40; SGC RF skip dist_decay*; RF n_est=100",
         },
         "graphs": meta,
-        "note": "US RQ2 extension; do not mix MAE into Taiwan Family A table.",
+        "note": "US RQ2 extension; do not mix MAE into Taiwan Core specification table.",
     }
     with open(OUT / "rq2_us_county_protocol.json", "w", encoding="utf-8") as f:
         json.dump(protocol, f, ensure_ascii=False, indent=2)
@@ -640,7 +640,7 @@ cd /workspace/taiwan-election-data
 .venv/bin/python fyp_us_taiwan_transfer/scripts/run_rq2_us_county_spatial.py
 ```
 
-Do **not** mix these MAE into Taiwan Family A / `rq2_county` tables.
+Do **not** mix these MAE into Taiwan Core specification / `rq2_county` tables.
 """
     (OUT / "README.md").write_text(readme, encoding="utf-8")
 

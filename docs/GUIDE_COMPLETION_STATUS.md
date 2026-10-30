@@ -9,7 +9,7 @@
 
 ## 一、總結一句
 
-家族 A（RQ1）與美國 Core、RQ2 縣市同窗、RQ3、文獻／申請限制已齊；民調／政綱為 **Extension**（已補驗證狀態表＋縣市缺口說明）；US trainable GCN 全縣仍 **DEFERRED**，但已有 **New England `us_gcn_pilot`**；老師報告 **PDF 已重產**；TEDS／ESC Excel／筆電抄 zip／Git remote 仍 blocked。
+核心設定（RQ1）與美國 Core、RQ2 縣市同窗、RQ3、文獻／申請限制已齊；民調／政綱為 **Extension**（已補驗證狀態表＋縣市缺口說明）；US trainable GCN 全縣仍 **DEFERRED**，但已有 **New England `us_gcn_pilot`**；老師報告 **PDF 已重產**；TEDS／ESC Excel／筆電抄 zip／Git remote 仍 blocked。
 
 ---
 
@@ -18,11 +18,11 @@
 | ID | Guide 對應 | 狀態 | 證據（路徑／數字） | 備註 |
 |----|------------|------|-------------------|------|
 | **I-A** 外推能力／樣本限制敘事 | RQ1；§6 OOT；§19 | **DONE** | README、`SUBMISSION_AUDIT`、老師報告 §〇：4 測試屆／**88** region-year；Prev **0.0793** | 勿把 88 當獨立 N |
-| **I-B** 政綱／議題入模 | §3；§6.2 ablation | **PARTIAL**↑ | Extension＋`docs/extension_poll_platform_VERIFICATION.md`（來源／年驗證狀態）；History+Platform Ridge **0.1113** | 未進 Family A；`verified` 欄仍空；**非因果** |
+| **I-B** 政綱／議題入模 | §3；§6.2 ablation | **PARTIAL**↑ | Extension＋`docs/extension_poll_platform_VERIFICATION.md`（來源／年驗證狀態）；History+Platform Ridge **0.1113** | 未進 Core specification；`verified` 欄仍空；**非因果** |
 | **I-C** 重要性≠因果 | Demo 5；§19 | **DONE** | 一律 model dependence | 口試防雷已寫 |
-| **I-D** 2026 地方情境 | §19 scenario | **DONE**（降級） | 補充／scenario；非主結果 | 非 Family A |
+| **I-D** 2026 地方情境 | §19 scenario | **DONE**（降級） | 補充／scenario；非主結果 | 非 Core specification |
 | **I-E** 民調≠模型目標 | §3／§19 | **PARTIAL**↑ | `縣市民調缺口說明.md`：poll long 表 **5165＝national**；UniformPollSwing＝Extension | 縣市面板仍無 |
-| **I-F** 多線混淆 | §4 Core vs Extension | **DONE** | 單一主入口＋家族表 | RF **0.1041** |
+| **I-F** 多線混淆 | §4 Core vs Extension | **DONE** | 單一主入口＋規格表 | RF **0.1041** |
 | **I-G** Git／可重現 | §17；§19 | **PARTIAL** | 本地 commit；腳本可重跑 | 無 remote |
 | **I-H** 美台／跨國 | RQ3；Demo 1／7 | **DONE** | 合成＋真實；美 Prev **0.0345**；TW **0.0793** | 不作政治轉移結論 |
 | **I-I** Conformal | RQ4；Demo 6 | **PARTIAL** | 探索、非產品；US Ridge 覆蓋約 **0.91**；TW 跨年不穩（詳 `RQ2_RQ3_RQ4_誠實框住.md` §三） | 未當校準產品 |
@@ -38,7 +38,7 @@
 | Demo | 狀態 | 路徑／說明 |
 |------|------|-----------|
 | **1** 合成 US/TW | **DONE** | `scripts/make_demo_us_tw_synthetic.py` |
-| **2** 時間外 backtest | **DONE** | Family A TW／US |
+| **2** 時間外 backtest | **DONE** | Core specification TW／US |
 | **3** OOT 誤差圖 | **DONE** | `results/.../charts/` |
 | **4** Feature ablation | **DONE** | Core＋Extension |
 | **5** Importance | **DONE** | feature_weights；非因果 |
@@ -68,7 +68,7 @@
 
 ## 五、主數字釘死（勿混報）
 
-| 家族 | 數字 |
+| 規格 | 數字 |
 |------|------|
 | **A（TW RQ1）** | Prev **0.0793**；RF **0.1041**；HGB **0.1189**；Ridge **0.1786** |
 | **A+ enriched** | Ridge **0.1425** |
@@ -113,7 +113,7 @@
 | 認同／黨性氣候 PROXY | TW ESC；US MEDSL homebrew lean（非 Cook PVI） |
 | 縣市民調／TEDS／ANES | 兩邊皆缺／申請 |
 
-新檔：`data/us_parity_extension/`。**未改 Family A MAE。**
+新檔：`data/us_parity_extension/`。**未改 Core specification MAE。**
 
 
 ---
@@ -127,6 +127,6 @@
 | 報告重組（Intro→Lit→Data→Basic analysis→Prediction→Limits→Next） | **DONE** | `docs/老師說明報告.md`／`.docx`／`.pdf` |
 | 教育 vs 經濟 vs 媒體重要性（TW＋US；權重≠因果） | **DONE**（Extension） | `results/factor_importance_edu_econ_media/`；縣市 OOT：Prev≫經濟≳教育；媒體僅全國小樣本 |
 | 引用（緒論／文獻／資料分析） | **DONE** | 報告內嵌 Linzer、Abramowitz、Erikson & Wlezien、Brito、小笠原、Achen & Wang、Batto、ethnoterritorial DOI 等；書目不捏造 |
-| 預測置於基本分析之後 | **DONE** | 報告 §4 因素 → §5 家族 A／US Core（Prev **0.0793**／**0.0345** 未改） |
+| 預測置於基本分析之後 | **DONE** | 報告 §4 因素 → §5 核心設定／US Core（Prev **0.0793**／**0.0345** 未改） |
 
 **實證排序（誠實）：** 歷史票壓倒；縣市層 **經濟代理略優於教育**（尤其 TW Prev+Economic Ridge MAE 0.0725 vs Prev 0.0793）；媒體不可與縣市因素並列宣稱。

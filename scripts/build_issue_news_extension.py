@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""News / Policy Issue Salience Extension — national×year only. Does NOT touch Family A."""
+"""News / Policy Issue Salience Extension — national×year only. Does NOT touch Core specification."""
 from __future__ import annotations
 import json, re, csv
 from pathlib import Path
@@ -454,7 +454,7 @@ def main():
     (OUT_DATA / "README.md").write_text(
         "# Extension: News / Policy Issue Salience\n\n"
         "National×election-year volume + tone from X public search + platform issue tags.\n"
-        "**Not Family A.** See `docs/新聞政策議題特徵Extension說明.md`.\n",
+        "**Not Core specification.** See `docs/新聞政策議題特徵Extension說明.md`.\n",
         encoding="utf-8",
     )
     print(f"scored {len(posts_rows)} posts, {len(agg)} issue×year cells")

@@ -1,4 +1,4 @@
-# 家族 A 核心回測重現（I-A／I-F）
+# 核心設定 核心回測重現（I-A／I-F）
 
 檢查日期：2026-10-30 00:21:07 UTC+8
 腳本：`scripts/taiwan_core_backtest.py`

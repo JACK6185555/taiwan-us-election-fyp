@@ -1,6 +1,6 @@
-# RQ2 county-level spatial vs non-spatial (Family A window)
+# RQ2 county-level spatial vs non-spatial (Core specification window)
 
-Headline RQ2 table for the Taiwan FYP Guide. Same panel, features, and expanding OOT years as Family A (`taiwan_core_backtest.py`). Township experiments remain supplements — do not mix township MAE into Family A.
+Headline RQ2 table for the Taiwan FYP Guide. Same panel, features, and expanding OOT years as Core specification (`taiwan_core_backtest.py`). Township experiments remain supplements — do not mix township MAE into Core specification.
 
 ## Run
 

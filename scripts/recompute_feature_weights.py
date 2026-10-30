@@ -2,11 +2,11 @@
 """Recompute feature weights (model dependence / predictive importance — NOT causal).
 
 Suites:
-  - TW Family A electoral-only (county×year OOT)
-  - TW Family A+ enriched (socio + ESC PROXY)
+  - TW Core specification electoral-only (county×year OOT)
+  - TW Core specification+ enriched (socio + ESC PROXY)
   - TW A+ education Extension (A+ + lag_education_rate) — labeled Extension if education only
   - US Core county×year
-  - Extension national-only correlational table (polls, X sentiment) — NOT Family A
+  - Extension national-only correlational table (polls, X sentiment) — NOT Core specification
 
 Does NOT invent numbers. Same Ridge/RF/HGB settings as prior weight pipelines.
 """
@@ -415,7 +415,7 @@ def export_us_weights(panel: pd.DataFrame):
 
     # FEATURE_WEIGHTS.md
     lines = [
-        "# US Family A — Feature weights (model dependence, not causal)",
+        "# US Core specification — Feature weights (model dependence, not causal)",
         "",
         f"Recomputed: {NOW}",
         "",
@@ -461,7 +461,7 @@ def export_us_weights(panel: pd.DataFrame):
 
 
 def extension_national_weights():
-    """Correlational / simple regression on national series only — NOT Family A."""
+    """Correlational / simple regression on national series only — NOT Core specification."""
     print("Extension national correlational weights...", flush=True)
     rows = []
 
@@ -490,7 +490,7 @@ def extension_national_weights():
             "ridge_std_coef": coef,
             "mae": float(mean_absolute_error(y, pred)),
             "method": "national series only; Ridge(alpha=0.1) after StandardScaler",
-            "interpretation": "correlational / predictive association — NOT causal; NOT county Family A",
+            "interpretation": "correlational / predictive association — NOT causal; NOT county Core specification",
             "years": ",".join(str(int(y_)) for y_ in sorted(m.election_year.unique())),
         })
 
@@ -569,7 +569,7 @@ def extension_national_weights():
                     "ridge_std_coef": float(pipe[-1].coef_[0]),
                     "mae": float(mean_absolute_error(yv, pred)),
                     "method": "national series only; crude poll average; Ridge(alpha=0.1)",
-                    "interpretation": "correlational — NOT causal; NOT county Family A; poll target mapping is heuristic",
+                    "interpretation": "correlational — NOT causal; NOT county Core specification; poll target mapping is heuristic",
                     "years": ",".join(str(int(y_)) for y_ in sorted(mm[ycol].unique())),
                 })
 
@@ -615,7 +615,7 @@ def extension_national_weights():
                         ),
                         "mae": float("nan"),
                         "method": "pilot X API sample aggregates; national only",
-                        "interpretation": "correlational / demo only — NOT causal; NOT Family A; tiny n",
+                        "interpretation": "correlational / demo only — NOT causal; NOT Core specification; tiny n",
                         "years": ",".join(str(int(y_)) for y_ in sorted(mm.election_year.unique())),
                     })
             else:
@@ -644,21 +644,21 @@ def extension_national_weights():
                             ),
                             "mae": float("nan"),
                             "method": "pilot X API sample aggregates; national only",
-                            "interpretation": "correlational / demo only — NOT causal; NOT Family A; tiny n",
+                            "interpretation": "correlational / demo only — NOT causal; NOT Core specification; tiny n",
                             "years": ",".join(str(int(y_)) for y_ in sorted(mm.election_year.unique())),
                         })
 
     ext = pd.DataFrame(rows)
     ext.to_csv(OUT_FW / "extension_national_feature_associations.csv", index=False, encoding="utf-8-sig")
     readme = [
-        "# Extension national feature associations — NOT Family A",
+        "# Extension national feature associations — NOT Core specification",
         "",
         f"Built: {NOW}",
         "",
         "These are **national-only** correlational / simple-regression associations",
         "(polls, X sentiment pilot aggregates).",
         "",
-        "- **NOT** county Family A / A+ weights",
+        "- **NOT** county Core specification / A+ weights",
         "- **NOT** causal",
         "- Tiny n for X (2–4 election years) — exploratory only",
         "",
@@ -676,7 +676,7 @@ def plot_tops(ridge_elec, rf_elec, ridge_us_perm):
     top = ridge_elec.head(10).iloc[::-1]
     ax.barh(top.feature_label, top.coef_mean_signed, color="#2878B5")
     ax.axvline(0, color="#333", lw=0.8)
-    ax.set_title("TW Family A — Ridge standardized coef (mean OOT)", loc="left")
+    ax.set_title("TW Core specification — Ridge standardized coef (mean OOT)", loc="left")
     ax.set_xlabel("Signed coef (NOT causal)")
     ax.spines[["top", "right"]].set_visible(False)
     plt.tight_layout()
@@ -686,7 +686,7 @@ def plot_tops(ridge_elec, rf_elec, ridge_us_perm):
     fig, ax = plt.subplots(figsize=(8, 5))
     top = rf_elec.head(10).iloc[::-1]
     ax.barh(top.feature_label, top.permutation_mae_increase_mean, color="#E07A2D")
-    ax.set_title("TW Family A — RF permutation MAE↑ (mean OOT)", loc="left")
+    ax.set_title("TW Core specification — RF permutation MAE↑ (mean OOT)", loc="left")
     ax.set_xlabel("Permutation MAE increase (NOT causal)")
     ax.spines[["top", "right"]].set_visible(False)
     plt.tight_layout()
@@ -756,15 +756,15 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
         "Aggregation TW: **mean across OOT folds** 2012, 2016, 2020, 2024.",
         "US: Ridge/RF coef on train<2024; permutation on 2024 subsample (n≤800) — same protocol as `us_core_weights_conformal.py`.",
         "",
-        "## Family A electoral-only mean OOT MAE (side-check)",
+        "## Core specification electoral-only mean OOT MAE (side-check)",
         "",
         mean_elec.to_string(index=False),
         "",
-        "## Family A+ enriched mean OOT MAE",
+        "## Core+ (enriched) enriched mean OOT MAE",
         "",
         mean_enr.to_string(index=False),
         "",
-        "## A+ + education Extension mean OOT MAE (NOT locked Family A)",
+        "## A+ + education Extension mean OOT MAE (NOT locked Core specification)",
         "",
         mean_edu.to_string(index=False) if mean_edu is not None else "(skipped)",
         "",
@@ -801,7 +801,7 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
         "",
         us_r[["feature", "feature_label", "weight"]].to_string(index=False),
         "",
-        "## Extension national associations (NOT Family A)",
+        "## Extension national associations (NOT Core specification)",
         "",
         ext_df.to_string(index=False) if len(ext_df) else "(none)",
         "",
@@ -819,7 +819,7 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
 
     # Chinese teacher doc
     zh = []
-    zh.append("# 特徵權重說明（臺灣縣市總統票｜Family A／A+｜美國對照）")
+    zh.append("# 特徵權重說明（臺灣縣市總統票｜Core specification／A+｜美國對照）")
     zh.append("")
     zh.append(f"更新：{NOW}")
     zh.append("")
@@ -833,20 +833,20 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
     zh.append("- RF／HGB 係**置換重要性**（打亂特徵後 OOT MAE 升幾多）同 impurity（RF）")
     zh.append("- 只有四個測試屆（2012／2016／2020／2024），排名會有波動")
     zh.append("")
-    zh.append("## Family A（純選舉史）平均 OOT MAE（重算旁證）")
+    zh.append("## Core specification（純選舉史）平均 OOT MAE（重算旁證）")
     zh.append("")
     zh.append("```")
     zh.append(mean_elec.to_string(index=False))
     zh.append("```")
     zh.append("")
-    zh.append("## Family A+（滯後社經／ESC PROXY）平均 OOT MAE")
+    zh.append("## Core+ (enriched)（滯後社經／ESC PROXY）平均 OOT MAE")
     zh.append("")
     zh.append("```")
     zh.append(mean_enr.to_string(index=False))
     zh.append("```")
     zh.append("")
     if mean_edu is not None:
-        zh.append("## A+ ＋教育率 Extension（`lag_education_rate`｜唔入鎖定 Family A）")
+        zh.append("## A+ ＋教育率 Extension（`lag_education_rate`｜唔入鎖定 Core specification）")
         zh.append("")
         zh.append("```")
         zh.append(mean_edu.to_string(index=False))
@@ -916,7 +916,7 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
     zh.append("")
     zh.append("美台兩邊都係「上屆／上上屆得票」主導；社經／教育權重遠細過歷史得票。")
     zh.append("")
-    zh.append("## Extension 全國關聯（**唔係** Family A）")
+    zh.append("## Extension 全國關聯（**唔係** Core specification）")
     zh.append("")
     zh.append("民調／X 情緒只得全國序列；見 `extension_national_feature_associations.csv`。相關／簡單回歸，**唔係**縣市權重、**唔係**因果。")
     zh.append("")
@@ -940,7 +940,7 @@ def write_docs(mean_elec, mean_enr, mean_edu, ridge_e, rf_e, hgb_e, ridge_p, rid
 
 ## 做咗咩
 
-用**現有面板**按既有 Family A／US Core 權重管道重算模型依賴（predictive importance），**無捏造數字**，**無權重＝因果**。
+用**現有面板**按既有 Core specification／US Core 權重管道重算模型依賴（predictive importance），**無捏造數字**，**無權重＝因果**。
 
 ## 模型同設定（同前輪）
 
@@ -958,18 +958,18 @@ US 權重：train&lt;2024 係數／MDI；置換喺 2024 子樣本（n≤800）�
 
 ## 特徵清單
 
-- **TW Family A：** 16 個選舉史特徵（`ELECTORAL`）
+- **TW Core specification：** 16 個選舉史特徵（`ELECTORAL`）
 - **TW A+：** ELECTORAL + 失業率／所得／密度 + ESC 認同／統獨 PROXY（全國滯後）
-- **TW A+ edu Extension：** A+ + `lag_education_rate`（MOI 大專以上；**唔入鎖定 Family A**）
+- **TW A+ edu Extension：** A+ + `lag_education_rate`（MOI 大專以上；**唔入鎖定 Core specification**）
 - **US Core：** 上屆／上上屆兩黨得票、swing、失業率、education_rate、所得、密度等 15 欄
-- **Extension 全國：** 538／TW 民調全國序列、X 情緒陣營差（pilot）— **標明 NOT Family A**
+- **Extension 全國：** 538／TW 民調全國序列、X 情緒陣營差（pilot）— **標明 NOT Core specification**
 
 ## 相對上輪改變
 
 {prior_note}
 
 - 新增／刷新：`taiwan_county_plus_edu_*`、`extension_national_feature_associations.csv`
-- Family A 鎖定主數字預期不變：Prev MAE ≈ **0.0793**（本輪旁證重 fit 確認）
+- Core specification 鎖定主數字預期不變：Prev MAE ≈ **0.0793**（本輪旁證重 fit 確認）
 - 權重數值可能因重跑而有浮點／置換抽樣微差；解讀不變：歷史得票主導
 
 ## 權重 ≠ 因果
@@ -978,7 +978,7 @@ Ridge 有號係數、置換重要性、MDI 都只係**模型依賴／預測重�
 
 ## 腳本
 
-`scripts/recompute_feature_weights.py`（讀現有 `county_panel_features_enriched_2000_2024.csv`、教育 Extension、US Family A panel；唔重建社經爬取）。
+`scripts/recompute_feature_weights.py`（讀現有 `county_panel_features_enriched_2000_2024.csv`、教育 Extension、US Core specification panel；唔重建社經爬取）。
 """
     (ROOT / "docs" / "權重重算說明.md").write_text(note, encoding="utf-8")
 
@@ -1013,7 +1013,7 @@ def main():
     edu_cols = edu_panel[["region_id", "year", "lag_education_rate"]].drop_duplicates()
     enriched_edu = enriched.merge(edu_cols, on=["region_id", "year"], how="left")
 
-    print("TW Family A electoral side-check + weights...", flush=True)
+    print("TW Core specification electoral side-check + weights...", flush=True)
     frame_e, ty, metrics_e, mean_e = tw_backtest(enriched, ELECTORAL, "family_a_electoral")
     print(mean_e.to_string(index=False))
     ridge_e, rf_e, hgb_e, _, _ = export_tw_weights(frame_e, ELECTORAL, ty, "taiwan_county", "electoral")
@@ -1024,7 +1024,7 @@ def main():
     mean_e.to_csv(OUT_FA / "family_a_mean_metrics.csv", index=False, encoding="utf-8-sig")
     metrics_e.to_csv(OUT_FA / "backtest_metrics_weights_sidecheck.csv", index=False, encoding="utf-8-sig")
 
-    print("TW Family A+ enriched...", flush=True)
+    print("TW Core specification+ enriched...", flush=True)
     frame_p, ty2, metrics_p, mean_p = tw_backtest(enriched, ENRICHED, "family_a_plus_enriched")
     print(mean_p.to_string(index=False))
     ridge_p, rf_p, hgb_p, _, _ = export_tw_weights(frame_p, ENRICHED, ty2, "taiwan_county_plus", "enriched")
@@ -1075,7 +1075,7 @@ def main():
 
     prev_mae = float(mean_e.loc[mean_e.model == "Previous-election baseline", "mae"].iloc[0])
     prior_note = (
-        f"- Side-check Family A Prev MAE = **{prev_mae:.6f}** "
+        f"- Side-check Core specification Prev MAE = **{prev_mae:.6f}** "
         f"(期望 ≈ 0.079265；鎖定主數字唔改語意）\n"
         f"- A+ Ridge MAE ≈ {float(mean_p.loc[mean_p.model=='Ridge','mae'].iloc[0]):.6f}；"
         f" edu Extension Ridge ≈ {float(mean_edu.loc[mean_edu.model=='Ridge','mae'].iloc[0]):.6f}"
@@ -1106,7 +1106,7 @@ def main():
         json.dumps(meta, ensure_ascii=False, indent=2, default=float) + "\n", encoding="utf-8"
     )
     print("DONE", flush=True)
-    print("TW Family A mean:\n", mean_e.to_string(index=False))
+    print("TW Core specification mean:\n", mean_e.to_string(index=False))
     print("Top Ridge electoral:\n", ridge_e.head(5).to_string(index=False))
     print("Top RF electoral:\n", rf_e.head(5).to_string(index=False))
     print("US mean:\n", us_mean.to_string(index=False))

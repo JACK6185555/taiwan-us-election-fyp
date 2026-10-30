@@ -2,7 +2,7 @@
 
 **Built:** 2026-10-30 14:05 Asia/Hong_Kong (UTC+8)  
 **Scope:** National Dem two-party poll share vs MEDSL-aggregated national Dem two-party outcome.  
-**NOT Family A.** County polls not used.
+**NOT Core specification.** County polls not used.
 
 ## Sources
 - Poll proxy: `data/us_parity_extension/us_national_poll_election_year_proxy.csv`
@@ -17,4 +17,4 @@
 ## Caveats
 - 2004 National last modeldate in 538 archive = **2004-11-02** (election day). Other legacy cycles: use last modeldate in file. 2020/2024 use separate averages files (2024 ends 2024-09-12).
 - 2024 averages file in repo ends **2024-09-12** (pre-election).
-- This is national Extension diagnostics only — does not enter Family A.
+- This is national Extension diagnostics only — does not enter Core specification.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Symmetric TW|US fill for must-have checklist (Extension only; no Family A changes).
+"""Symmetric TW|US fill for must-have checklist (Extension only; no Core specification changes).
 
 For every checklist item: (1) real public data, (2) same-layer PROXY, or (3) explicit 兩邊皆缺.
 Asia/Hong_Kong timestamps.
@@ -419,7 +419,7 @@ def fill_us_electorate_proxy() -> pd.DataFrame:
     m["new_voters_stock_change_proxy"] = m["electorate_change_pct"]
     m["country"] = "US"
     m["note"] = (
-        "PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; "
+        "PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Core specification panel + fundamentals turnout; "
         "NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP"
     )
     m["family_a"] = "NOT_INCLUDED"
@@ -439,7 +439,7 @@ def fill_us_electorate_proxy() -> pd.DataFrame:
                                 "electorate_change_pct": np.nan,
                                 "new_voters_stock_change_proxy": np.nan,
                                 "country": "US",
-                                "note": "GAP — US Family A county panel starts 2008",
+                                "note": "GAP — US Core specification county panel starts 2008",
                                 "family_a": "NOT_INCLUDED",
                             }
                         ]
@@ -659,7 +659,7 @@ def rebuild_processing_demo():
         f"""# Must-have processing DEMO
 
 **Built:** {NOW}  
-**Family A:** not modified.
+**Core specification:** not modified.
 
 - `simple_poll_and_turnout_sketch.csv` — TW + US national toy poll×turnout  
 - `monte_carlo_winprob_DEMO.csv` — TW + US independent normal win-prob illustration (not 538 / not Electoral College)
@@ -676,7 +676,7 @@ def write_symmetry_docs(fund: pd.DataFrame):
         f"""# 美台必備數據對稱說明
 
 **日期：** {NOW}  
-**規則：** 每一項 = 兩邊都有真實公開資料／同一概念層 PROXY／或明確「兩邊皆缺」。**未改 Family A。**
+**規則：** 每一項 = 兩邊都有真實公開資料／同一概念層 PROXY／或明確「兩邊皆缺」。**未改 Core specification。**
 
 ## 本輪對稱補齊
 
@@ -707,10 +707,10 @@ def write_symmetry_docs(fund: pd.DataFrame):
 
 **日期：** {NOW}  
 **用途：** 每項標 **TW｜US｜status**（有資料／PROXY／兩邊皆缺）。  
-**規則：** 唔改 Family A；Extension only；唔捏造。  
+**規則：** 唔改 Core specification；Extension only；唔捏造。  
 **對稱說明：** `美台必備數據對稱說明.md` · **補齊：** `必備數據補齊說明.md`
 
-status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝兩邊都有但建構唔同；`部分對等`＝兩邊都只有部分年；`兩邊皆缺`；`Family A已有`。
+status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝兩邊都有但建構唔同；`部分對等`＝兩邊都只有部分年；`兩邊皆缺`；`Core specification已有`。
 
 ---
 
@@ -729,7 +729,7 @@ status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝
 
 | 項目 | TW | US | status |
 |------|----|----|--------|
-| prev／prev2 歷史票 | Family A panel | Family A panel | **Family A已有／對等** |
+| prev／prev2 歷史票 | Core specification panel | Core specification panel | **Core specification已有／對等** |
 | 鐵票 floor | `tw_county_partisan_floor_turnout.csv` | `us_county_partisan_floor.csv` | **對等**（Extension） |
 | 總統投票率 | CEC | VEP 近似 | **對等** |
 | 在任旗標 | coder | coder | **對等** |
@@ -741,7 +741,7 @@ status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝
 |------|----|----|--------|
 | 年齡全國 PROXY | MOI `tw_national_age_structure_proxy_moi.csv` | WB `us_national_age_structure_proxy_worldbank.csv` | **層級對等（來源異）** |
 | 年齡縣選年面板 | 缺 | 缺 | **兩邊皆缺** |
-| 教育 | Extension／A+ `lag_education_rate` | Family A `education_rate` | **層級大致對等**（TW 未入 Family A） |
+| 教育 | Extension／A+ `lag_education_rate` | Core specification `education_rate` | **層級大致對等**（TW 未入 Core specification） |
 | 性別縣面板 | 缺 | 缺 | **兩邊皆缺** |
 | 族群／籍貫／種族縣面板 | 缺 | 缺（ACS 未入） | **兩邊皆缺** |
 | 新選民人數 PROXY | `tw_national_turnout_electorate_proxy.csv` | `us_national_turnout_electorate_proxy.csv` | **層級對等**（US 2000/04 GAP） |
@@ -782,7 +782,7 @@ status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝
 - `results/must_have_processing_demo/`（TW+US）  
 - `docs/美台必備數據對稱說明.md`
 
-**未改 Family A。**
+**未改 Core specification。**
 """,
         encoding="utf-8",
     )
@@ -791,7 +791,7 @@ status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝
         f"""# 必備數據補齊說明（對稱輪）
 
 **日期：** {NOW}  
-**規則：** 公開資料；**唔改 Family A**。
+**規則：** 公開資料；**唔改 Core specification**。
 
 ## 本輪對稱補咗咩
 
@@ -814,7 +814,7 @@ status 代碼：`對等`＝兩邊都有同層；`層級對等（定義異）`＝
 - TW NCU CCI 長序列；US Gallup 選前全序列  
 - 薪資；完整選舉人團 Monte Carlo  
 
-## Family A
+## Core specification
 
 **未改。**
 """,
@@ -844,7 +844,7 @@ def patch_parity_table():
 | 薪資 | 缺 | 缺 | **兩邊皆缺** |
 | MC DEMO | 有 | 有 | 對等（示範） |
 
-**未改 Family A。**
+**未改 Core specification。**
 
 """
     if marker in text:

@@ -1,4 +1,4 @@
-# US Family A — Feature weights (model dependence, not causal)
+# US Core specification — Feature weights (model dependence, not causal)
 
 Recomputed: 2026-10-30 14:24 Asia/Hong_Kong (UTC+8)
 

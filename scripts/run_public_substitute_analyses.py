@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Public-substitute analyses (Extension only) — do NOT modify Family A MAE.
+"""Public-substitute analyses (Extension only) — do NOT modify Core specification MAE.
 
 1) Fill US 2004 national poll proxy from 538 GitHub pres_pollaverages_1968-2016.csv
 2) Poll-as-forecast accuracy table (national two-party)
@@ -256,7 +256,7 @@ def poll_accuracy(proxy: pd.DataFrame):
 
 **Built:** {NOW}  
 **Scope:** National Dem two-party poll share vs MEDSL-aggregated national Dem two-party outcome.  
-**NOT Family A.** County polls not used.
+**NOT Core specification.** County polls not used.
 
 ## Sources
 - Poll proxy: `data/us_parity_extension/us_national_poll_election_year_proxy.csv`
@@ -271,7 +271,7 @@ def poll_accuracy(proxy: pd.DataFrame):
 ## Caveats
 - 538 1968–2016 National archive truncates around **early September** each cycle (2004 as_of = last modeldate therein).
 - 2024 averages file in repo ends **2024-09-12** (pre-election).
-- This is national Extension diagnostics only — does not enter Family A.
+- This is national Extension diagnostics only — does not enter Core specification.
 """,
         encoding="utf-8",
     )
@@ -463,7 +463,7 @@ def education_a_plus_analysis(edu: pd.DataFrame):
     edu_coef = coefs[coefs["feature"] == EDU_COL].copy()
     write_df(out_dir / "ridge_education_coef_by_year.csv", edu_coef)
 
-    # comparison table vs locked Family A / A+ published means (reference only)
+    # comparison table vs locked Core specification / A+ published means (reference only)
     locked = pd.DataFrame([
         {"suite": "Family_A_LOCKED_published", "model": "Previous-election baseline", "mae": 0.0792648157080057, "note": "Do not overwrite"},
         {"suite": "Family_A_LOCKED_published", "model": "Ridge", "mae": 0.17857985899144863, "note": "Do not overwrite"},
@@ -476,7 +476,7 @@ def education_a_plus_analysis(edu: pd.DataFrame):
     edu_mean = mean[mean["suite"] == "extension_a_plus_education"]
     aplus_mean = mean[mean["suite"] == "family_a_plus_enriched_rerun"]
     lines = [
-        f"# TW education_rate Extension A+ (NOT Family A)",
+        f"# TW education_rate Extension A+ (NOT Core specification)",
         "",
         f"**Built:** {NOW}",
         "",
@@ -496,13 +496,13 @@ def education_a_plus_analysis(edu: pd.DataFrame):
         "```",
         "",
         "## Locked published reference (unchanged)",
-        "- Family A Prev MAE **0.0793**; Family A Ridge **0.1786**",
-        "- Family A+ Ridge **0.1425** (published enriched)",
+        "- Core specification Prev MAE **0.0793**; Core specification Ridge **0.1786**",
+        "- Core+ (enriched) Ridge **0.1425** (published enriched)",
         "",
         "## Caveats",
         "- 權重／係數**唔係**因果。",
         "- 教育率滯後對早期選舉覆蓋較佳（MOI 自民國86年起）；金門／連江亦有列。",
-        "- **禁止**把本 Extension MAE 寫入 Family A 主表。",
+        "- **禁止**把本 Extension MAE 寫入 Core specification 主表。",
         "",
     ]
     readme.write_text("\n".join(lines), encoding="utf-8")

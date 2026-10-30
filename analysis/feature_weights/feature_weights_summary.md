@@ -7,7 +7,7 @@
 Aggregation TW: **mean across OOT folds** 2012, 2016, 2020, 2024.
 US: Ridge/RF coef on train<2024; permutation on 2024 subsample (n≤800) — same protocol as `us_core_weights_conformal.py`.
 
-## Family A electoral-only mean OOT MAE (side-check)
+## Core specification electoral-only mean OOT MAE (side-check)
 
                      model      mae     rmse
 Previous-election baseline 0.079265 0.081417
@@ -15,7 +15,7 @@ Previous-election baseline 0.079265 0.081417
       HistGradientBoosting 0.118865 0.126775
                      Ridge 0.178580 0.185480
 
-## Family A+ enriched mean OOT MAE
+## Core+ (enriched) enriched mean OOT MAE
 
                      model      mae     rmse
 Previous-election baseline 0.079265 0.081417
@@ -23,7 +23,7 @@ Previous-election baseline 0.079265 0.081417
       HistGradientBoosting 0.118867 0.126579
                      Ridge 0.142500 0.147859
 
-## A+ + education Extension mean OOT MAE (NOT locked Family A)
+## A+ + education Extension mean OOT MAE (NOT locked Core specification)
 
                      model      mae     rmse
 Previous-election baseline 0.079265 0.081417
@@ -125,13 +125,13 @@ prev2_gop_two_party_share  GOP share two elections ago  0.014755
          abs_dem_change_1       Abs Dem previous swing  0.000190
              dem_change_1           Dem previous swing -0.000103
 
-## Extension national associations (NOT Family A) — refreshed
+## Extension national associations (NOT Core specification) — refreshed
 
                           layer country                       feature                                                feature_label                  target  n_years  pearson_r  ridge_std_coef      mae                                                                  method                                                            interpretation                              years
-Extension_national_NOT_Family_A      US      dem_two_party_share_poll        538 national poll Dem two-party (election-year as-of) nat_dem_two_party_share        7   0.412952        0.006602 0.011635             national series only; Ridge(alpha=0.1) after StandardScaler  correlational / predictive association — NOT causal; NOT county Family A 2000,2004,2008,2012,2016,2020,2024
-Extension_national_NOT_Family_A      TW     poll_dpp_two_party_approx TW national poll DPP/(DPP+KMT) crude mean (Wikipedia tables)               dpp_share        3   0.141669        0.010728 0.071717 national series only; crude poll average by year×side; Ridge(alpha=0.1) correlational — NOT causal; NOT county Family A; target mapping heuristic                     2016,2020,2024
-Extension_national_NOT_Family_A      TW x_sentiment_gap_dpp_minus_kmt                 X camp mean sentiment DPP−KMT (pilot sample)               dpp_share        2   1.000000             NaN      NaN                            pilot X API sample aggregates; national only              correlational / demo only — NOT causal; NOT Family A; tiny n                          2020,2024
-Extension_national_NOT_Family_A      US x_sentiment_gap_dem_minus_gop                 X camp mean sentiment DEM−GOP (pilot sample) nat_dem_two_party_share        2   1.000000             NaN      NaN                            pilot X API sample aggregates; national only              correlational / demo only — NOT causal; NOT Family A; tiny n                          2020,2024
+Extension_national_NOT_Core      US      dem_two_party_share_poll        538 national poll Dem two-party (election-year as-of) nat_dem_two_party_share        7   0.412952        0.006602 0.011635             national series only; Ridge(alpha=0.1) after StandardScaler  correlational / predictive association — NOT causal; NOT county Core specification 2000,2004,2008,2012,2016,2020,2024
+Extension_national_NOT_Core      TW     poll_dpp_two_party_approx TW national poll DPP/(DPP+KMT) crude mean (Wikipedia tables)               dpp_share        3   0.141669        0.010728 0.071717 national series only; crude poll average by year×side; Ridge(alpha=0.1) correlational — NOT causal; NOT county Core specification; target mapping heuristic                     2016,2020,2024
+Extension_national_NOT_Core      TW x_sentiment_gap_dpp_minus_kmt                 X camp mean sentiment DPP−KMT (pilot sample)               dpp_share        2   1.000000             NaN      NaN                            pilot X API sample aggregates; national only              correlational / demo only — NOT causal; NOT Core specification; tiny n                          2020,2024
+Extension_national_NOT_Core      US x_sentiment_gap_dem_minus_gop                 X camp mean sentiment DEM−GOP (pilot sample) nat_dem_two_party_share        2   1.000000             NaN      NaN                            pilot X API sample aggregates; national only              correlational / demo only — NOT causal; NOT Core specification; tiny n                          2020,2024
 
 
 ## Files

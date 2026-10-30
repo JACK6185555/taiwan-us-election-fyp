@@ -1,7 +1,7 @@
 # X（Twitter）情緒／聲量特徵 — Extension 試點說明
 
 **日期：** 2026-10-30（Asia/Hong_Kong, UTC+8）  
-**狀態：** **Extension 試點完成**；**唔改 Family A MAE**  
+**狀態：** **Extension 試點完成**；**唔改 Core specification MAE**  
 **問題來源：** 用戶問可否用 X 爬蟲攞政黨／人物／政綱評論做情緒 feature。
 
 ---
@@ -9,7 +9,7 @@
 ## 一句結論
 
 **可以作為報告／demo 用嘅全國級 Extension feature（情緒均值、正負比、樣本聲量、陣營差）**；  
-**唔可以**當縣市 Family A 特徵（冇可靠 geo 對齊縣市）；**唔等於**因果；**唔係** HTML 爬蟲（用 Grok Bot 內建 X MCP `search_posts_all` 公開讀取）。
+**唔可以**當縣市 Core specification 特徵（冇可靠 geo 對齊縣市）；**唔等於**因果；**唔係** HTML 爬蟲（用 Grok Bot 內建 X MCP `search_posts_all` 公開讀取）。
 
 本輪差分符號 vs 全國勝方：**4 屆入面 3 屆同向**（TW2020、US2020、US2024 同向；**TW2024 反向**）。見下表。
 
@@ -71,11 +71,11 @@
 
 檔：`results/x_sentiment_extension/sentiment_differential_vs_winner.csv`。
 
-**解讀：** 試點顯示「全國級情緒差」有時同勝方同向，但 **n 細、樣本有偏、TW2024 已反向** → 只適合作 Extension 敘事／敏感度，**禁止**寫入 Family A 或宣稱預測力。
+**解讀：** 試點顯示「全國級情緒差」有時同勝方同向，但 **n 細、樣本有偏、TW2024 已反向** → 只適合作 Extension 敘事／敏感度，**禁止**寫入 Core specification 或宣稱預測力。
 
 ---
 
-## 點解唔入 Family A
+## 點解唔入 Core specification
 
 1. **粒度唔對：** 縣市開票需要縣特徵；X 公開搜尋**無**穩定縣／鄉鎮地理欄可 join。  
 2. **樣本偏誤：** 活躍用戶 ≠ 選民；TW 中文區海外／立場極化嚴重；洗版帳號即使用 `-is:reply` 仍殘留。  

@@ -1,6 +1,6 @@
 # US parity Extension (parallel to TW Extension / ESC PROXY)
 
-Built for FYP **data-layer parity** with Taiwan — not for mixing into Family A Core MAE.
+Built for FYP **data-layer parity** with Taiwan — not for mixing into Core specification MAE.
 
 | File | Parallel to TW |
 |------|----------------|
