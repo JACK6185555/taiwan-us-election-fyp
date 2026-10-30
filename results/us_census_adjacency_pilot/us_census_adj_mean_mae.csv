@@ -1,0 +1,13 @@
+subset,family,model,adjacency,mean_mae
+FullUS,baseline,PreviousShare,none,0.03448094228391743
+FullUS,NonSpatial,Ridge,none,0.03877988594175858
+FullUS,NonSpatial,RandomForest,none,0.04189231947311493
+FullUS,SGC_diffusion,SGC_L1+Ridge,census2024_queen,0.04384946952663959
+FullUS,SGC_diffusion,SGC_L1+RandomForest,census2024_queen,0.044183322790799534
+MidAtlantic,baseline,PreviousShare,none,0.036960329922243795
+MidAtlantic,NonSpatial,Ridge,none,0.0473605243956654
+MidAtlantic,NonSpatial,RandomForest,none,0.049137243451609094
+MidAtlantic,SGC_diffusion,SGC_L1+RandomForest,census2024_queen,0.05018245738539451
+MidAtlantic,SGC_diffusion,SGC_L1+Ridge,census2024_queen,0.05862119333487114
+MidAtlantic,trainable_gnn_lite,ResidualDenseGCN_L1,census2024_queen,0.07295412482225612
+MidAtlantic,trainable_gnn_lite,DenseGCN_L1,census2024_queen,0.09324807938587318

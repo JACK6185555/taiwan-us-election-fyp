@@ -12,7 +12,7 @@
 
 ## 一、空間（RQ2）
 
-**一句主張：** 喺美台縣市／縣級總統票同窗 OOT 下，**共邊／SGC／可訓練 GNN 未穩定打敗 PreviousShare**；美國全縣可訓練 GCN **刻意延後（DEFERRED）**，New England pilot **只**可在子集內比較。
+**一句主張：** 喺美台縣市／縣級總統票同窗 OOT 下，**共邊／SGC／可訓練 GNN 未穩定打敗 PreviousShare**；美國已用 **Census 2024 縣鄰接**跑全縣 SGC＋Mid-Atlantic GCN-lite；**全縣可訓練 GCN 定稿**仍 DEFERRED（runtime），區域 pilot **只**可在子集內比較。
 
 ### 1.1 做咗咩
 
@@ -21,8 +21,10 @@
 | 共同協議 | 測試年 2012／2016／2020／2024；expanding（train year &lt; test）；SEED=42 | `docs/RQ2_美台空間.md` |
 | 臺灣 | 22 縣市；Core specification 歷史特徵；Queen／k-NN／距離衰減；SGC＋可訓練 GCN／GAT | `fyp_taiwan_spatial_gnn/rq2_county/` |
 | 美國全縣 | 3111 counties；SGC＋NonSpatial＋Prev；Queen≈9072 邊 | `fyp_us_taiwan_transfer/rq2_us_county/` |
-| 美國全縣 trainable GCN | **DEFERRED**（runtime）；部分 2012 數字僅診斷 | `docs/US_GCN_DEFERRED.md`、`gcn_partial_note.json` |
-| NE pilot | New England 67 縣；標籤 `us_gcn_pilot` | `results/us_gcn_pilot/` |
+| 美國官方鄰接 | Census County Adjacency 2024；panel∩graph **3103／3111** | `data/us_county_adjacency/` |
+| 美國全縣 SGC（Census） | 已跑；Prev 0.0345 仍贏；SGC≈0.0438 | `results/us_census_adjacency_pilot/` |
+| 美國全縣 trainable GCN | **仍 DEFERRED**（runtime）；已唔係無圖 | `docs/US_GCN_DEFERRED.md`、`gcn_partial_note.json` |
+| MA／NE pilot | Mid-Atlantic 150 縣 GCN-lite；NE 67 縣舊 pilot | `results/us_census_adjacency_pilot/`、`results/us_gcn_pilot/` |
 
 ### 1.2 證據表（真實 CSV）
 
@@ -54,13 +56,23 @@
 | trainable_gnn | ResidualGCN_L1 queen | 0.0569 |
 | trainable_gnn | TrainableGCN_L1 queen | 0.0685 |
 
+**Census 全縣 SGC＋Mid-Atlantic（`us_census_adj_mean_mae.csv`；2026-10-31）**
+
+| subset | family | model | mean MAE |
+|--------|--------|-------|---------:|
+| FullUS | baseline | PreviousShare | **0.0345**（≈ locked） |
+| FullUS | SGC | SGC_L1+Ridge census2024 | 0.0438 |
+| MidAtlantic | baseline | PreviousShare | **0.0370** |
+| MidAtlantic | trainable_gnn_lite | ResidualDenseGCN_L1 | 0.0730 |
+
+
 ### 1.3 限制（必須講）
 
 1. **Prev 仍然最好**（TW／US 全縣／NE 子集方向一致）——空間擴散係更誠實嘅相鄰假設，但喺呢個 OOT 窗**未穩定改善預測**。  
 2. TW 最佳 SGC（0.1029）只略好過非空間 RF（0.1043），**仍遠輸** Prev 0.0793。  
 3. US 全縣 SGC ~0.0437 **差過** Prev 0.0345 同 NonSpatial Ridge 0.0388。  
-4. **全縣可訓練 US GCN = DEFERRED**；部分 2012 GCN≈0.086／ResidualGCN≈0.072（`gcn_partial_note.json`）都差過全縣 Prev，**唔當定稿**。  
-5. NE pilot N＝67：**子集 ≠ 全國**；pilot 內 GCN 亦未贏同子集 Prev。  
+4. **全縣可訓練 US GCN 定稿 = 仍 DEFERRED**（runtime）；**Census 鄰接＋全縣 SGC＋MA GCN-lite 已補**——已唔係「無數據」。部分 2012 GCN≈0.086／ResidualGCN≈0.072（`gcn_partial_note.json`）都差過全縣 Prev，**唔當定稿**。  
+5. NE／Mid-Atlantic pilot：**子集 ≠ 全國**；pilot 內 GCN 亦未贏同子集 Prev。CT 8 縣因 Census 2024 Planning Regions 唔入圖。  
 6. Importance／空間係數 ≠ 因果；唔好解讀成「鄰縣決定投票」。
 
 ---

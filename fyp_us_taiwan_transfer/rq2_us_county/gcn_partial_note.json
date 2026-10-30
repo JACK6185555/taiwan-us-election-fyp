@@ -8,5 +8,15 @@
     "TrainableGCN_L1_queen": 0.1039,
     "ResidualGCN_L1_queen": 0.0762,
     "source": "earlier longer run log"
+  },
+  "updated": "2026-10-31",
+  "census_adjacency_pilot": {
+    "note": "Official Census 2024 adjacency + FullUS SGC + MidAtlantic DenseGCN-lite completed. Full-US trainable GCN protocol still deferred for runtime.",
+    "results_dir": "results/us_census_adjacency_pilot/",
+    "docs": "docs/US_GCN_DEFERRED.md",
+    "fullus_prev_mean_mae": 0.03448,
+    "fullus_sgc_l1_ridge_mae": 0.04385,
+    "midatlantic_prev_mae": 0.03696,
+    "midatlantic_residual_dense_gcn_mae": 0.07295
   }
 }

@@ -1,0 +1,49 @@
+{
+  "label": "us_census_adjacency_pilot",
+  "adjacency_source": {
+    "source_url": "https://www2.census.gov/geo/docs/reference/county_adjacency/county_adjacency2024.txt",
+    "source_file": "county_adjacency2024.txt",
+    "year_label": 2024,
+    "n_unique_geoids_in_file": 3236,
+    "n_undirected_edges": 9480,
+    "n_raw_rows": 22196
+  },
+  "dependency": {
+    "torch_geometric": false,
+    "gcn_implementation": "DenseGCN / ResidualDenseGCN (PyTorch mm + A_hat; no PyG)",
+    "sgc": "scipy.sparse / numpy graph convolution + Ridge/RF",
+    "torch": "2.14.1+cu130"
+  },
+  "test_years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "seed": 42,
+  "max_epochs": 30,
+  "patience": 8,
+  "fips_match": {
+    "panel_common_oot_fips": 3111,
+    "panel_intersect_census": 3103,
+    "match_rate": 0.997428,
+    "n_undirected_edges_in_subgraph": 9188,
+    "mean_degree": 5.922010957138253,
+    "n_islands_degree0": 4,
+    "n_panel_missing_from_census": 8
+  },
+  "mid_atlantic": {
+    "states_fips": [
+      "34",
+      "36",
+      "42"
+    ],
+    "n_counties": 150,
+    "n_edges": 404,
+    "mean_degree": 5.386666666666667
+  },
+  "locked_us_core_prev_mae": 0.0345,
+  "this_run_fullus_prev_mean_mae": 0.03448094228391743,
+  "note": "Census 2024 adjacency unblocks official-graph RQ2 spatial. Full-US trainable GCN still heavy; Mid-Atlantic GCN-lite is the trainable pilot. FullUS SGC comparable to locked Prev 0.0345 on same OOT years; MidAtlantic numbers are subset-only.",
+  "wall_seconds": 13.47
+}

@@ -25,7 +25,7 @@
 - 單位：**3111** counties；目標 Dem two-party `party_share_A`  
 - 特徵：`prev_share_A`, `log_total_votes`, `unemployment`, `education_rate`, `median_income`, `log_density`  
 - 幾何：plotly `geojson-counties-fips`（Census TIGER ZIP HTTP **403**）→ Queen **9072** 邊，平均度 **5.83**；k-NN k=5；dist-decay σ=80 km  
-- **Trainable full-US GCN**：runtime 受限 → **deferred**；2012 部分數字見 `gcn_partial_note.json`（GCN 0.086／ResidualGCN 0.072，都差過 PrevShare）
+- **Trainable full-US GCN**：runtime 仍 **deferred**；**Census 2024 鄰接＋全縣 SGC＋Mid-Atlantic GCN-lite 已跑**（`docs/US_GCN_DEFERRED.md`）。舊 2012 部分數字見 `gcn_partial_note.json`
 
 ### Mean OOT MAE（2012–2024；`rq2_us_county_mean_mae.csv`）
 
@@ -58,7 +58,9 @@ RF impurity：`prev_share_A` **0.928**。詳見 `feature_weights_ridge_summary.c
 ```
 
 
-## US trainable GCN（2026-10-30）
+## US 空間圖＋trainable（2026-10-31 更新）
 
-- **全縣**：仍 DEFERRED — `docs/US_GCN_DEFERRED.md`；部分 2012／2016 見 `gcn_partial_note.json`。  
-- **Pilot**：New England 67 縣 — `results/us_gcn_pilot/`（標籤 `us_gcn_pilot`）。同子集 Prev mean MAE ≈**0.0314** 最好；ResidualGCN≈0.0569；TrainableGCN≈0.0685。**勿**與全縣 0.0345 混報。
+- **官方鄰接：** Census County Adjacency **2024** → `data/us_county_adjacency/`（match **3103／3111＝99.74%**；CT 8 歷史縣因改 Planning Regions 唔入圖；HI 4 縣 degree-0）。詳見 `docs/US_GCN_DEFERRED.md`。  
+- **全縣 SGC（Census queen）：** Prev **0.0345** 仍最好；SGC_L1+Ridge ≈**0.0438**（與舊 GeoJSON Queen ~0.0437 一致）。產物：`results/us_census_adjacency_pilot/`。  
+- **全縣 trainable GCN：** 仍 **runtime DEFERRED**（已唔係「無鄰接數據」）。舊部分數字見 `gcn_partial_note.json`。  
+- **區域 pilot：** Mid-Atlantic 150 縣 GCN-lite（無 PyG）— 同子集 Prev≈**0.0370** 最好；ResidualDenseGCN≈0.073；DenseGCN≈0.093。NE 67 縣舊 pilot 仍見 `results/us_gcn_pilot/`。

@@ -100,6 +100,7 @@ taiwan-election-github/
 │   ├── parties/ / legislative/        # 補充：鄉鎮三黨
 │   ├── improved/ / improved_r2/       # 補充
 │   └── spatial_* / us_taiwan_transfer # 補充 RQ2／RQ3
+│   └── us_census_adjacency_pilot/     # US Census 鄰接＋SGC／MA GCN-lite
 ├── analysis/taiwan_core/              # 核心設定 鏡像
 ├── scripts/
 │   ├── taiwan_core_backtest.py        # ★ 核心設定

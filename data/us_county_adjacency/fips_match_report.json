@@ -1,0 +1,29 @@
+{
+  "panel_common_oot_fips": 3111,
+  "census_file_geoids": 3236,
+  "panel_intersect_census": 3103,
+  "match_rate": 0.997428,
+  "panel_missing_from_census": [
+    "09001",
+    "09003",
+    "09005",
+    "09007",
+    "09009",
+    "09011",
+    "09013",
+    "09015"
+  ],
+  "n_panel_missing_from_census": 8,
+  "n_undirected_edges_in_subgraph": 9188,
+  "mean_degree": 5.922010957138253,
+  "n_islands_degree0": 4,
+  "adjacency_meta": {
+    "source_url": "https://www2.census.gov/geo/docs/reference/county_adjacency/county_adjacency2024.txt",
+    "source_file": "county_adjacency2024.txt",
+    "year_label": 2024,
+    "n_unique_geoids_in_file": 3236,
+    "n_undirected_edges": 9480,
+    "n_raw_rows": 22196
+  },
+  "locked_us_core_prev_mae_reference": 0.0345
+}

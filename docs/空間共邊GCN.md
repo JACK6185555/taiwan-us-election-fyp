@@ -169,3 +169,15 @@ Guide RQ2 兩邊都要空間。美國產物：`fyp_us_taiwan_transfer/rq2_us_cou
 - Mean OOT MAE：PreviousShare **0.0345** &lt; NonSpatial Ridge 0.0388 &lt; 最佳 SGC（L1+Ridge queen）0.0437
 - 全美 trainable GCN：**deferred**（runtime）；見 `gcn_partial_note.json`
 - 跨國摘要：`docs/RQ2_美台空間.md`
+
+---
+
+## 美國縣級（補充；2026-10-31）
+
+臺灣本檔以鄉鎮 Queen 為主。美國對應改用官方 **Census County Adjacency 2024**（唔再只靠 Plotly GeoJSON Queen）：
+
+- 資料：`data/us_county_adjacency/`（README 含 URL）
+- 全縣 SGC＋Mid-Atlantic GCN-lite：`results/us_census_adjacency_pilot/`
+- 狀態同結論：`docs/US_GCN_DEFERRED.md`、`docs/RQ2_美台空間.md`
+
+全縣 Prev MAE **0.0345** 仍贏 Census SGC（≈0.0438）；全縣 trainable GCN 定稿仍 runtime-deferred。
