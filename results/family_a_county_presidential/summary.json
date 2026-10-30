@@ -1,0 +1,157 @@
+{
+  "target": "target_DPP_vote_share",
+  "unit": "county-year; DPP presidential valid-vote share",
+  "panel_years": [
+    2008,
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "test_years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "fold_rule": "expanding window; train year < test year; 22 counties tested together",
+  "seed": 42,
+  "permutation_repeats": 30,
+  "mean_metrics": [
+    {
+      "model": "Previous-election baseline",
+      "mae": 0.0792648157080057,
+      "rmse": 0.08141650539817602
+    },
+    {
+      "model": "Random Forest",
+      "mae": 0.10408403266877839,
+      "rmse": 0.11645038149166018
+    },
+    {
+      "model": "HistGradientBoosting",
+      "mae": 0.11886504466936916,
+      "rmse": 0.12677517955296846
+    },
+    {
+      "model": "Ridge",
+      "mae": 0.17857985899144863,
+      "rmse": 0.18548000544613086
+    }
+  ],
+  "top_features": {
+    "Ridge": [
+      {
+        "feature_label": "DPP share two elections ago",
+        "importance_mean": 0.0037886798235085006,
+        "rank": 1
+      },
+      {
+        "feature_label": "KMT share two elections ago",
+        "importance_mean": 0.003619829066876572,
+        "rank": 2
+      },
+      {
+        "feature_label": "Previous DPP-other margin",
+        "importance_mean": 0.0024838511264628884,
+        "rank": 3
+      },
+      {
+        "feature_label": "Previous DPP share",
+        "importance_mean": 0.0024425040638535642,
+        "rank": 4
+      },
+      {
+        "feature_label": "Previous DPP-KMT margin",
+        "importance_mean": 0.002423967912154291,
+        "rank": 5
+      }
+    ],
+    "Ridge standardized coefficient": [
+      {
+        "feature_label": "DPP share two elections ago",
+        "importance_mean": 0.02443258987238011,
+        "rank": 1
+      },
+      {
+        "feature_label": "Previous KMT share",
+        "importance_mean": 0.020907782288020902,
+        "rank": 2
+      },
+      {
+        "feature_label": "Previous DPP-KMT margin",
+        "importance_mean": 0.020897466808217535,
+        "rank": 3
+      },
+      {
+        "feature_label": "Previous DPP share",
+        "importance_mean": 0.020735140154392005,
+        "rank": 4
+      },
+      {
+        "feature_label": "Previous DPP-other margin",
+        "importance_mean": 0.019650015574628633,
+        "rank": 5
+      }
+    ],
+    "Random Forest": [
+      {
+        "feature_label": "DPP share two elections ago",
+        "importance_mean": 0.019844633037847795,
+        "rank": 1
+      },
+      {
+        "feature_label": "Previous KMT share",
+        "importance_mean": 0.007355763994674258,
+        "rank": 2
+      },
+      {
+        "feature_label": "Previous DPP-KMT margin",
+        "importance_mean": 0.0027811133850953024,
+        "rank": 3
+      },
+      {
+        "feature_label": "Previous DPP-other margin",
+        "importance_mean": 0.0019170474120848758,
+        "rank": 4
+      },
+      {
+        "feature_label": "Previous DPP share",
+        "importance_mean": 0.0015334683777205396,
+        "rank": 5
+      }
+    ],
+    "HistGradientBoosting": [
+      {
+        "feature_label": "DPP share two elections ago",
+        "importance_mean": 0.014760248895791778,
+        "rank": 1
+      },
+      {
+        "feature_label": "Previous DPP share",
+        "importance_mean": 0.009602131100406044,
+        "rank": 2
+      },
+      {
+        "feature_label": "Previous KMT share",
+        "importance_mean": 0.008229422926259281,
+        "rank": 3
+      },
+      {
+        "feature_label": "Previous turnout",
+        "importance_mean": 0.0011327560247337994,
+        "rank": 4
+      },
+      {
+        "feature_label": "Mean party swing magnitude",
+        "importance_mean": 0.00034335630207935134,
+        "rank": 5
+      }
+    ]
+  },
+  "limitations": [
+    "Only 4 out-of-time test elections; county observations within each election are dependent.",
+    "Small number of elections limits tuning and ranking stability.",
+    "Permutation importance and Ridge weights describe model use/association, not causal effects."
+  ]
+}

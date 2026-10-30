@@ -1,0 +1,19 @@
+country,feature,factor_group,n_years,pearson_r_vs_national_vote_PROXY,years,note
+TW,unrate,economic_national,7,0.4430541997139399,"2000,2004,2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,cpi_yoy_pct,economic_national,7,-0.325532025383043,"2000,2004,2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,presidential_approval,economic_national,2,1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,media_camp_sentiment_gap,media,2,0.9999999999999998,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,media_mean_sentiment_all,media,2,-1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,media_top_issue_sentiment,media,2,-1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,media_top_issue_volume_share,media,2,-1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,media_issue_mean_sentiment,media,2,0.9999999999999999,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+TW,prev,previous,6,-0.10869566257340486,"2004,2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,unrate,economic_national,5,0.6556298039688612,"2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,cpi_yoy_pct,economic_national,5,0.6813178967016896,"2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,umcsent,economic_national,5,-0.5520350614534794,"2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,media_camp_sentiment_gap,media,2,0.9999999999999999,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,media_mean_sentiment_all,media,2,-1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,media_top_issue_sentiment,media,2,-1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,media_top_issue_volume_share,media,2,0.9999999999999999,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,media_issue_mean_sentiment,media,2,1.0,"2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny
+US,prev,previous,5,0.6543105044036109,"2008,2012,2016,2020,2024",county-mean national PROXY; correlational NOT causal; media n tiny

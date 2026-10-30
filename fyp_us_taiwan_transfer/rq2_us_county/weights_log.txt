@@ -1,0 +1,12 @@
+weights year=2012 done
+weights year=2016 done
+weights year=2020 done
+weights year=2024 done
+wrote NonSpatial feature weights → /workspace/taiwan-election-data/fyp_us_taiwan_transfer/rq2_us_county
+        feature  mean_abs_coef  mean_coef
+   prev_share_A       0.130068   0.130068
+ education_rate       0.014880   0.014880
+    log_density       0.008257  -0.008257
+log_total_votes       0.008145   0.008145
+   unemployment       0.005857   0.005144
+  median_income       0.003108   0.001751

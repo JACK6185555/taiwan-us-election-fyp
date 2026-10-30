@@ -1,0 +1,19 @@
+year,ballot,party,observed_national_share,note,expected_from_elretks_const,abs_diff,ok
+2016,district_legislator,dpp,0.45079187940791965,sum of township candidate votes by party / total valid,,,
+2016,district_legislator,kmt,0.3871305851723314,sum of township candidate votes by party / total valid,,,
+2016,district_legislator,tpp,,sum of township candidate votes by party / total valid,,,
+2016,party_list,dpp,0.44059800000000005,CEC elretks national %,0.440598,5.551115123125783e-17,True
+2016,party_list,kmt,0.269148,CEC elretks national %,0.269148,0.0,True
+2016,party_list,tpp,,CEC elretks national %,,,True
+2020,district_legislator,dpp,0.4560297313125674,sum of township candidate votes by party / total valid,,,
+2020,district_legislator,kmt,0.4057310296809,sum of township candidate votes by party / total valid,,,
+2020,district_legislator,tpp,0.019047162248077624,sum of township candidate votes by party / total valid,,,
+2020,party_list,dpp,0.339774,CEC elretks national %,0.339774,0.0,True
+2020,party_list,kmt,0.333578,CEC elretks national %,0.333578,0.0,True
+2020,party_list,tpp,0.112203,CEC elretks national %,0.112203,0.0,True
+2024,district_legislator,dpp,0.45166644467358785,sum of township candidate votes by party / total valid,,,
+2024,district_legislator,kmt,0.4042219342132241,sum of township candidate votes by party / total valid,,,
+2024,district_legislator,tpp,0.029723177125034982,sum of township candidate votes by party / total valid,,,
+2024,party_list,dpp,0.361629,CEC elretks national %,0.361629,0.0,True
+2024,party_list,kmt,0.34584200000000004,CEC elretks national %,0.345842,5.551115123125783e-17,True
+2024,party_list,tpp,0.22070599999999999,CEC elretks national %,0.220706,2.7755575615628914e-17,True

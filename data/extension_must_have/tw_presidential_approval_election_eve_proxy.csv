@@ -1,0 +1,8 @@
+country,election_year,presidential_approval,n_polls_used,window,source,family_a,note
+TW,2000,,0,,,NOT_INCLUDED,GAP — no systematic public election-eve approval archive ingested for this year
+TW,2004,,0,,,NOT_INCLUDED,GAP — no systematic public election-eve approval archive ingested for this year
+TW,2008,,0,,,NOT_INCLUDED,GAP — no systematic public election-eve approval archive ingested for this year
+TW,2012,,0,,,NOT_INCLUDED,GAP — no systematic public election-eve approval archive ingested for this year
+TW,2016,,0,,,NOT_INCLUDED,GAP — no systematic public election-eve approval archive ingested for this year
+TW,2020,51.08,10,Nov-Dec before election (Wikipedia Tsai approval tables),https://en.wikipedia.org/wiki/Opinion_polling_on_the_Tsai_Ing-wen_presidency,NOT_INCLUDED,Sitting president Tsai approve%; 2000-2016 GAP (Chen/Ma pages not systematically ingested)
+TW,2024,43.34,5,Nov-Dec before election (Wikipedia Tsai approval tables),https://en.wikipedia.org/wiki/Opinion_polling_on_the_Tsai_Ing-wen_presidency,NOT_INCLUDED,Sitting president Tsai approve%; 2000-2016 GAP (Chen/Ma pages not systematically ingested)

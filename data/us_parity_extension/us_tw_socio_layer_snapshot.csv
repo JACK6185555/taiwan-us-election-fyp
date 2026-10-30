@@ -1,0 +1,9 @@
+feature_layer,TW,US,parity
+lag_unemployment,"lag_unemployment_pct (county, DGBAS)",unemployment (ERS yearly in panel),YES_approx
+lag_income,lag_log_mean_income (tax mean),log_median_income / median_income (ERS/ACS wave),YES_approx_diff_def
+lag_density,lag_log_pop_density (MOI),log_density (ACS2020 static),YES_approx_US_static
+education,MISSING county bachelor panel,education_rate (ERS),US_only
+prev_vote_history,prev/prev2 DPP KMT Other + margins,prev/prev2 dem/gop two-party + margins,YES
+identity_climate,ESC national lag_* id/tongdu PROXY,county lag_partisan_lean_dem (MEDSL homebrew),YES_diff_construct
+national_polls,Extension taiwan_polls_long (national),538 daily 2020/2024 + wiki year proxy,PARTIAL_pre2020_thin
+platforms,Extension platforms_long (wiki text excerpts),APP metadata + theme tags (no full text),YES_metadata_level

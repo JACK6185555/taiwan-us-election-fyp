@@ -1,0 +1,30 @@
+party,feature,importance,fit,note
+DPP,prev_dpp_share,0.8918534482678079,train_years_lt_2024,out_of_time RF impurity
+DPP,prev_kmt_share,0.02341127941527266,train_years_lt_2024,out_of_time RF impurity
+DPP,prev_third_share,0.02183082673481504,train_years_lt_2024,out_of_time RF impurity
+DPP,prev_turnout,0.004920685227571252,train_years_lt_2024,out_of_time RF impurity
+DPP,prev_dpp_swing,0.0026949541266149814,train_years_lt_2024,out_of_time RF impurity
+DPP,prev_kmt_swing,0.005208378788418738,train_years_lt_2024,out_of_time RF impurity
+DPP,median_income,0.010390530353349378,train_years_lt_2024,out_of_time RF impurity
+DPP,urbanization,0.024154896660080364,train_years_lt_2024,out_of_time RF impurity
+DPP,education_rate,0.006301444236048752,train_years_lt_2024,out_of_time RF impurity
+DPP,log_people,0.009233556190020933,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_dpp_share,0.7080799159008385,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_kmt_share,0.03707849931187871,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_third_share,0.06867265818317869,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_turnout,0.01156156311197624,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_dpp_swing,0.01076691855667225,train_years_lt_2024,out_of_time RF impurity
+KMT,prev_kmt_swing,0.10330101824861689,train_years_lt_2024,out_of_time RF impurity
+KMT,median_income,0.014738252084174177,train_years_lt_2024,out_of_time RF impurity
+KMT,urbanization,0.02810362801585356,train_years_lt_2024,out_of_time RF impurity
+KMT,education_rate,0.008451934855984014,train_years_lt_2024,out_of_time RF impurity
+KMT,log_people,0.009245611730826902,train_years_lt_2024,out_of_time RF impurity
+TPP,prev_dpp_share,0.04206470344523981,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,prev_kmt_share,0.025566160519345755,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,prev_third_share,0.6714692228463329,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,prev_turnout,0.05791983214281006,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,median_income,0.041066185803862905,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,urbanization,0.036392928855677284,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,education_rate,0.0627370988194556,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,log_people,0.040011530695309244,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal
+TPP,dpp_kmt_margin_prev,0.022772336871966364,in_sample_2024_impurity,TPP has only one presidential election; importance is descriptive not temporal

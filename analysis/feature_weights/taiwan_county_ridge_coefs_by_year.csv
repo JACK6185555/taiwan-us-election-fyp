@@ -1,0 +1,65 @@
+﻿suite,test_year,feature,feature_label,standardized_coef_signed,standardized_coef_abs
+electoral,2012,prev_DPP_vote_share,Previous DPP share,0.012013948957625894,0.012013948957625894
+electoral,2012,prev_KMT_vote_share,Previous KMT share,-0.012013948957625814,0.012013948957625814
+electoral,2012,prev_Other_vote_share,Previous other share,0.0,0.0
+electoral,2012,prev2_DPP_vote_share,DPP share two elections ago,0.013428021432333207,0.013428021432333207
+electoral,2012,prev2_KMT_vote_share,KMT share two elections ago,-0.0031639130796422676,0.0031639130796422676
+electoral,2012,prev2_Other_vote_share,Other share two elections ago,-0.0114268181760714,0.0114268181760714
+electoral,2012,prev_turnout,Previous turnout,-0.0010657037172345037,0.0010657037172345037
+electoral,2012,DPP_change_1,DPP previous swing,0.0019483897885970345,0.0019483897885970345
+electoral,2012,KMT_change_1,KMT previous swing,-0.010391766733336642,0.010391766733336642
+electoral,2012,Other_change_1,Other previous swing,0.011426818176071411,0.011426818176071411
+electoral,2012,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.012013948957625862,0.012013948957625862
+electoral,2012,prev_DPP_Other_margin,Previous DPP-other margin,0.012013948957625866,0.012013948957625866
+electoral,2012,DPP_KMT_margin_change_1,DPP-KMT margin change,0.009458821109755777,0.009458821109755777
+electoral,2012,previous_party_change_abs_mean,Mean party swing magnitude,-0.011426818176071359,0.011426818176071359
+electoral,2012,previous_party_change_std,Dispersion of party swings,-0.010747226006381859,0.010747226006381859
+electoral,2012,turnout_change_1,Turnout change,0.007141478878273328,0.007141478878273328
+electoral,2016,prev_DPP_vote_share,Previous DPP share,0.02270704064718711,0.02270704064718711
+electoral,2016,prev_KMT_vote_share,Previous KMT share,-0.02270704064718699,0.02270704064718699
+electoral,2016,prev_Other_vote_share,Previous other share,0.0,0.0
+electoral,2016,prev2_DPP_vote_share,DPP share two elections ago,0.030874490464884056,0.030874490464884056
+electoral,2016,prev2_KMT_vote_share,KMT share two elections ago,-0.013109019763630745,0.013109019763630745
+electoral,2016,prev2_Other_vote_share,Other share two elections ago,-0.008757004374886041,0.008757004374886041
+electoral,2016,prev_turnout,Previous turnout,-0.0005338867233652317,0.0005338867233652317
+electoral,2016,DPP_change_1,DPP previous swing,-0.013420131142650395,0.013420131142650395
+electoral,2016,KMT_change_1,KMT previous swing,-0.004700048476211391,0.004700048476211391
+electoral,2016,Other_change_1,Other previous swing,0.008757004374886053,0.008757004374886053
+electoral,2016,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02270704064718696,0.02270704064718696
+electoral,2016,prev_DPP_Other_margin,Previous DPP-other margin,0.022707040647187048,0.022707040647187048
+electoral,2016,DPP_KMT_margin_change_1,DPP-KMT margin change,-0.0034132090402708005,0.0034132090402708005
+electoral,2016,previous_party_change_abs_mean,Mean party swing magnitude,-0.006941624131413959,0.006941624131413959
+electoral,2016,previous_party_change_std,Dispersion of party swings,-0.00594070976828878,0.00594070976828878
+electoral,2016,turnout_change_1,Turnout change,-0.0001197476226267964,0.0001197476226267964
+electoral,2020,prev_DPP_vote_share,Previous DPP share,0.023350534031574523,0.023350534031574523
+electoral,2020,prev_KMT_vote_share,Previous KMT share,-0.02695876252930687,0.02695876252930687
+electoral,2020,prev_Other_vote_share,Previous other share,0.033935508392327535,0.033935508392327535
+electoral,2020,prev2_DPP_vote_share,DPP share two elections ago,0.028215119138599074,0.028215119138599074
+electoral,2020,prev2_KMT_vote_share,KMT share two elections ago,-0.009937655989834591,0.009937655989834591
+electoral,2020,prev2_Other_vote_share,Other share two elections ago,-0.00921051136726355,0.00921051136726355
+electoral,2020,prev_turnout,Previous turnout,0.003642762789458083,0.003642762789458083
+electoral,2020,DPP_change_1,DPP previous swing,-0.009411240810829885,0.009411240810829885
+electoral,2020,KMT_change_1,KMT previous swing,-0.009390839181987262,0.009390839181987262
+electoral,2020,Other_change_1,Other previous swing,0.01115883893776314,0.01115883893776314
+electoral,2020,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02518470921497478,0.02518470921497478
+electoral,2020,prev_DPP_Other_margin,Previous DPP-other margin,0.019565348539503317,0.019565348539503317
+electoral,2020,DPP_KMT_margin_change_1,DPP-KMT margin change,0.005678028012658795,0.005678028012658795
+electoral,2020,previous_party_change_abs_mean,Mean party swing magnitude,-0.004460757792480004,0.004460757792480004
+electoral,2020,previous_party_change_std,Dispersion of party swings,-0.0005111371543661185,0.0005111371543661185
+electoral,2020,turnout_change_1,Turnout change,-0.004745417976876076,0.004745417976876076
+electoral,2024,prev_DPP_vote_share,Previous DPP share,0.024869036981180488,0.024869036981180488
+electoral,2024,prev_KMT_vote_share,Previous KMT share,-0.021951377017963934,0.021951377017963934
+electoral,2024,prev_Other_vote_share,Previous other share,0.0009958685702741977,0.0009958685702741977
+electoral,2024,prev2_DPP_vote_share,DPP share two elections ago,0.0252127284537041,0.0252127284537041
+electoral,2024,prev2_KMT_vote_share,KMT share two elections ago,-0.006076875347450491,0.006076875347450491
+electoral,2024,prev2_Other_vote_share,Other share two elections ago,-0.012345459058490051,0.012345459058490051
+electoral,2024,prev_turnout,Previous turnout,0.004456098586717164,0.004456098586717164
+electoral,2024,DPP_change_1,DPP previous swing,0.000597737245708824,0.000597737245708824
+electoral,2024,KMT_change_1,KMT previous swing,-0.011727159713422615,0.011727159713422615
+electoral,2024,Other_change_1,Other previous swing,0.011116946457096311,0.011116946457096311
+electoral,2024,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02368416841308253,0.02368416841308253
+electoral,2024,prev_DPP_Other_margin,Previous DPP-other margin,0.024313724154198305,0.024313724154198305
+electoral,2024,DPP_KMT_margin_change_1,DPP-KMT margin change,0.01099686548209392,0.01099686548209392
+electoral,2024,previous_party_change_abs_mean,Mean party swing magnitude,-0.010749245824779381,0.010749245824779381
+electoral,2024,previous_party_change_std,Dispersion of party swings,-0.004000851038053925,0.004000851038053925
+electoral,2024,turnout_change_1,Turnout change,0.012268443531360633,0.012268443531360633

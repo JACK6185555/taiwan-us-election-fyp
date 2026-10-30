@@ -1,0 +1,26 @@
+﻿suite,feature,feature_label,impurity_mean,impurity_std,permutation_mae_increase_mean,permutation_std_across_folds,rank,interpretation
+enriched,prev2_DPP_vote_share,DPP share two elections ago,0.3812737459987767,0.3046008706184359,0.019681427961819896,0.018537307851140026,1,model dependence / predictive importance — NOT causal
+enriched,prev_KMT_vote_share,Previous KMT share,0.19453524241744896,0.1401633473921391,0.007079900278369258,0.009691959002625556,2,model dependence / predictive importance — NOT causal
+enriched,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.06724579596875767,0.03521488637222915,0.002728287944939564,0.002687502212085951,3,model dependence / predictive importance — NOT causal
+enriched,prev_DPP_vote_share,Previous DPP share,0.08945544466131086,0.07723777106781442,0.0026961353600483224,0.004514140709437216,4,model dependence / predictive importance — NOT causal
+enriched,prev_DPP_Other_margin,Previous DPP-other margin,0.02835001083375379,0.02611549367101313,0.0020354870853201293,0.003414130525069601,5,model dependence / predictive importance — NOT causal
+enriched,previous_party_change_std,Dispersion of party swings,0.03974556755001131,0.03799836940080253,0.00019775534768414307,0.0003406535471437131,6,model dependence / predictive importance — NOT causal
+enriched,previous_party_change_abs_mean,Mean party swing magnitude,0.042934452867062455,0.05392961990301622,0.00014977924368491426,0.00025162237757523715,7,model dependence / predictive importance — NOT causal
+enriched,lag_unemployment_pct,Lag county unemployment %,0.0007300843431320872,0.0008714343856666219,7.662247237654417e-05,9.189478904997344e-05,8,model dependence / predictive importance — NOT causal
+enriched,prev2_KMT_vote_share,KMT share two elections ago,0.0036275897216775095,0.003239720980023813,2.753318976910305e-05,0.00014198940953074135,9,model dependence / predictive importance — NOT causal
+enriched,DPP_change_1,DPP previous swing,0.0017140907862614118,0.001417418819631547,1.4038250900471245e-05,5.295643926926216e-05,10,model dependence / predictive importance — NOT causal
+enriched,lag_log_mean_income,Lag log mean income,3.4413090717380816e-05,6.882618143476163e-05,6.079183100216509e-06,1.2158366200433017e-05,11,model dependence / predictive importance — NOT causal
+enriched,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.0011969118389653045,0.0014384756470137699,0.0,0.0,12,model dependence / predictive importance — NOT causal
+enriched,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.00017611487843249238,0.00029628458790104464,0.0,0.0,13,model dependence / predictive importance — NOT causal
+enriched,Other_change_1,Other previous swing,0.022432136377921928,0.027166859949810534,0.0,0.0,14,model dependence / predictive importance — NOT causal
+enriched,lag_both_id_pct,Lag national both ID % (ESC PROXY),0.0009067049770489035,0.00104754374732576,0.0,0.0,15,model dependence / predictive importance — NOT causal
+enriched,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),0.0003712282805188761,0.0004309144382087996,0.0,0.0,16,model dependence / predictive importance — NOT causal
+enriched,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),0.0007393400826354317,0.0009360367031578123,0.0,0.0,17,model dependence / predictive importance — NOT causal
+enriched,prev2_Other_vote_share,Other share two elections ago,0.043339393817132706,0.06700174879069608,0.0,0.0,18,model dependence / predictive importance — NOT causal
+enriched,prev_Other_vote_share,Previous other share,0.0007530954760250465,0.0008870426981580202,0.0,0.0,19,model dependence / predictive importance — NOT causal
+enriched,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),0.0006030563152784254,0.00045316829318199533,0.0,0.0,20,model dependence / predictive importance — NOT causal
+enriched,lag_log_pop_density,Lag log pop density,8.407814907183217e-05,0.00016815629814366433,-3.2319528675333237e-06,6.463905735066647e-06,21,model dependence / predictive importance — NOT causal
+enriched,KMT_change_1,KMT previous swing,0.03960282194575712,0.0539246490676544,-6.392401290255164e-06,1.2784802580510328e-05,22,model dependence / predictive importance — NOT causal
+enriched,prev_turnout,Previous turnout,0.011101811659506305,0.007641664981975199,-6.6378995098672375e-06,0.0006219826815906381,23,model dependence / predictive importance — NOT causal
+enriched,DPP_KMT_margin_change_1,DPP-KMT margin change,0.023151342480078236,0.017540680796686643,-5.948779072913283e-05,0.0004968538465471415,24,model dependence / predictive importance — NOT causal
+enriched,turnout_change_1,Turnout change,0.005895525482717298,0.0016075510089710535,-0.0003068680229175782,0.00046639917572027513,25,model dependence / predictive importance — NOT causal

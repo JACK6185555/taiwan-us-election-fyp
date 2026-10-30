@@ -1,0 +1,9 @@
+country,calendar_year,moi_roc_year,age_band,share,count,grain,source,family_a,note
+TW,2016,105,15_29,0.227717,4644962,national_from_village_sum,edu_age_marital_105.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2016,105,30_44,0.276719,5644492,national_from_village_sum,edu_age_marital_105.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2016,105,45_64,0.343288,7002376,national_from_village_sum,edu_age_marital_105.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2016,105,65plus,0.152275,3106105,national_from_village_sum,edu_age_marital_105.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2018,107,15_29,0.217557,4468765,national_from_village_sum,edu_age_marital_107.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2018,107,30_44,0.271699,5580888,national_from_village_sum,edu_age_marital_107.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2018,107,45_64,0.343588,7057535,national_from_village_sum,edu_age_marital_107.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only
+TW,2018,107,65plus,0.167157,3433517,national_from_village_sum,edu_age_marital_107.csv,NOT_INCLUDED,PROXY — not election-year aligned county panel; 105/107 only

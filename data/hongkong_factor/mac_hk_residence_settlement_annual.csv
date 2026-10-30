@@ -1,0 +1,10 @@
+calendar_year,residence_permits,settlement_permits,coverage,source_url,notes
+2016,4057,1086,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2017,4015,1074,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2018,4148,1090,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2019,5858,1474,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2020,10813,1576,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2021,11173,1685,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2022,8945,1296,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2023,6626,1432,full_year,https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,陸委會公開 CSV 年合計；此為許可流量，非在台存量，亦非選舉人數
+2024,2683,1163,YTD_01-07 (months in source file),https://www.mac.gov.tw/big5/data/112_香港居民來臺居留、定居統計.csv,來源檔截至 202407；非全年。勿與先前口述全年數字混用

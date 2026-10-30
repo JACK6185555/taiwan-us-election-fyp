@@ -1,0 +1,17 @@
+weights...
+  fitted ridge/rf/hgb
+  permutation...
+Traceback (most recent call last):
+  File "/workspace/taiwan-election-data/fyp_us_core/scripts/us_core_weights_conformal.py", line 325, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/workspace/taiwan-election-data/fyp_us_core/scripts/us_core_weights_conformal.py", line 113, in main
+    weights = weights.sort_values(["source","model","weight_type","abs_weight"], ascending=[True,True,True,False])
+  File "/workspace/taiwan-election-data/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 9322, in sort_values
+    keys_data = list(keys)  # type: ignore[arg-type]
+  File "/workspace/taiwan-election-data/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 9311, in <genexpr>
+    keys = (self._get_label_or_level_values(x, axis=axis) for x in by)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/workspace/taiwan-election-data/.venv/lib/python3.13/site-packages/pandas/core/generic.py", line 1708, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'source'

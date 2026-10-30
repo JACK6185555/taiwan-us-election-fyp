@@ -1,0 +1,901 @@
+{
+  "round": 2,
+  "improvements": [
+    "county_mean_lag + spatial_lag LOO; ablation NoSpatial / LOO / CountyMean / Both",
+    "consistent swing+demeaned+level for presidential & legislative DPP/KMT (+TPP where possible)",
+    "demeaned→level: prev_nat / ESC_nat / oracle_nat (oracle labeled leakage)",
+    "split conformal + year-specific residual q90 on DEMEANED",
+    "Ridge year FE (test year FE=0) + ESC regime; ESC county still unavailable documented"
+  ],
+  "before_after_2024": [
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "target": "demeaned",
+      "best_baseline": "PreviousDemeaned",
+      "baseline_MAE": 0.1043625278273825,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.13477883454107029,
+      "delta_MAE_baseline_minus_r2": -0.03041630671368778,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "target": "level",
+      "best_baseline": "PreviousShare",
+      "baseline_MAE": 0.10479403416640194,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.12996200320723847,
+      "delta_MAE_baseline_minus_r2": -0.025167969040836527,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "target": "swing",
+      "best_baseline": "ZeroSwing",
+      "baseline_MAE": 0.10479403416640194,
+      "best_r2_model": "HistGB",
+      "r2_MAE": 0.13568324086907826,
+      "delta_MAE_baseline_minus_r2": -0.030889206702676322,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "target": "demeaned",
+      "best_baseline": "PreviousDemeaned",
+      "baseline_MAE": 0.13301746073089396,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.1371137454032537,
+      "delta_MAE_baseline_minus_r2": -0.004096284672359729,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "target": "level",
+      "best_baseline": "PreviousShare",
+      "baseline_MAE": 0.13295209736444247,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.134812360887763,
+      "delta_MAE_baseline_minus_r2": -0.0018602635233205267,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "target": "swing",
+      "best_baseline": "ZeroSwing",
+      "baseline_MAE": 0.13295209736444247,
+      "best_r2_model": "RandomForest",
+      "r2_MAE": 0.13277071660556336,
+      "delta_MAE_baseline_minus_r2": 0.0001813807588791072,
+      "r2_wins": true,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "TPP",
+      "target": "demeaned",
+      "best_baseline": "PreviousDemeaned",
+      "baseline_MAE": 0.046545065184667715,
+      "best_r2_model": "HistGB",
+      "r2_MAE": 0.048253211982264906,
+      "delta_MAE_baseline_minus_r2": -0.0017081467975971903,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "TPP",
+      "target": "level",
+      "best_baseline": "PreviousShare",
+      "baseline_MAE": 0.03888618494685047,
+      "best_r2_model": "HistGB",
+      "r2_MAE": 0.04152977894991148,
+      "delta_MAE_baseline_minus_r2": -0.002643594003061009,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "TPP",
+      "target": "swing",
+      "best_baseline": "ZeroSwing",
+      "baseline_MAE": 0.03888618494685047,
+      "best_r2_model": NaN,
+      "r2_MAE": NaN,
+      "delta_MAE_baseline_minus_r2": NaN,
+      "r2_wins": null,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "best_baseline": "PreviousDemeaned",
+      "baseline_MAE": 0.036486006062170166,
+      "best_r2_model": "RandomForest",
+      "r2_MAE": 0.040964567770578386,
+      "delta_MAE_baseline_minus_r2": -0.00447856170840822,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "level",
+      "best_baseline": "PreviousShare",
+      "baseline_MAE": 0.14872504338071132,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.07127127912130533,
+      "delta_MAE_baseline_minus_r2": 0.07745376425940599,
+      "r2_wins": true,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "best_baseline": "ZeroSwing",
+      "baseline_MAE": 0.14872504338071132,
+      "best_r2_model": "Ridge",
+      "r2_MAE": 0.040258221066410235,
+      "delta_MAE_baseline_minus_r2": 0.10846682231430109,
+      "r2_wins": true,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "best_baseline": "PreviousDemeaned",
+      "baseline_MAE": 0.024669601060199258,
+      "best_r2_model": "RandomForest",
+      "r2_MAE": 0.041997316459720574,
+      "delta_MAE_baseline_minus_r2": -0.017327715399521316,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "level",
+      "best_baseline": "PreviousShare",
+      "baseline_MAE": 0.05981585439374408,
+      "best_r2_model": "RandomForest",
+      "r2_MAE": 0.05482446064827883,
+      "delta_MAE_baseline_minus_r2": 0.004991393745465249,
+      "r2_wins": true,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "best_baseline": "ZeroSwing",
+      "baseline_MAE": 0.05981585439374408,
+      "best_r2_model": "RandomForest",
+      "r2_MAE": 0.08452441210045204,
+      "delta_MAE_baseline_minus_r2": -0.024708557706707962,
+      "r2_wins": false,
+      "delta_MAE": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "TPP",
+      "target": "demeaned",
+      "best_baseline": "ZeroDemeaned",
+      "baseline_MAE": 0.03893896524617767,
+      "best_r2_model": NaN,
+      "r2_MAE": NaN,
+      "delta_MAE_baseline_minus_r2": NaN,
+      "r2_wins": null,
+      "delta_MAE": NaN
+    }
+  ],
+  "spatial_ablation_pres_RF_2024": [
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "NoSpatial",
+      "model": "RandomForest",
+      "n_features": 22,
+      "MAE": 0.17059237404539915,
+      "RMSE": 0.17685946675307035,
+      "R2": -17.246890967388925
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "SpatialLOO_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.16587335130224584,
+      "RMSE": 0.1717645494073177,
+      "R2": -16.21073126250773
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "CountyMean_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.1657899997620841,
+      "RMSE": 0.17148147671703695,
+      "R2": -16.154050492064417
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "SpatialBoth",
+      "model": "RandomForest",
+      "n_features": 26,
+      "MAE": 0.16558306879462167,
+      "RMSE": 0.17147245489523782,
+      "R2": -16.152245554078448
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "NoSpatialNoESC",
+      "model": "RandomForest",
+      "n_features": 14,
+      "MAE": 0.205862961991371,
+      "RMSE": 0.21464135340990506,
+      "R2": -25.875654579771375
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "NoSpatial",
+      "model": "RandomForest",
+      "n_features": 22,
+      "MAE": 0.04050843182031848,
+      "RMSE": 0.047811171206679895,
+      "R2": 0.8521131038639812
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "SpatialLOO_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.03948756250545659,
+      "RMSE": 0.04727827210740304,
+      "R2": 0.8553914002886083
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "CountyMean_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.0404578929482719,
+      "RMSE": 0.04793470699847794,
+      "R2": 0.8513478882570104
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "SpatialBoth",
+      "model": "RandomForest",
+      "n_features": 26,
+      "MAE": 0.040964567770578386,
+      "RMSE": 0.04925837631913137,
+      "R2": 0.8430247752398237
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "NoSpatialNoESC",
+      "model": "RandomForest",
+      "n_features": 14,
+      "MAE": 0.058475197613763165,
+      "RMSE": 0.06971753914402122,
+      "R2": 0.6855475177397704
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "NoSpatial",
+      "model": "RandomForest",
+      "n_features": 22,
+      "MAE": 0.078531088893342,
+      "RMSE": 0.08578233532160583,
+      "R2": -5.029955055980051
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "SpatialLOO_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.0711271638035756,
+      "RMSE": 0.07896896888884927,
+      "R2": -4.110122127471444
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "CountyMean_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.06947410967998337,
+      "RMSE": 0.07750314493935523,
+      "R2": -3.9221743876159803
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "SpatialBoth",
+      "model": "RandomForest",
+      "n_features": 26,
+      "MAE": 0.08452441210045204,
+      "RMSE": 0.09219302866603865,
+      "R2": -5.964893972333872
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "swing",
+      "test_year": 2024,
+      "feature_set": "NoSpatialNoESC",
+      "model": "RandomForest",
+      "n_features": 14,
+      "MAE": 0.09260224389518541,
+      "RMSE": 0.09801348950211972,
+      "R2": -6.87208994115602
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "NoSpatial",
+      "model": "RandomForest",
+      "n_features": 22,
+      "MAE": 0.044089081803610077,
+      "RMSE": 0.049675929550307446,
+      "R2": 0.812762805430362
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "SpatialLOO_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.04418743721256351,
+      "RMSE": 0.049933156180925,
+      "R2": 0.8108187215321918
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "CountyMean_only",
+      "model": "RandomForest",
+      "n_features": 25,
+      "MAE": 0.04372872275779817,
+      "RMSE": 0.04944011662520407,
+      "R2": 0.814536225810738
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "SpatialBoth",
+      "model": "RandomForest",
+      "n_features": 26,
+      "MAE": 0.041997316459720574,
+      "RMSE": 0.0476798756028829,
+      "R2": 0.8275074479611093
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "feature_set": "NoSpatialNoESC",
+      "model": "RandomForest",
+      "n_features": 14,
+      "MAE": 0.05265487871564498,
+      "RMSE": 0.05968616311242176,
+      "R2": 0.7296991301974034
+    }
+  ],
+  "demeaned_to_level_highlights": [
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "PreviousShare",
+      "MAE_level": 0.14872504338071132,
+      "note": "baseline",
+      "MAE_demeaned": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+prev_nat",
+      "MAE_level": 0.06826487376469412,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.10557844543528583
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+esc_nat",
+      "MAE_level": 0.06255342950330961,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.10557844543528583
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+oracle_nat",
+      "MAE_level": 0.10557844543528583,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.10557844543528583
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+prev_nat",
+      "MAE_level": 0.18653151122507214,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.040964567770578386
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+esc_nat",
+      "MAE_level": 0.17953151122507224,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.040964567770578386
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+oracle_nat",
+      "MAE_level": 0.040964567770578386,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.040964567770578386
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+prev_nat",
+      "MAE_level": 0.20712033919811113,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.05162870572840073
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+esc_nat",
+      "MAE_level": 0.20012033919811123,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.05162870572840073
+    },
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+oracle_nat",
+      "MAE_level": 0.05162870572840073,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.05162870572840073
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "PreviousShare",
+      "MAE_level": 0.05981585439374408,
+      "note": "baseline",
+      "MAE_demeaned": NaN
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+prev_nat",
+      "MAE_level": 0.1604163170037288,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.10917962053742505
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+esc_nat",
+      "MAE_level": 0.1344163170037288,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.10917962053742505
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+oracle_nat",
+      "MAE_level": 0.10917962053742505,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.10917962053742505
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+prev_nat",
+      "MAE_level": 0.02550378253594735,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.04199731645972058
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+esc_nat",
+      "MAE_level": 0.026760316294419616,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.04199731645972058
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+oracle_nat",
+      "MAE_level": 0.04199731645972058,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.04199731645972058
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+prev_nat",
+      "MAE_level": 0.028945639367372957,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.04393477208659742
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+esc_nat",
+      "MAE_level": 0.02963515504631847,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.04393477208659742
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+oracle_nat",
+      "MAE_level": 0.043934772086597414,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.04393477208659742
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "PreviousShare",
+      "MAE_level": 0.10479403416640194,
+      "note": "baseline",
+      "MAE_demeaned": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+prev_nat",
+      "MAE_level": 0.1324394977218625,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.13477883454107029
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+esc_nat",
+      "MAE_level": 0.13626911825873397,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.13477883454107029
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+oracle_nat",
+      "MAE_level": 0.13477883454107029,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.13477883454107029
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+prev_nat",
+      "MAE_level": 0.17204260260944942,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.17466309418064163
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+esc_nat",
+      "MAE_level": 0.17625372017560498,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.17466309418064163
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+oracle_nat",
+      "MAE_level": 0.17466309418064163,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.17466309418064163
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+prev_nat",
+      "MAE_level": 0.14030198721612958,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.14293088483827812
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+esc_nat",
+      "MAE_level": 0.14454219942073704,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.14293088483827812
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+oracle_nat",
+      "MAE_level": 0.14293088483827812,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.14293088483827812
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "PreviousShare",
+      "MAE_level": 0.13295209736444247,
+      "note": "baseline",
+      "MAE_demeaned": NaN
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+prev_nat",
+      "MAE_level": 0.13686818597796982,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.1371137454032537
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+esc_nat",
+      "MAE_level": 0.14252787529708652,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.1371137454032537
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "Ridge_demeaned+oracle_nat",
+      "MAE_level": 0.1371137454032537,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.1371137454032537
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+prev_nat",
+      "MAE_level": 0.14154518405236585,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.14162374569397773
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+esc_nat",
+      "MAE_level": 0.14588986779430346,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.14162374569397773
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "RandomForest_demeaned+oracle_nat",
+      "MAE_level": 0.14162374569397773,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.14162374569397773
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+prev_nat",
+      "MAE_level": 0.14978645826913245,
+      "note": "honest: add previous election national mean",
+      "MAE_demeaned": 0.1499914984141971
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+esc_nat",
+      "MAE_level": 0.15499346122154908,
+      "note": "honest PROXY: prev_nat + ESC pid delta",
+      "MAE_demeaned": 0.1499914984141971
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "test_year": 2024,
+      "method": "HistGB_demeaned+oracle_nat",
+      "MAE_level": 0.1499914984141971,
+      "note": "ORACLE leakage: true test-year national — ranking skill only",
+      "MAE_demeaned": 0.1499914984141971
+    }
+  ],
+  "conformal_demeaned": [
+    {
+      "race": "presidential",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "cal_year": 2020,
+      "fit_years": [
+        2012,
+        2016
+      ],
+      "alpha": 0.1,
+      "nominal_coverage": 0.9,
+      "split_conformal_halfwidth_q": 0.14050647398031318,
+      "split_empirical_coverage": 0.8478260869565217,
+      "year_specific_max_q90_halfwidth": 0.14050647398031316,
+      "year_specific_empirical_coverage": 0.8478260869565217,
+      "MAE_point": 0.08822317932170659,
+      "n_fit": 723,
+      "n_cal": 368,
+      "n_test": 368,
+      "note": "split conformal on DEMEANED; year-specific = max leave-one-election |resid| q90",
+      "year_specific_quantiles_json": "[{\"holdout_year\": 2016, \"resid_q50\": 0.052455502194038856, \"resid_q90\": 0.08986871459395367, \"MAE\": 0.0533905384241713}, {\"holdout_year\": 2020, \"resid_q50\": 0.10195576743300452, \"resid_q90\": 0.14050647398031316, \"MAE\": 0.10190487746494192}]"
+    },
+    {
+      "race": "presidential",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "cal_year": 2020,
+      "fit_years": [
+        2012,
+        2016
+      ],
+      "alpha": 0.1,
+      "nominal_coverage": 0.9,
+      "split_conformal_halfwidth_q": 0.23063927900004452,
+      "split_empirical_coverage": 1.0,
+      "year_specific_max_q90_halfwidth": 0.23063927900004452,
+      "year_specific_empirical_coverage": 1.0,
+      "MAE_point": 0.09473984210955654,
+      "n_fit": 723,
+      "n_cal": 368,
+      "n_test": 368,
+      "note": "split conformal on DEMEANED; year-specific = max leave-one-election |resid| q90",
+      "year_specific_quantiles_json": "[{\"holdout_year\": 2016, \"resid_q50\": 0.04585179989518029, \"resid_q90\": 0.08788675809963967, \"MAE\": 0.05032972211695134}, {\"holdout_year\": 2020, \"resid_q50\": 0.10277946047445136, \"resid_q90\": 0.23063927900004452, \"MAE\": 0.11789578987602263}]"
+    },
+    {
+      "race": "legislative_district",
+      "party": "DPP",
+      "target": "demeaned",
+      "test_year": 2024,
+      "cal_year": 2020,
+      "fit_years": [
+        2016
+      ],
+      "alpha": 0.1,
+      "nominal_coverage": 0.9,
+      "split_conformal_halfwidth_q": 0.3536685199218099,
+      "split_empirical_coverage": 0.9565217391304348,
+      "year_specific_max_q90_halfwidth": 0.35366851992181,
+      "year_specific_empirical_coverage": 0.9565217391304348,
+      "MAE_point": 0.120807319253848,
+      "n_fit": 368,
+      "n_cal": 368,
+      "n_test": 368,
+      "note": "split conformal on DEMEANED; year-specific = max leave-one-election |resid| q90",
+      "year_specific_quantiles_json": "[{\"holdout_year\": 2020, \"resid_q50\": 0.11027001324090377, \"resid_q90\": 0.35366851992181, \"MAE\": 0.15418047600318574}]"
+    },
+    {
+      "race": "legislative_district",
+      "party": "KMT",
+      "target": "demeaned",
+      "test_year": 2024,
+      "cal_year": 2020,
+      "fit_years": [
+        2016
+      ],
+      "alpha": 0.1,
+      "nominal_coverage": 0.9,
+      "split_conformal_halfwidth_q": 0.18284546128028661,
+      "split_empirical_coverage": 0.75,
+      "year_specific_max_q90_halfwidth": 0.18284546128028664,
+      "year_specific_empirical_coverage": 0.75,
+      "MAE_point": 0.13807728857076182,
+      "n_fit": 368,
+      "n_cal": 368,
+      "n_test": 368,
+      "note": "split conformal on DEMEANED; year-specific = max leave-one-election |resid| q90",
+      "year_specific_quantiles_json": "[{\"holdout_year\": 2020, \"resid_q50\": 0.056532936249040995, \"resid_q90\": 0.18284546128028664, \"MAE\": 0.0815019146830991}]"
+    }
+  ],
+  "esc_county": "unavailable — see proxies/ESC_COUNTY_UNAVAILABLE.md"
+}

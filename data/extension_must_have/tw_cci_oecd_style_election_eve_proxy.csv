@@ -1,0 +1,8 @@
+country,election_year,asof,cci_oecd_style,note,source,family_a
+TW,2000,,,GAP_pre_2013_or_missing_month — NTPC series starts ROC102/2013,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2004,,,GAP_pre_2013_or_missing_month — NTPC series starts ROC102/2013,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2008,,,GAP_pre_2013_or_missing_month — NTPC series starts ROC102/2013,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2012,,,GAP_pre_2013_or_missing_month — NTPC series starts ROC102/2013,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2016,2016-01,85.55,OECD-style CCI index (~100 long-run); NOT NCU Taiwan CCI (0-200); scale ≠ UMCSENT,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2020,2020-01,90.8,OECD-style CCI index (~100 long-run); NOT NCU Taiwan CCI (0-200); scale ≠ UMCSENT,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED
+TW,2024,2024-01,111.08,OECD-style CCI index (~100 long-run); NOT NCU Taiwan CCI (0-200); scale ≠ UMCSENT,data.ntpc.gov.tw dataset 9d0483b6-513a-46b2-92e3-5f9b315999bb,NOT_INCLUDED

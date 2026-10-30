@@ -1,0 +1,4 @@
+metric,value,n_years,years,note
+MAE_poll_as_forecast_two_party,0.0142069519857205,7,"2000,2004,2008,2012,2016,2020,2024",Extension; national only; 2004 as_of=2004-11-02 from 538 legacy; 2024 as_of=2024-09-12
+MAE_previous_election_two_party,0.0220655311959758,6,"2004,2008,2012,2016,2020,2024",Same years as poll MAE where prev exists
+mean_signed_error_poll_minus_actual,0.0017376457410208,7,"2000,2004,2008,2012,2016,2020,2024",Positive = polls overstated Dem two-party share

@@ -1,0 +1,41 @@
+race,party,test_year,method,MAE_level,note,MAE_demeaned
+presidential,DPP,2024,PreviousShare,0.14872504338071132,baseline,
+presidential,DPP,2024,Ridge_demeaned+prev_nat,0.06826487376469412,honest: add previous election national mean,0.10557844543528583
+presidential,DPP,2024,Ridge_demeaned+esc_nat,0.06255342950330961,honest PROXY: prev_nat + ESC pid delta,0.10557844543528583
+presidential,DPP,2024,Ridge_demeaned+oracle_nat,0.10557844543528583,ORACLE leakage: true test-year national — ranking skill only,0.10557844543528583
+presidential,DPP,2024,RandomForest_demeaned+prev_nat,0.18653151122507214,honest: add previous election national mean,0.040964567770578386
+presidential,DPP,2024,RandomForest_demeaned+esc_nat,0.17953151122507224,honest PROXY: prev_nat + ESC pid delta,0.040964567770578386
+presidential,DPP,2024,RandomForest_demeaned+oracle_nat,0.040964567770578386,ORACLE leakage: true test-year national — ranking skill only,0.040964567770578386
+presidential,DPP,2024,HistGB_demeaned+prev_nat,0.20712033919811113,honest: add previous election national mean,0.05162870572840073
+presidential,DPP,2024,HistGB_demeaned+esc_nat,0.20012033919811123,honest PROXY: prev_nat + ESC pid delta,0.05162870572840073
+presidential,DPP,2024,HistGB_demeaned+oracle_nat,0.05162870572840073,ORACLE leakage: true test-year national — ranking skill only,0.05162870572840073
+presidential,KMT,2024,PreviousShare,0.05981585439374408,baseline,
+presidential,KMT,2024,Ridge_demeaned+prev_nat,0.1604163170037288,honest: add previous election national mean,0.10917962053742505
+presidential,KMT,2024,Ridge_demeaned+esc_nat,0.1344163170037288,honest PROXY: prev_nat + ESC pid delta,0.10917962053742505
+presidential,KMT,2024,Ridge_demeaned+oracle_nat,0.10917962053742505,ORACLE leakage: true test-year national — ranking skill only,0.10917962053742505
+presidential,KMT,2024,RandomForest_demeaned+prev_nat,0.02550378253594735,honest: add previous election national mean,0.04199731645972058
+presidential,KMT,2024,RandomForest_demeaned+esc_nat,0.026760316294419616,honest PROXY: prev_nat + ESC pid delta,0.04199731645972058
+presidential,KMT,2024,RandomForest_demeaned+oracle_nat,0.04199731645972058,ORACLE leakage: true test-year national — ranking skill only,0.04199731645972058
+presidential,KMT,2024,HistGB_demeaned+prev_nat,0.028945639367372957,honest: add previous election national mean,0.04393477208659742
+presidential,KMT,2024,HistGB_demeaned+esc_nat,0.02963515504631847,honest PROXY: prev_nat + ESC pid delta,0.04393477208659742
+presidential,KMT,2024,HistGB_demeaned+oracle_nat,0.043934772086597414,ORACLE leakage: true test-year national — ranking skill only,0.04393477208659742
+legislative_district,DPP,2024,PreviousShare,0.10479403416640194,baseline,
+legislative_district,DPP,2024,Ridge_demeaned+prev_nat,0.1324394977218625,honest: add previous election national mean,0.13477883454107029
+legislative_district,DPP,2024,Ridge_demeaned+esc_nat,0.13626911825873397,honest PROXY: prev_nat + ESC pid delta,0.13477883454107029
+legislative_district,DPP,2024,Ridge_demeaned+oracle_nat,0.13477883454107029,ORACLE leakage: true test-year national — ranking skill only,0.13477883454107029
+legislative_district,DPP,2024,RandomForest_demeaned+prev_nat,0.17204260260944942,honest: add previous election national mean,0.17466309418064163
+legislative_district,DPP,2024,RandomForest_demeaned+esc_nat,0.17625372017560498,honest PROXY: prev_nat + ESC pid delta,0.17466309418064163
+legislative_district,DPP,2024,RandomForest_demeaned+oracle_nat,0.17466309418064163,ORACLE leakage: true test-year national — ranking skill only,0.17466309418064163
+legislative_district,DPP,2024,HistGB_demeaned+prev_nat,0.14030198721612958,honest: add previous election national mean,0.14293088483827812
+legislative_district,DPP,2024,HistGB_demeaned+esc_nat,0.14454219942073704,honest PROXY: prev_nat + ESC pid delta,0.14293088483827812
+legislative_district,DPP,2024,HistGB_demeaned+oracle_nat,0.14293088483827812,ORACLE leakage: true test-year national — ranking skill only,0.14293088483827812
+legislative_district,KMT,2024,PreviousShare,0.13295209736444247,baseline,
+legislative_district,KMT,2024,Ridge_demeaned+prev_nat,0.13686818597796982,honest: add previous election national mean,0.1371137454032537
+legislative_district,KMT,2024,Ridge_demeaned+esc_nat,0.14252787529708652,honest PROXY: prev_nat + ESC pid delta,0.1371137454032537
+legislative_district,KMT,2024,Ridge_demeaned+oracle_nat,0.1371137454032537,ORACLE leakage: true test-year national — ranking skill only,0.1371137454032537
+legislative_district,KMT,2024,RandomForest_demeaned+prev_nat,0.14154518405236585,honest: add previous election national mean,0.14162374569397773
+legislative_district,KMT,2024,RandomForest_demeaned+esc_nat,0.14588986779430346,honest PROXY: prev_nat + ESC pid delta,0.14162374569397773
+legislative_district,KMT,2024,RandomForest_demeaned+oracle_nat,0.14162374569397773,ORACLE leakage: true test-year national — ranking skill only,0.14162374569397773
+legislative_district,KMT,2024,HistGB_demeaned+prev_nat,0.14978645826913245,honest: add previous election national mean,0.1499914984141971
+legislative_district,KMT,2024,HistGB_demeaned+esc_nat,0.15499346122154908,honest PROXY: prev_nat + ESC pid delta,0.1499914984141971
+legislative_district,KMT,2024,HistGB_demeaned+oracle_nat,0.1499914984141971,ORACLE leakage: true test-year national — ranking skill only,0.1499914984141971

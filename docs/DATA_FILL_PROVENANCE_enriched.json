@@ -1,0 +1,162 @@
+{
+  "panel_base": "data/county_panel_features_2000_2024.csv (CEC presidential county)",
+  "unemployment": {
+    "file": "data/economy/county_unemployment_annual_2010_2024.csv",
+    "source": "data.gov.tw dataset 6640 DGBAS 人力資源調查縣市別失業率",
+    "rule": "lag = election_year - 1; Kinmen/Lienchiang absent in source"
+  },
+  "income": {
+    "file": "data/economy/income_county_panel.csv",
+    "source": "MOI/Fiscal income tax unit township aggregate → county mean_income",
+    "rule": "nearest ce_year < election_year; log(mean_income)",
+    "available_ce_years": [
+      2016,
+      2017,
+      2019,
+      2020
+    ]
+  },
+  "pop_density": {
+    "file": "data/economy/moi_pop_density_county_panel.csv",
+    "source": "MOI township pop/area → county",
+    "rule": "nearest ce_year < election_year; log(density)",
+    "available_ce_years": [
+      2019,
+      2020,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "esc_identity": {
+    "file": "data/esc_proxies/esc_identity_annual.csv",
+    "note": "PROXY transcribed from public ESC-citing tables; NOT official ESC Excel / NOT TEDS",
+    "rule": "national series; use latest year <= election_year-1"
+  },
+  "esc_tongdu": {
+    "file": "data/esc_proxies/esc_tongdu_annual.csv",
+    "note": "PROXY; indep_lean = asap + SQ→indep; unif_lean = asap + SQ→unif",
+    "rule": "national series; use latest year <= election_year-1"
+  },
+  "imputation": "Within each OOT fold, missing socio cells filled with TRAIN median (documented; not fabricated TEDS).",
+  "coverage": {
+    "lag_unemployment_pct": {
+      "n_non_null": 80,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 0,
+        "2004": 0,
+        "2008": 0,
+        "2012": 20,
+        "2016": 20,
+        "2020": 20,
+        "2024": 20
+      }
+    },
+    "lag_log_mean_income": {
+      "n_non_null": 44,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 0,
+        "2004": 0,
+        "2008": 0,
+        "2012": 0,
+        "2016": 0,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_log_pop_density": {
+      "n_non_null": 44,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 0,
+        "2004": 0,
+        "2008": 0,
+        "2012": 0,
+        "2016": 0,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_taiwanese_id_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_chinese_id_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_both_id_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_indep_lean_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_status_quo_forever_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    },
+    "lag_unif_lean_pct": {
+      "n_non_null": 154,
+      "n_total": 154,
+      "by_year_non_null": {
+        "2000": 22,
+        "2004": 22,
+        "2008": 22,
+        "2012": 22,
+        "2016": 22,
+        "2020": 22,
+        "2024": 22
+      }
+    }
+  },
+  "written": "data/county_panel_features_enriched_2000_2024.csv"
+}

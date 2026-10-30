@@ -1,0 +1,12 @@
+{
+  "method": "split conformal; calib=prior election; train<calib",
+  "alpha": 0.1,
+  "target_coverage": 0.9,
+  "by_model_mean": {
+    "HistGradientBoosting": 0.8809687106893552,
+    "Previous-election baseline": 0.8342520679447696,
+    "Random Forest": 0.8734683739623091,
+    "Ridge": 0.9098952854632799
+  },
+  "note": "If coverage << 0.9, miscalibrated (honest like TW RQ4)."
+}

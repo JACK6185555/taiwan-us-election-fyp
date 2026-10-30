@@ -1,0 +1,61 @@
+﻿model,feature,feature_label,importance_mean,rank,source
+Ridge,prev2_dem_two_party_share,Dem share two elections ago,0.014755253230860632,1,perm_2024_subsample
+Ridge,prev2_gop_two_party_share,GOP share two elections ago,0.01475525323085589,2,perm_2024_subsample
+Ridge,prev_gop_two_party_share,Previous GOP two-party share,0.012620876194823086,3,perm_2024_subsample
+Ridge,prev_dem_gop_margin,Previous Dem–GOP margin,0.012620876194815214,4,perm_2024_subsample
+Ridge,prev_dem_two_party_share,Previous Dem two-party share,0.01262087619480515,5,perm_2024_subsample
+Ridge,education_rate,Bachelor's+ rate (ERS wave),0.0010912318332141264,6,perm_2024_subsample
+Ridge,log_density,Log population density (ACS),0.0009352836191311453,7,perm_2024_subsample
+Ridge,prev_log_total_votes,Previous log total votes,-0.0003608962710473125,8,perm_2024_subsample
+Ridge,abs_dem_change_1,Abs Dem previous swing,0.00018963478100562093,9,perm_2024_subsample
+Ridge,dem_change_1,Dem previous swing,-0.00010278003389488228,10,perm_2024_subsample
+Ridge,dem_gop_margin_change_1,Dem–GOP margin change,-0.00010278003389479797,11,perm_2024_subsample
+Ridge,gop_change_1,GOP previous swing,-0.00010278003389467723,12,perm_2024_subsample
+Ridge,log_votes_change_1,Log-votes change,6.825598716628904e-05,13,perm_2024_subsample
+Ridge,log_median_income,Log median income,6.629591045069841e-05,14,perm_2024_subsample
+Ridge,unemployment,Unemployment rate,6.474779061403437e-05,15,perm_2024_subsample
+Random Forest,prev_gop_two_party_share,Previous GOP two-party share,0.06226354425162724,1,perm_2024_subsample
+Random Forest,prev_dem_two_party_share,Previous Dem two-party share,0.012085961180222208,2,perm_2024_subsample
+Random Forest,prev_dem_gop_margin,Previous Dem–GOP margin,0.010876097853151061,3,perm_2024_subsample
+Random Forest,prev2_gop_two_party_share,GOP share two elections ago,-0.002236796812507852,4,perm_2024_subsample
+Random Forest,prev2_dem_two_party_share,Dem share two elections ago,-0.001957672546051948,5,perm_2024_subsample
+Random Forest,log_votes_change_1,Log-votes change,-0.0006238085183153067,6,perm_2024_subsample
+Random Forest,log_median_income,Log median income,-0.0005506752292691021,7,perm_2024_subsample
+Random Forest,log_density,Log population density (ACS),0.0003990146214498426,8,perm_2024_subsample
+Random Forest,prev_log_total_votes,Previous log total votes,0.0002821821605456784,9,perm_2024_subsample
+Random Forest,education_rate,Bachelor's+ rate (ERS wave),0.00014891796739175886,10,perm_2024_subsample
+Random Forest,dem_gop_margin_change_1,Dem–GOP margin change,-6.78240694755354e-05,11,perm_2024_subsample
+Random Forest,dem_change_1,Dem previous swing,-3.2396628277030214e-05,12,perm_2024_subsample
+Random Forest,unemployment,Unemployment rate,-3.238721159384006e-05,13,perm_2024_subsample
+Random Forest,abs_dem_change_1,Abs Dem previous swing,-2.79266616831364e-05,14,perm_2024_subsample
+Random Forest,gop_change_1,GOP previous swing,-1.715816135144932e-07,15,perm_2024_subsample
+HistGradientBoosting,prev_gop_two_party_share,Previous GOP two-party share,0.05590968963574146,1,perm_2024_subsample
+HistGradientBoosting,prev_dem_two_party_share,Previous Dem two-party share,0.03728755076610968,2,perm_2024_subsample
+HistGradientBoosting,prev2_dem_two_party_share,Dem share two elections ago,-0.0019915862151632783,3,perm_2024_subsample
+HistGradientBoosting,log_density,Log population density (ACS),0.0014985788839984742,4,perm_2024_subsample
+HistGradientBoosting,log_votes_change_1,Log-votes change,-0.0013821697268606437,5,perm_2024_subsample
+HistGradientBoosting,prev2_gop_two_party_share,GOP share two elections ago,-0.0006094680720431886,6,perm_2024_subsample
+HistGradientBoosting,prev_log_total_votes,Previous log total votes,0.0003600625826733296,7,perm_2024_subsample
+HistGradientBoosting,dem_change_1,Dem previous swing,-0.00033258726580455146,8,perm_2024_subsample
+HistGradientBoosting,unemployment,Unemployment rate,-0.0003000986071670979,9,perm_2024_subsample
+HistGradientBoosting,abs_dem_change_1,Abs Dem previous swing,0.00013298550896352553,10,perm_2024_subsample
+HistGradientBoosting,log_median_income,Log median income,-0.00010647196809417877,11,perm_2024_subsample
+HistGradientBoosting,education_rate,Bachelor's+ rate (ERS wave),9.681585027827844e-05,12,perm_2024_subsample
+HistGradientBoosting,gop_change_1,GOP previous swing,-3.6826507677344136e-05,13,perm_2024_subsample
+HistGradientBoosting,prev_dem_gop_margin,Previous Dem–GOP margin,0.0,14,perm_2024_subsample
+HistGradientBoosting,dem_gop_margin_change_1,Dem–GOP margin change,0.0,15,perm_2024_subsample
+Ridge standardized coefficient,prev2_dem_two_party_share,Dem share two elections ago,0.028046979383474516,1,refit_lt_2024
+Ridge standardized coefficient,prev2_gop_two_party_share,GOP share two elections ago,0.028046979383469565,2,refit_lt_2024
+Ridge standardized coefficient,prev_gop_two_party_share,Previous GOP two-party share,0.02769127355782562,3,refit_lt_2024
+Ridge standardized coefficient,prev_dem_gop_margin,Previous Dem–GOP margin,0.02769127355781636,4,refit_lt_2024
+Ridge standardized coefficient,prev_dem_two_party_share,Previous Dem two-party share,0.027691273557804524,5,refit_lt_2024
+Ridge standardized coefficient,log_votes_change_1,Log-votes change,0.022139718552113077,6,refit_lt_2024
+Ridge standardized coefficient,education_rate,Bachelor's+ rate (ERS wave),0.013089389691014478,7,refit_lt_2024
+Ridge standardized coefficient,abs_dem_change_1,Abs Dem previous swing,0.006409193762509483,8,refit_lt_2024
+Ridge standardized coefficient,gop_change_1,GOP previous swing,0.005609114496967829,9,refit_lt_2024
+Ridge standardized coefficient,dem_gop_margin_change_1,Dem–GOP margin change,0.005609114496959758,10,refit_lt_2024
+Ridge standardized coefficient,dem_change_1,Dem previous swing,0.0056091144969540345,11,refit_lt_2024
+Ridge standardized coefficient,unemployment,Unemployment rate,0.004328637081574373,12,refit_lt_2024
+Ridge standardized coefficient,log_density,Log population density (ACS),0.00429118357245156,13,refit_lt_2024
+Ridge standardized coefficient,prev_log_total_votes,Previous log total votes,0.003911721776688718,14,refit_lt_2024
+Ridge standardized coefficient,log_median_income,Log median income,0.0003499523680675511,15,refit_lt_2024

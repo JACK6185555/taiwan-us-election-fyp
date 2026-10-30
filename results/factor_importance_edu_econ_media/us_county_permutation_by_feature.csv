@@ -1,0 +1,17 @@
+suite,test_year,spec,feature,factor_group,permutation_mae_increase,permutation_std
+US_county,2012,Prev+Education+Economic,prev_dem_two_party_share,previous,0.10803517596912665,0.001410756104398828
+US_county,2012,Prev+Education+Economic,education_rate,education,0.0007832892274266002,0.00010899788108316213
+US_county,2012,Prev+Education+Economic,unemployment,economic,0.00015836018344291222,0.00013518105586731458
+US_county,2012,Prev+Education+Economic,log_median_income,economic,0.001790684774704483,0.0001954553655791574
+US_county,2016,Prev+Education+Economic,prev_dem_two_party_share,previous,0.11334550639584899,0.001860404958589757
+US_county,2016,Prev+Education+Economic,education_rate,education,-0.0001019874334535394,0.00015296965037677328
+US_county,2016,Prev+Education+Economic,unemployment,economic,-0.00205389438744896,0.00013621316183487053
+US_county,2016,Prev+Education+Economic,log_median_income,economic,-0.0004957960759566204,0.00015342440019490202
+US_county,2020,Prev+Education+Economic,prev_dem_two_party_share,previous,0.14880586540382648,0.0019891709118414957
+US_county,2020,Prev+Education+Economic,education_rate,education,0.0002430359642269514,0.00011898435907794289
+US_county,2020,Prev+Education+Economic,unemployment,economic,0.001059917990251856,0.0001372301001774841
+US_county,2020,Prev+Education+Economic,log_median_income,economic,0.0013574447033983226,0.00013917038657552586
+US_county,2024,Prev+Education+Economic,prev_dem_two_party_share,previous,0.14450010061621246,0.001589357395209042
+US_county,2024,Prev+Education+Economic,education_rate,education,0.0020616105145833796,0.00023487798294956818
+US_county,2024,Prev+Education+Economic,unemployment,economic,0.0008282774152833858,0.00010912677686267087
+US_county,2024,Prev+Education+Economic,log_median_income,economic,0.0006133096631374581,9.590089169848445e-05

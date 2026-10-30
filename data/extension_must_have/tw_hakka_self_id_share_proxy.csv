@@ -1,0 +1,5 @@
+year,pop_wan,hakka_single_wan,hakka_broad_wan,hakka_single_pct,hakka_broad_pct,approx_ce,source,family_a
+97,2297.4,310.8,587.7,13.53,25.58,2008,Hakka Affairs Council survey DTST20171200004 (repo raw/ethnicity); units=萬人; PROXY,NOT_INCLUDED
+100,2316.2,314.7,575.3,13.59,24.84,2011,Hakka Affairs Council survey DTST20171200004 (repo raw/ethnicity); units=萬人; PROXY,NOT_INCLUDED
+103,2337.4,315.2,638.0,13.49,27.3,2014,Hakka Affairs Council survey DTST20171200004 (repo raw/ethnicity); units=萬人; PROXY,NOT_INCLUDED
+105,2349.2,381.5,694.0,16.24,29.54,2016,Hakka Affairs Council survey DTST20171200004 (repo raw/ethnicity); units=萬人; PROXY,NOT_INCLUDED

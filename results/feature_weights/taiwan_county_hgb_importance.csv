@@ -1,0 +1,17 @@
+﻿suite,feature,feature_label,impurity_mean,impurity_std,permutation_mae_increase_mean,permutation_std_across_folds,rank,interpretation
+electoral,prev2_DPP_vote_share,DPP share two elections ago,0.0,0.0,0.014706604446527492,0.011300593860917606,1,model dependence / predictive importance — NOT causal
+electoral,prev_DPP_vote_share,Previous DPP share,0.0,0.0,0.00983753348334873,0.008534999198809635,2,model dependence / predictive importance — NOT causal
+electoral,prev_KMT_vote_share,Previous KMT share,0.0,0.0,0.008446187782012607,0.012382293875151362,3,model dependence / predictive importance — NOT causal
+electoral,prev_turnout,Previous turnout,0.0,0.0,0.001257580503625677,0.001784942828559496,4,model dependence / predictive importance — NOT causal
+electoral,previous_party_change_abs_mean,Mean party swing magnitude,0.0,0.0,0.00033865030895774835,0.0006773006179154967,5,model dependence / predictive importance — NOT causal
+electoral,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0,0.0,0.0002237574266945282,0.0004475148533890564,6,model dependence / predictive importance — NOT causal
+electoral,prev_DPP_Other_margin,Previous DPP-other margin,0.0,0.0,8.952387287674361e-05,0.0006769293747367236,7,model dependence / predictive importance — NOT causal
+electoral,previous_party_change_std,Dispersion of party swings,0.0,0.0,3.397360893403848e-05,6.794721786807696e-05,8,model dependence / predictive importance — NOT causal
+electoral,DPP_change_1,DPP previous swing,0.0,0.0,5.3175786072647e-06,1.06351572145294e-05,9,model dependence / predictive importance — NOT causal
+electoral,Other_change_1,Other previous swing,0.0,0.0,0.0,0.0,10,model dependence / predictive importance — NOT causal
+electoral,prev_Other_vote_share,Previous other share,0.0,0.0,0.0,0.0,11,model dependence / predictive importance — NOT causal
+electoral,prev2_Other_vote_share,Other share two elections ago,0.0,0.0,0.0,0.0,12,model dependence / predictive importance — NOT causal
+electoral,turnout_change_1,Turnout change,0.0,0.0,-6.025767601118721e-05,9.342877605684029e-05,13,model dependence / predictive importance — NOT causal
+electoral,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.0,0.0,-9.563451459337845e-05,0.0006919981251688681,14,model dependence / predictive importance — NOT causal
+electoral,KMT_change_1,KMT previous swing,0.0,0.0,-0.00011743206484593991,0.00023486412969187981,15,model dependence / predictive importance — NOT causal
+electoral,prev2_KMT_vote_share,KMT share two elections ago,0.0,0.0,-0.00023155846964400506,0.00028468672642546446,16,model dependence / predictive importance — NOT causal

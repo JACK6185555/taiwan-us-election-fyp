@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "panel": "/workspace/taiwan-election-data/fyp_us_taiwan_transfer/cleaned/us_county_presidential_panel.csv",
+  "test_years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "protocol": "expanding window train year < test_year",
+  "unit": "US county n=3111",
+  "target": "party_share_A",
+  "features": [
+    "prev_share_A",
+    "log_total_votes",
+    "unemployment",
+    "education_rate",
+    "median_income",
+    "log_density"
+  ],
+  "adjacency": {
+    "primary": "queen (plotly geojson-counties-fips)",
+    "sensitivity": [
+      "knn_k=5",
+      "dist_decay_sigma_km=80"
+    ]
+  },
+  "models": "PreviousShare; NonSpatial Ridge/RF; SGC L1/L2 + Ridge/RF (RF skipped on dist_decay*)",
+  "trainable_gcn": "deferred \u2014 see gcn_partial_note.json",
+  "graphs": {
+    "n_counties": 3111,
+    "geo_source": "/workspace/taiwan-election-data/raw/geo/us_county/counties.geojson",
+    "geo_note": "plotly geojson-counties-fips; Census TIGER 403",
+    "queen_n_edges": 9072,
+    "queen_avg_degree": 5.832208293153327,
+    "queen_islands_n": 7,
+    "knn_k": 5,
+    "knn_n_edges": 8779,
+    "knn_avg_degree": 5.643844423015108,
+    "dist_sigma_km": 80.0,
+    "dist_n_edges": 152057,
+    "dist_avg_degree": 97.75441980070717,
+    "trainable_gcn": "deferred \u2014 full-US PyG GCN runtime-capped; partial 2012 numbers in gcn_partial_note.json",
+    "crs_projected": "EPSG:5070"
+  },
+  "note": "Do not mix into Taiwan Family A / rq2_county tables."
+}

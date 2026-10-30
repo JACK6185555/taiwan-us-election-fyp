@@ -1,0 +1,4 @@
+election_year,dpp_pid_pct,kmt_pid_pct,tpp_pid_pct,independent_pct,taiwanese_id_pct,chinese_id_pct,both_id_pct,status_quo_forever_pct,indep_lean_combined_pct,unif_lean_combined_pct,proxy_quality,notes
+2016,,,,,59.5,3.3,33.3,25.4,22.2,9.6,party_series_incomplete_needs_ESC_excel,identity year=2015; tongdu year=2015; party from published cites where available; full party Excel needs ESC application
+2020,34.0,,,,58.5,3.3,34.7,27.8,26.9,8.9,partial_published_only_dpp,identity year=2019; tongdu year=2019; party from published cites where available; full party Excel needs ESC application
+2024,28.3,19.4,14.3,36.9,61.7,2.4,32,33.2,25.3,7.4,published_2023_ESC_cite,identity year=2023; tongdu year=2023; party from published cites where available; full party Excel needs ESC application

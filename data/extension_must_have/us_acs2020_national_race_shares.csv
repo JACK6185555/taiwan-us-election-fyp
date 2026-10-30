@@ -1,0 +1,2 @@
+grain,source,year_ref,total,white_alone_pct,black_alone_pct,asian_alone_pct,aian_alone_pct,nhpi_alone_pct,other_alone_pct,twoplus_pct,note
+national,ACS 2020 5-year county file in repo (fyp_us_taiwan_transfer/raw/us/ACS2020_5year_county.csv),2020,329824950.0,70.31,12.61,5.59,0.82,0.19,5.27,5.21,Race alone categories; Hispanic origin not separately tabulated in this extract. NOT Family A.

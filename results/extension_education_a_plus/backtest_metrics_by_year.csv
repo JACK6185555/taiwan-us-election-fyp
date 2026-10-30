@@ -1,0 +1,49 @@
+suite,test_year,n_train,n_test,model,mae,rmse
+family_a_electoral_only_rerun,2012,22,22,Previous-election baseline,0.04024929564698385,0.04065506874104762
+family_a_electoral_only_rerun,2012,22,22,Ridge,0.05398024518706663,0.06942941513818492
+family_a_electoral_only_rerun,2012,22,22,Random Forest,0.07086769449393492,0.10429240250635421
+family_a_electoral_only_rerun,2012,22,22,HistGradientBoosting,0.17420096308303246,0.18293834403022538
+family_a_electoral_only_rerun,2016,44,22,Previous-election baseline,0.09789898667754059,0.0995662598190369
+family_a_electoral_only_rerun,2016,44,22,Ridge,0.11187521543694999,0.11425346454334989
+family_a_electoral_only_rerun,2016,44,22,Random Forest,0.1321724093122114,0.13643792242873207
+family_a_electoral_only_rerun,2016,44,22,HistGradientBoosting,0.10461787810674245,0.10709456099172822
+family_a_electoral_only_rerun,2020,66,22,Previous-election baseline,0.019272789977491236,0.02288641696760428
+family_a_electoral_only_rerun,2020,66,22,Ridge,0.3359549473135437,0.3446852783286952
+family_a_electoral_only_rerun,2020,66,22,Random Forest,0.045667277526601206,0.05596668498423688
+family_a_electoral_only_rerun,2020,66,22,HistGradientBoosting,0.04585036522730212,0.06058373747358545
+family_a_electoral_only_rerun,2024,88,22,Previous-election baseline,0.15963819053000716,0.16255827606501527
+family_a_electoral_only_rerun,2024,88,22,Ridge,0.21250902802823388,0.21355186377429322
+family_a_electoral_only_rerun,2024,88,22,Random Forest,0.16488372478230684,0.16948431467847744
+family_a_electoral_only_rerun,2024,88,22,HistGradientBoosting,0.15079097226039975,0.15648407571633488
+family_a_plus_enriched_rerun,2012,22,22,Previous-election baseline,0.04024929564698385,0.04065506874104762
+family_a_plus_enriched_rerun,2012,22,22,Ridge,0.05398024518706667,0.06942941513818499
+family_a_plus_enriched_rerun,2012,22,22,Random Forest,0.06840524890652948,0.09936533220173006
+family_a_plus_enriched_rerun,2012,22,22,HistGradientBoosting,0.17420096308303246,0.18293834403022538
+family_a_plus_enriched_rerun,2016,44,22,Previous-election baseline,0.09789898667754059,0.0995662598190369
+family_a_plus_enriched_rerun,2016,44,22,Ridge,0.07060694439770575,0.07360083110302078
+family_a_plus_enriched_rerun,2016,44,22,Random Forest,0.13300975327448183,0.1373169237445342
+family_a_plus_enriched_rerun,2016,44,22,HistGradientBoosting,0.10461787810674245,0.10709456099172822
+family_a_plus_enriched_rerun,2020,66,22,Previous-election baseline,0.019272789977491236,0.02288641696760428
+family_a_plus_enriched_rerun,2020,66,22,Ridge,0.1718408432571609,0.17282828576018278
+family_a_plus_enriched_rerun,2020,66,22,Random Forest,0.04331842977519009,0.0549167538322728
+family_a_plus_enriched_rerun,2020,66,22,HistGradientBoosting,0.04551958063075307,0.059916096877316694
+family_a_plus_enriched_rerun,2024,88,22,Previous-election baseline,0.15963819053000716,0.16255827606501527
+family_a_plus_enriched_rerun,2024,88,22,Ridge,0.2735733071156009,0.2755759911292745
+family_a_plus_enriched_rerun,2024,88,22,Random Forest,0.172701309882054,0.17705649346918537
+family_a_plus_enriched_rerun,2024,88,22,HistGradientBoosting,0.15112994661715337,0.15636684521584485
+extension_a_plus_education,2012,22,22,Previous-election baseline,0.04024929564698385,0.04065506874104762
+extension_a_plus_education,2012,22,22,Ridge,0.05289456216385175,0.06856720752383148
+extension_a_plus_education,2012,22,22,Random Forest,0.07266733573367348,0.10233995516016631
+extension_a_plus_education,2012,22,22,HistGradientBoosting,0.16530234868586266,0.17707852904120364
+extension_a_plus_education,2016,44,22,Previous-election baseline,0.09789898667754059,0.0995662598190369
+extension_a_plus_education,2016,44,22,Ridge,0.0715693063076628,0.07469569876208182
+extension_a_plus_education,2016,44,22,Random Forest,0.13297866002296613,0.13705997196772796
+extension_a_plus_education,2016,44,22,HistGradientBoosting,0.10737336906243365,0.1096660491679519
+extension_a_plus_education,2020,66,22,Previous-election baseline,0.019272789977491236,0.02288641696760428
+extension_a_plus_education,2020,66,22,Ridge,0.17174076145788722,0.1727719219575779
+extension_a_plus_education,2020,66,22,Random Forest,0.04581494433103081,0.05691940454870711
+extension_a_plus_education,2020,66,22,HistGradientBoosting,0.04925810193689047,0.06457731124521363
+extension_a_plus_education,2024,88,22,Previous-election baseline,0.15963819053000716,0.16255827606501527
+extension_a_plus_education,2024,88,22,Ridge,0.27254699191041193,0.2745757184866536
+extension_a_plus_education,2024,88,22,Random Forest,0.1723202992376676,0.1766732774390794
+extension_a_plus_education,2024,88,22,HistGradientBoosting,0.15611683362211312,0.16156413055640878

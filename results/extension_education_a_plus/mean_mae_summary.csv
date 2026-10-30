@@ -1,0 +1,13 @@
+suite,model,mae,rmse
+extension_a_plus_education,Previous-election baseline,0.0792648157080057,0.08141650539817602
+extension_a_plus_education,Random Forest,0.1059453098313345,0.11824815227892019
+extension_a_plus_education,HistGradientBoosting,0.11951266332682497,0.12822150500269447
+extension_a_plus_education,Ridge,0.1421879054599534,0.1476526366825362
+family_a_electoral_only_rerun,Previous-election baseline,0.0792648157080057,0.08141650539817602
+family_a_electoral_only_rerun,Random Forest,0.10339777652876359,0.11654533114945015
+family_a_electoral_only_rerun,HistGradientBoosting,0.1188650446693692,0.12677517955296846
+family_a_electoral_only_rerun,Ridge,0.17857985899144854,0.1854800054461308
+family_a_plus_enriched_rerun,Previous-election baseline,0.0792648157080057,0.08141650539817602
+family_a_plus_enriched_rerun,Random Forest,0.10435868545956387,0.1171638758119306
+family_a_plus_enriched_rerun,HistGradientBoosting,0.11886709210942034,0.12657896177877878
+family_a_plus_enriched_rerun,Ridge,0.14250033498938355,0.14785863078266576

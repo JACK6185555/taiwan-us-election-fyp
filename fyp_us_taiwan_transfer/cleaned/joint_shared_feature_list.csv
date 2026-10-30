@@ -1,0 +1,7 @@
+feature,shared,note
+prev_share_A,True,lagged party_share_A (4yr)
+log_total_votes,True,log1p turnout/size
+z_income,True,within-country z of log income; US=ERS2022 median HH or ACS2020; TW=tax mean_income static
+z_log_density,True,within-country z of log1p density; US=ACS2020; TW=static pop density
+z_education,False,US ERS bachelor% wave / ACS; TW missing — US-only / not in joint socio set
+z_unemployment,False,US ERS Unemployment_rate_year; TW missing

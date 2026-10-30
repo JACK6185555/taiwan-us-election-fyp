@@ -1,0 +1,14 @@
+country,grain,spec,features,model,n_years,mae_loo,note
+TW,national_PROXY,PreviousShare_only,prev,baseline,6,0.08239980128608658,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+TW,national_PROXY,Prev+EconNational,"prev,unrate,cpi_yoy_pct",Ridge_LOO,6,0.08428973298235011,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+TW,national_PROXY,EconNational_only,"unrate,cpi_yoy_pct",Ridge_LOO,7,0.07475846802104169,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+TW,national_PROXY,Prev+MediaCampGap,"prev,media_camp_sentiment_gap",Ridge_LOO,2,0.15963819053000716,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+TW,national_PROXY,MediaCampGap_only,media_camp_sentiment_gap,Ridge_LOO,2,0.15963819053000716,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+TW,national_PROXY,Prev+MediaIssueSent,"prev,media_issue_mean_sentiment",Ridge_LOO,2,0.15963819053000716,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,PreviousShare_only,prev,baseline,5,0.02851808262700285,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,Prev+EconNational,"prev,unrate,cpi_yoy_pct",Ridge_LOO,5,0.022274226099246675,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,EconNational_only,"unrate,cpi_yoy_pct",Ridge_LOO,5,0.020697255567485296,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,Prev+EconNational+CCI,"prev,unrate,cpi_yoy_pct,umcsent",Ridge_LOO,5,0.01931665167575559,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,Prev+MediaCampGap,"prev,media_camp_sentiment_gap",Ridge_LOO,2,0.016868239335439517,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,MediaCampGap_only,media_camp_sentiment_gap,Ridge_LOO,2,0.016868239335439517,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal
+US,national_PROXY,Prev+MediaIssueSent,"prev,media_issue_mean_sentiment",Ridge_LOO,2,0.016868239335439517,LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal

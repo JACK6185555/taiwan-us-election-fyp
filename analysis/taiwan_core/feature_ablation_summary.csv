@@ -1,0 +1,19 @@
+﻿model,feature_set,n_features,mae,rmse
+HistGradientBoosting,All history features,16,0.11886504466936916,0.12677517955296846
+HistGradientBoosting,All history minus Earlier election,13,0.12047246936824686,0.12758840893076745
+HistGradientBoosting,All history minus Margins and swings,8,0.12230887346279239,0.13063555059923876
+HistGradientBoosting,All history minus Previous election,12,0.09562886132434587,0.10787926318868465
+HistGradientBoosting,All history minus Turnout change,15,0.11320830266736781,0.12106218282361209
+HistGradientBoosting,Previous-election only,1,0.11651386215223891,0.12264195745455495
+Random Forest,All history features,16,0.10408403266877839,0.11645038149166019
+Random Forest,All history minus Earlier election,13,0.10477153680453535,0.11685273939788639
+Random Forest,All history minus Margins and swings,8,0.10487046996429264,0.11434462209204012
+Random Forest,All history minus Previous election,12,0.10381806037469678,0.1170936401476484
+Random Forest,All history minus Turnout change,15,0.10344676903468779,0.11482818728963212
+Random Forest,Previous-election only,1,0.11505967875420876,0.12043493483907736
+Ridge,All history features,16,0.17857985899144863,0.18548000544613086
+Ridge,All history minus Earlier election,13,0.17703284114080325,0.1858519223705114
+Ridge,All history minus Margins and swings,8,0.1891437997133411,0.19688512349236134
+Ridge,All history minus Previous election,12,0.1089687424834645,0.11614959391680149
+Ridge,All history minus Turnout change,15,0.16208381514025327,0.17159999511970378
+Ridge,Previous-election only,1,0.10125916421046943,0.10595261594712353

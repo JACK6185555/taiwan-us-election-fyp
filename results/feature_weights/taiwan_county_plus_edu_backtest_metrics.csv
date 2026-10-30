@@ -1,0 +1,17 @@
+﻿suite,test_year,model,mae,rmse,n_train,n_test
+extension_a_plus_education,2012,Previous-election baseline,0.04024929564698385,0.04065506874104762,22,22
+extension_a_plus_education,2012,Ridge,0.05289456216385175,0.06856720752383148,22,22
+extension_a_plus_education,2012,Random Forest,0.07266733573367348,0.10233995516016631,22,22
+extension_a_plus_education,2012,HistGradientBoosting,0.16530234868586266,0.17707852904120364,22,22
+extension_a_plus_education,2016,Previous-election baseline,0.09789898667754059,0.0995662598190369,44,22
+extension_a_plus_education,2016,Ridge,0.07156930630766305,0.07469569876208204,44,22
+extension_a_plus_education,2016,Random Forest,0.1333695090500313,0.1373634093745069,44,22
+extension_a_plus_education,2016,HistGradientBoosting,0.10737336906243361,0.10966604916795186,44,22
+extension_a_plus_education,2020,Previous-election baseline,0.019272789977491236,0.02288641696760428,66,22
+extension_a_plus_education,2020,Ridge,0.17174076145788747,0.17277192195757815,66,22
+extension_a_plus_education,2020,Random Forest,0.04537419995208722,0.05510957189387565,66,22
+extension_a_plus_education,2020,HistGradientBoosting,0.04925810193689047,0.06457731124521363,66,22
+extension_a_plus_education,2024,Previous-election baseline,0.15963819053000716,0.16255827606501527,88,22
+extension_a_plus_education,2024,Ridge,0.27254699191041243,0.274575718486654,88,22
+extension_a_plus_education,2024,Random Forest,0.1709640990626683,0.17529465247356044,88,22
+extension_a_plus_education,2024,HistGradientBoosting,0.15611683362211312,0.16156413055640878,88,22

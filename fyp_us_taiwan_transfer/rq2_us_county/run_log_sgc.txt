@@ -1,0 +1,79 @@
+=== fold 2012 ===
+  NS Ridge MAE=0.0522
+  NS RandomForest MAE=0.0533
+  SGC L1+Ridge/queen MAE=0.0586
+  SGC L1+RandomForest/queen MAE=0.0533
+  SGC L2+Ridge/queen MAE=0.0615
+  SGC L2+RandomForest/queen MAE=0.0543
+  SGC L1+Ridge/knn MAE=0.0590
+  SGC L1+RandomForest/knn MAE=0.0539
+  SGC L2+Ridge/knn MAE=0.0617
+  SGC L2+RandomForest/knn MAE=0.0545
+  SGC L1+Ridge/dist_decay MAE=0.0669
+  SGC L2+Ridge/dist_decay MAE=0.0709
+  SGC L1+Ridge/dist_decay_bin MAE=0.0711
+  SGC L2+Ridge/dist_decay_bin MAE=0.0767
+=== fold 2016 ===
+  NS Ridge MAE=0.0656
+  NS RandomForest MAE=0.0678
+  SGC L1+Ridge/queen MAE=0.0727
+  SGC L1+RandomForest/queen MAE=0.0732
+  SGC L2+Ridge/queen MAE=0.0766
+  SGC L2+RandomForest/queen MAE=0.0762
+  SGC L1+Ridge/knn MAE=0.0724
+  SGC L1+RandomForest/knn MAE=0.0727
+  SGC L2+Ridge/knn MAE=0.0763
+  SGC L2+RandomForest/knn MAE=0.0761
+  SGC L1+Ridge/dist_decay MAE=0.0816
+  SGC L2+Ridge/dist_decay MAE=0.0852
+  SGC L1+Ridge/dist_decay_bin MAE=0.0853
+  SGC L2+Ridge/dist_decay_bin MAE=0.0895
+=== fold 2020 ===
+  NS Ridge MAE=0.0237
+  NS RandomForest MAE=0.0282
+  SGC L1+Ridge/queen MAE=0.0285
+  SGC L1+RandomForest/queen MAE=0.0302
+  SGC L2+Ridge/queen MAE=0.0308
+  SGC L2+RandomForest/queen MAE=0.0314
+  SGC L1+Ridge/knn MAE=0.0286
+  SGC L1+RandomForest/knn MAE=0.0300
+  SGC L2+Ridge/knn MAE=0.0308
+  SGC L2+RandomForest/knn MAE=0.0320
+  SGC L1+Ridge/dist_decay MAE=0.0336
+  SGC L2+Ridge/dist_decay MAE=0.0344
+  SGC L1+Ridge/dist_decay_bin MAE=0.0346
+  SGC L2+Ridge/dist_decay_bin MAE=0.0345
+=== fold 2024 ===
+  NS Ridge MAE=0.0136
+  NS RandomForest MAE=0.0181
+  SGC L1+Ridge/queen MAE=0.0151
+  SGC L1+RandomForest/queen MAE=0.0198
+  SGC L2+Ridge/queen MAE=0.0159
+  SGC L2+RandomForest/queen MAE=0.0204
+  SGC L1+Ridge/knn MAE=0.0153
+  SGC L1+RandomForest/knn MAE=0.0200
+  SGC L2+Ridge/knn MAE=0.0159
+  SGC L2+RandomForest/knn MAE=0.0205
+  SGC L1+Ridge/dist_decay MAE=0.0168
+  SGC L2+Ridge/dist_decay MAE=0.0171
+  SGC L1+Ridge/dist_decay_bin MAE=0.0171
+  SGC L2+Ridge/dist_decay_bin MAE=0.0175
+
+=== MEAN MAE ===
+       family               model      adjacency      mae     rmse  n_years
+     baseline       PreviousShare           none 0.034482 0.043149        4
+   NonSpatial               Ridge           none 0.038791 0.047150        4
+   NonSpatial        RandomForest           none 0.041850 0.050613        4
+SGC_diffusion        SGC_L1+Ridge          queen 0.043716 0.051868        4
+SGC_diffusion        SGC_L1+Ridge            knn 0.043826 0.051996        4
+SGC_diffusion SGC_L1+RandomForest          queen 0.044103 0.052923        4
+SGC_diffusion SGC_L1+RandomForest            knn 0.044128 0.053035        4
+SGC_diffusion SGC_L2+RandomForest          queen 0.045574 0.054530        4
+SGC_diffusion SGC_L2+RandomForest            knn 0.045760 0.054881        4
+SGC_diffusion        SGC_L2+Ridge            knn 0.046159 0.054209        4
+SGC_diffusion        SGC_L2+Ridge          queen 0.046187 0.054216        4
+SGC_diffusion        SGC_L1+Ridge     dist_decay 0.049727 0.057726        4
+SGC_diffusion        SGC_L2+Ridge     dist_decay 0.051875 0.059866        4
+SGC_diffusion        SGC_L1+Ridge dist_decay_bin 0.052033 0.060033        4
+SGC_diffusion        SGC_L2+Ridge dist_decay_bin 0.054567 0.062616        4
+Done in 35.4s → /workspace/taiwan-election-data/fyp_us_taiwan_transfer/rq2_us_county

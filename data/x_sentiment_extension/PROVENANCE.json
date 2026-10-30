@@ -1,0 +1,15 @@
+{
+  "source": "Grok Bot built-in X MCP search_posts_all (full archive public read)",
+  "no_html_scrape": true,
+  "no_user_api_keys": true,
+  "filters": "-is:retweet -is:reply; lang:zh (TW) / lang:en (US); election keywords",
+  "sentiment": {
+    "zh": "SnowNLP (0..1→[-1,1]) + small political pos/neg lexicon nudge",
+    "en": "vaderSentiment compound [-1,1]"
+  },
+  "limits": "max 25/page; pilot 1–2 pages/entity; platform skew; spam residual; not population-representative",
+  "not_family_a": true,
+  "raw_dir": "data/x_sentiment_extension/raw",
+  "date_built": "2026-10-30",
+  "timezone_note": "Windows are UTC as in search_posts_all start_time/end_time"
+}

@@ -1,0 +1,16 @@
+country,test_year,features,n_features,feature_list,MAE,RMSE,R2
+TW,2024,History,3,"prev_vote_share,prev_turnout,prev_swing",0.219089841999971,0.22515341221458343,-2.2796537483243755
+TW,2024,History+Economy,4,"prev_vote_share,prev_turnout,prev_swing,median_income",0.21064572229341288,0.2178823429310996,-2.0712488179223367
+TW,2024,History+Demographics,6,"prev_vote_share,prev_turnout,prev_swing,urbanization,education_rate,log_people",0.2172318924764168,0.2237561167256684,-2.239073190728545
+TW,2024,History+Economy+Demo,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.2096342648550687,0.21719762937465267,-2.0519758345101216
+TW,2024,All_available,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.2096342648550687,0.21719762937465267,-2.0519758345101216
+TW,2016,History,3,"prev_vote_share,prev_turnout,prev_swing",0.05120414562509844,0.055616389236004274,0.8739136751883885
+TW,2016,History+Economy,4,"prev_vote_share,prev_turnout,prev_swing,median_income",0.051853370333784496,0.05636311386530982,0.87050518994431
+TW,2016,History+Demographics,6,"prev_vote_share,prev_turnout,prev_swing,urbanization,education_rate,log_people",0.05234220154287976,0.05689173952619119,0.8680647536818524
+TW,2016,History+Economy+Demo,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.052507680204997256,0.05707066988815644,0.8672335488305292
+TW,2016,All_available,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.052507680204997256,0.05707066988815643,0.8672335488305293
+TW,2020,History,3,"prev_vote_share,prev_turnout,prev_swing",0.06610388461111649,0.07259628096269007,0.7484923361994353
+TW,2020,History+Economy,4,"prev_vote_share,prev_turnout,prev_swing,median_income",0.06629365179766798,0.07277982325932479,0.747218974843435
+TW,2020,History+Demographics,6,"prev_vote_share,prev_turnout,prev_swing,urbanization,education_rate,log_people",0.06911191623818826,0.07496919908792464,0.7317818145944417
+TW,2020,History+Economy+Demo,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.06941590438489316,0.0752982129429422,0.7294224151584028
+TW,2020,All_available,7,"prev_vote_share,prev_turnout,prev_swing,median_income,urbanization,education_rate,log_people",0.06941590438489317,0.07529821294294221,0.7294224151584027

@@ -1,0 +1,307 @@
+{
+  "built_at": "2026-10-30 16:31 Asia/Hong_Kong (UTC+8)",
+  "family_a_locked": true,
+  "family_a_prev_mae_tw": 0.0793,
+  "outputs": [
+    "README.md",
+    "factor_importance_summary_table.csv",
+    "media_camp_sentiment_gap.csv",
+    "media_top_issue_by_year.csv",
+    "national_factor_associations.csv",
+    "national_loo_mae_by_spec.csv",
+    "national_loo_ranking.csv",
+    "national_merged_TW.csv",
+    "national_merged_US.csv",
+    "tw_county_mean_abs_ridge_coef_by_group.csv",
+    "tw_county_mean_delta_mae_vs_prev.csv",
+    "tw_county_mean_group_permutation.csv",
+    "tw_county_mean_mae_by_spec.csv",
+    "tw_county_permutation_by_feature.csv",
+    "tw_county_permutation_by_group.csv",
+    "tw_county_ridge_coefs_by_year.csv",
+    "tw_county_spec_mae_by_year.csv",
+    "us_county_mean_abs_ridge_coef_by_group.csv",
+    "us_county_mean_delta_mae_vs_prev.csv",
+    "us_county_mean_group_permutation.csv",
+    "us_county_mean_mae_by_spec.csv",
+    "us_county_permutation_by_feature.csv",
+    "us_county_permutation_by_group.csv",
+    "us_county_ridge_coefs_by_year.csv",
+    "us_county_spec_mae_by_year.csv"
+  ],
+  "disclaimer": "predictive dependence / OOT ΔMAE — NOT causal",
+  "tw_county_group_perm_rank": [
+    {
+      "factor_group": "previous",
+      "group_permutation_mae_increase_mean": 0.054830694664296784
+    },
+    {
+      "factor_group": "economic",
+      "group_permutation_mae_increase_mean": 0.0005649059593638489
+    },
+    {
+      "factor_group": "education",
+      "group_permutation_mae_increase_mean": -0.00019996952026974562
+    }
+  ],
+  "us_county_group_perm_rank": [
+    {
+      "factor_group": "previous",
+      "group_permutation_mae_increase_mean": 0.1283895272816044
+    },
+    {
+      "factor_group": "economic",
+      "group_permutation_mae_increase_mean": 0.001362715900979171
+    },
+    {
+      "factor_group": "education",
+      "group_permutation_mae_increase_mean": 0.0007060515699529623
+    }
+  ],
+  "tw_county_mean_mae": [
+    {
+      "spec": "Prev+Economic",
+      "model": "Ridge",
+      "mae": 0.07253061714045536
+    },
+    {
+      "spec": "Prev+Education+Economic",
+      "model": "Ridge",
+      "mae": 0.07756328598095633
+    },
+    {
+      "spec": "PreviousShare_only",
+      "model": "baseline",
+      "mae": 0.07926481570800571
+    },
+    {
+      "spec": "Prev+Economic",
+      "model": "RandomForest",
+      "mae": 0.08816632258294493
+    },
+    {
+      "spec": "Prev+Education",
+      "model": "Ridge",
+      "mae": 0.08903419894162118
+    },
+    {
+      "spec": "Prev+Education",
+      "model": "RandomForest",
+      "mae": 0.0927555283390381
+    },
+    {
+      "spec": "Prev+Education+Economic",
+      "model": "RandomForest",
+      "mae": 0.09460570674900293
+    },
+    {
+      "spec": "Economic_only",
+      "model": "Ridge",
+      "mae": 0.1058031880095604
+    },
+    {
+      "spec": "Economic_only",
+      "model": "RandomForest",
+      "mae": 0.12114018450922938
+    },
+    {
+      "spec": "Education_only",
+      "model": "Ridge",
+      "mae": 0.13306496731000844
+    },
+    {
+      "spec": "Education_only",
+      "model": "RandomForest",
+      "mae": 0.1436338726777739
+    }
+  ],
+  "us_county_mean_mae": [
+    {
+      "spec": "PreviousShare_only",
+      "model": "baseline",
+      "mae": 0.03448407878659069
+    },
+    {
+      "spec": "Prev+Education",
+      "model": "Ridge",
+      "mae": 0.04242054096554361
+    },
+    {
+      "spec": "Prev+Education+Economic",
+      "model": "Ridge",
+      "mae": 0.043831675999737314
+    },
+    {
+      "spec": "Prev+Economic",
+      "model": "Ridge",
+      "mae": 0.04397208365735213
+    },
+    {
+      "spec": "Prev+Education",
+      "model": "RandomForest",
+      "mae": 0.04510712550563719
+    },
+    {
+      "spec": "Prev+Economic",
+      "model": "RandomForest",
+      "mae": 0.04631043159599922
+    },
+    {
+      "spec": "Prev+Education+Economic",
+      "model": "RandomForest",
+      "mae": 0.04737875058762996
+    },
+    {
+      "spec": "Education_only",
+      "model": "RandomForest",
+      "mae": 0.11794935709482952
+    },
+    {
+      "spec": "Economic_only",
+      "model": "RandomForest",
+      "mae": 0.11972543863119382
+    },
+    {
+      "spec": "Economic_only",
+      "model": "Ridge",
+      "mae": 0.12861182903455998
+    },
+    {
+      "spec": "Education_only",
+      "model": "Ridge",
+      "mae": 0.13030623620660686
+    }
+  ],
+  "national_loo": [
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "PreviousShare_only",
+      "features": "prev",
+      "model": "baseline",
+      "n_years": 6,
+      "mae_loo": 0.08239980128608658,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "Prev+EconNational",
+      "features": "prev,unrate,cpi_yoy_pct",
+      "model": "Ridge_LOO",
+      "n_years": 6,
+      "mae_loo": 0.08428973298235011,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "EconNational_only",
+      "features": "unrate,cpi_yoy_pct",
+      "model": "Ridge_LOO",
+      "n_years": 7,
+      "mae_loo": 0.07475846802104169,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "Prev+MediaCampGap",
+      "features": "prev,media_camp_sentiment_gap",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.15963819053000716,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "MediaCampGap_only",
+      "features": "media_camp_sentiment_gap",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.15963819053000716,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "TW",
+      "grain": "national_PROXY",
+      "spec": "Prev+MediaIssueSent",
+      "features": "prev,media_issue_mean_sentiment",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.15963819053000716,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "PreviousShare_only",
+      "features": "prev",
+      "model": "baseline",
+      "n_years": 5,
+      "mae_loo": 0.02851808262700285,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "Prev+EconNational",
+      "features": "prev,unrate,cpi_yoy_pct",
+      "model": "Ridge_LOO",
+      "n_years": 5,
+      "mae_loo": 0.022274226099246675,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "EconNational_only",
+      "features": "unrate,cpi_yoy_pct",
+      "model": "Ridge_LOO",
+      "n_years": 5,
+      "mae_loo": 0.020697255567485296,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "Prev+EconNational+CCI",
+      "features": "prev,unrate,cpi_yoy_pct,umcsent",
+      "model": "Ridge_LOO",
+      "n_years": 5,
+      "mae_loo": 0.01931665167575559,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "Prev+MediaCampGap",
+      "features": "prev,media_camp_sentiment_gap",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.016868239335439517,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "MediaCampGap_only",
+      "features": "media_camp_sentiment_gap",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.016868239335439517,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    },
+    {
+      "country": "US",
+      "grain": "national_PROXY",
+      "spec": "Prev+MediaIssueSent",
+      "features": "prev,media_issue_mean_sentiment",
+      "model": "Ridge_LOO",
+      "n_years": 2,
+      "mae_loo": 0.016868239335439517,
+      "note": "LEAVE-ONE-YEAR national; media/econ fundamentals Extension; NOT Family A; NOT causal"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "backend": "torch + torch_geometric",
+  "torch_version": "2.15.0+cpu",
+  "hidden": 32,
+  "n_layers": 2,
+  "dropout": 0.15,
+  "lr": 0.005,
+  "weight_decay": 0.0001,
+  "max_epochs": 250,
+  "patience": 35,
+  "gat_heads": 2,
+  "features": [
+    "prev_dpp_share",
+    "prev_kmt_share",
+    "prev_turnout",
+    "median_income",
+    "urbanization",
+    "education_rate",
+    "log_people",
+    "geo_north",
+    "geo_central",
+    "geo_south",
+    "geo_east",
+    "geo_islands",
+    "esc_dpp_delta",
+    "esc_kmt_delta",
+    "esc_dpp_pid",
+    "esc_kmt_pid"
+  ],
+  "note": "Trainable 2-layer GCNConv / GATConv on Queen contiguity (and county clique sensitivity). SGC L2 Raw∥diffuse + Ridge/RF kept as baseline. NonSpatial MLP matches hidden size. Fit on all years < test_year; early-stop monitors last pre-test year MAE in z-space (that year stays in train). Features and targets StandardScaler-fit on train; predictions inverse-transformed before MAE. Hyperparams: hidden=32, layers=2, dropout=0.15, lr=5e-3, wd=1e-4, max_epochs=250, patience=35, gat_heads=2, seed=42, CPU."
+}

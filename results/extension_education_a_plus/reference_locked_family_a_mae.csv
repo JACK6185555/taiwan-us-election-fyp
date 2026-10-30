@@ -1,0 +1,5 @@
+suite,model,mae,note
+Family_A_LOCKED_published,Previous-election baseline,0.0792648157080057,Do not overwrite
+Family_A_LOCKED_published,Ridge,0.17857985899144863,Do not overwrite
+Family_A_PLUS_LOCKED_published,Previous-election baseline,0.0792648157080057,Do not overwrite
+Family_A_PLUS_LOCKED_published,Ridge,0.14250033498938372,Do not overwrite

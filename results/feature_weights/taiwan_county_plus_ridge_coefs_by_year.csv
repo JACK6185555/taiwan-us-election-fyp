@@ -1,0 +1,101 @@
+﻿suite,test_year,feature,feature_label,standardized_coef_signed,standardized_coef_abs
+enriched,2012,prev_DPP_vote_share,Previous DPP share,0.012013948957625843,0.012013948957625843
+enriched,2012,prev_KMT_vote_share,Previous KMT share,-0.012013948957625845,0.012013948957625845
+enriched,2012,prev_Other_vote_share,Previous other share,0.0,0.0
+enriched,2012,prev2_DPP_vote_share,DPP share two elections ago,0.013428021432333181,0.013428021432333181
+enriched,2012,prev2_KMT_vote_share,KMT share two elections ago,-0.0031639130796422684,0.0031639130796422684
+enriched,2012,prev2_Other_vote_share,Other share two elections ago,-0.011426818176071395,0.011426818176071395
+enriched,2012,prev_turnout,Previous turnout,-0.0010657037172344909,0.0010657037172344909
+enriched,2012,DPP_change_1,DPP previous swing,0.0019483897885970393,0.0019483897885970393
+enriched,2012,KMT_change_1,KMT previous swing,-0.010391766733336662,0.010391766733336662
+enriched,2012,Other_change_1,Other previous swing,0.011426818176071395,0.011426818176071395
+enriched,2012,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.012013948957625845,0.012013948957625845
+enriched,2012,prev_DPP_Other_margin,Previous DPP-other margin,0.012013948957625843,0.012013948957625843
+enriched,2012,DPP_KMT_margin_change_1,DPP-KMT margin change,0.009458821109755754,0.009458821109755754
+enriched,2012,previous_party_change_abs_mean,Mean party swing magnitude,-0.011426818176071395,0.011426818176071395
+enriched,2012,previous_party_change_std,Dispersion of party swings,-0.01074722600638189,0.01074722600638189
+enriched,2012,turnout_change_1,Turnout change,0.0071414788782733375,0.0071414788782733375
+enriched,2012,lag_unemployment_pct,Lag county unemployment %,0.0,0.0
+enriched,2012,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched,2012,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched,2012,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.0,0.0
+enriched,2012,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),0.0,0.0
+enriched,2012,lag_both_id_pct,Lag national both ID % (ESC PROXY),0.0,0.0
+enriched,2012,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),0.0,0.0
+enriched,2012,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.0,0.0
+enriched,2012,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),0.0,0.0
+enriched,2016,prev_DPP_vote_share,Previous DPP share,0.02365010984581278,0.02365010984581278
+enriched,2016,prev_KMT_vote_share,Previous KMT share,-0.02365010984581265,0.02365010984581265
+enriched,2016,prev_Other_vote_share,Previous other share,0.0,0.0
+enriched,2016,prev2_DPP_vote_share,DPP share two elections ago,0.028191552663972868,0.028191552663972868
+enriched,2016,prev2_KMT_vote_share,KMT share two elections ago,-0.014797948125814087,0.014797948125814087
+enriched,2016,prev2_Other_vote_share,Other share two elections ago,-0.005679150380092602,0.005679150380092602
+enriched,2016,prev_turnout,Previous turnout,-0.0006711426990961363,0.0006711426990961363
+enriched,2016,DPP_change_1,DPP previous swing,-0.007740915929199811,0.007740915929199811
+enriched,2016,KMT_change_1,KMT previous swing,-0.0035871723745454663,0.0035871723745454663
+enriched,2016,Other_change_1,Other previous swing,0.005679150380092609,0.005679150380092609
+enriched,2016,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02365010984581263,0.02365010984581263
+enriched,2016,prev_DPP_Other_margin,Previous DPP-other margin,0.023650109845812717,0.023650109845812717
+enriched,2016,DPP_KMT_margin_change_1,DPP-KMT margin change,-0.000907220468379286,0.000907220468379286
+enriched,2016,previous_party_change_abs_mean,Mean party swing magnitude,-0.004677941245195048,0.004677941245195048
+enriched,2016,previous_party_change_std,Dispersion of party swings,-0.0039615211611644385,0.0039615211611644385
+enriched,2016,turnout_change_1,Turnout change,0.0016157067004482154,0.0016157067004482154
+enriched,2016,lag_unemployment_pct,Lag county unemployment %,-0.0018919079376158152,0.0018919079376158152
+enriched,2016,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched,2016,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched,2016,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.0033707696329114785,0.0033707696329114785
+enriched,2016,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.0033707696329114897,0.0033707696329114897
+enriched,2016,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.003370769632911534,0.003370769632911534
+enriched,2016,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),-0.003370769632911541,0.003370769632911541
+enriched,2016,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.0033707696329114854,0.0033707696329114854
+enriched,2016,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.0033707696329115014,0.0033707696329115014
+enriched,2020,prev_DPP_vote_share,Previous DPP share,0.024075625879495306,0.024075625879495306
+enriched,2020,prev_KMT_vote_share,Previous KMT share,-0.024564215411395324,0.024564215411395324
+enriched,2020,prev_Other_vote_share,Previous other share,0.0037953681371422007,0.0037953681371422007
+enriched,2020,prev2_DPP_vote_share,DPP share two elections ago,0.026567187968487584,0.026567187968487584
+enriched,2020,prev2_KMT_vote_share,KMT share two elections ago,-0.013802751368570664,0.013802751368570664
+enriched,2020,prev2_Other_vote_share,Other share two elections ago,-0.004403814006347415,0.004403814006347415
+enriched,2020,prev_turnout,Previous turnout,0.005994867059428541,0.005994867059428541
+enriched,2020,DPP_change_1,DPP previous swing,-0.005058685245034609,0.005058685245034609
+enriched,2020,KMT_change_1,KMT previous swing,-0.0032802616830293683,0.0032802616830293683
+enriched,2020,Other_change_1,Other previous swing,0.004517906301388102,0.004517906301388102
+enriched,2020,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.024351953619181323,0.024351953619181323
+enriched,2020,prev_DPP_Other_margin,Previous DPP-other margin,0.023345879000462248,0.023345879000462248
+enriched,2020,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0012128922773529587,0.0012128922773529587
+enriched,2020,previous_party_change_abs_mean,Mean party swing magnitude,-0.0031739460408207404,0.0031739460408207404
+enriched,2020,previous_party_change_std,Dispersion of party swings,-0.0016358273513805827,0.0016358273513805827
+enriched,2020,turnout_change_1,Turnout change,-0.0032907497514451955,0.0032907497514451955
+enriched,2020,lag_unemployment_pct,Lag county unemployment %,-0.003799512168127831,0.003799512168127831
+enriched,2020,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched,2020,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched,2020,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.012574941213563381,0.012574941213563381
+enriched,2020,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.010772418930466878,0.010772418930466878
+enriched,2020,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.013752713786691115,0.013752713786691115
+enriched,2020,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),0.011320037074464466,0.011320037074464466
+enriched,2020,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.004642912580004979,0.004642912580004979
+enriched,2020,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.010978059912626762,0.010978059912626762
+enriched,2024,prev_DPP_vote_share,Previous DPP share,0.025544081782480493,0.025544081782480493
+enriched,2024,prev_KMT_vote_share,Previous KMT share,-0.020787261842926952,0.020787261842926952
+enriched,2024,prev_Other_vote_share,Previous other share,-0.0039060982476361895,0.0039060982476361895
+enriched,2024,prev2_DPP_vote_share,DPP share two elections ago,0.02655319129399063,0.02655319129399063
+enriched,2024,prev2_KMT_vote_share,KMT share two elections ago,-0.01551953665147205,0.01551953665147205
+enriched,2024,prev2_Other_vote_share,Other share two elections ago,-0.003801162703370892,0.003801162703370892
+enriched,2024,prev_turnout,Previous turnout,0.007589096069942206,0.007589096069942206
+enriched,2024,DPP_change_1,DPP previous swing,-0.0006195424520213253,0.0006195424520213253
+enriched,2024,KMT_change_1,KMT previous swing,-0.002139827201220907,0.002139827201220907
+enriched,2024,Other_change_1,Other previous swing,0.0022779929810257124,0.0022779929810257124
+enriched,2024,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.023369853135943745,0.023369853135943745
+enriched,2024,prev_DPP_Other_margin,Previous DPP-other margin,0.0269883306983435,0.0269883306983435
+enriched,2024,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0017685235240325074,0.0017685235240325074
+enriched,2024,previous_party_change_abs_mean,Mean party swing magnitude,-0.005890343731487843,0.005890343731487843
+enriched,2024,previous_party_change_std,Dispersion of party swings,-0.0042736546676344096,0.0042736546676344096
+enriched,2024,turnout_change_1,Turnout change,0.0028971803860828736,0.0028971803860828736
+enriched,2024,lag_unemployment_pct,Lag county unemployment %,-0.0027242751887357427,0.0027242751887357427
+enriched,2024,lag_log_mean_income,Lag log mean income,0.0037142819197934344,0.0037142819197934344
+enriched,2024,lag_log_pop_density,Lag log pop density,0.0039785124118993705,0.0039785124118993705
+enriched,2024,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.019474440068401717,0.019474440068401717
+enriched,2024,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.013307182338741352,0.013307182338741352
+enriched,2024,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.02456761357471658,0.02456761357471658
+enriched,2024,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),-0.00736905626619132,0.00736905626619132
+enriched,2024,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),-0.006087237178677347,0.006087237178677347
+enriched,2024,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.006201520443317023,0.006201520443317023

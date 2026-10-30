@@ -1,0 +1,95 @@
+{
+  "backtest_mae_pivot": {
+    "2016": {
+      "HistGB": 0.057044,
+      "PreviousElection": 0.08997,
+      "RandomForest": 0.052508,
+      "Ridge": 0.049138
+    },
+    "2020": {
+      "HistGB": 0.072611,
+      "PreviousElection": 0.021965,
+      "RandomForest": 0.069416,
+      "Ridge": 0.083269
+    },
+    "2024": {
+      "HistGB": 0.210449,
+      "PreviousElection": 0.148725,
+      "RandomForest": 0.209634,
+      "Ridge": 0.237922
+    }
+  },
+  "ablation_2024": [
+    {
+      "features": "History+Economy+Demo",
+      "MAE": 0.209634
+    },
+    {
+      "features": "All_available",
+      "MAE": 0.209634
+    },
+    {
+      "features": "History+Economy",
+      "MAE": 0.210646
+    },
+    {
+      "features": "History+Demographics",
+      "MAE": 0.217232
+    },
+    {
+      "features": "History",
+      "MAE": 0.21909
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "prev_vote_share",
+      "importance": 0.9561032891208522,
+      "test_year": 2024,
+      "country": "TW"
+    },
+    {
+      "feature": "prev_swing",
+      "importance": 0.01686793090415377,
+      "test_year": 2024,
+      "country": "TW"
+    },
+    {
+      "feature": "prev_turnout",
+      "importance": 0.00975534657002644,
+      "test_year": 2024,
+      "country": "TW"
+    },
+    {
+      "feature": "median_income",
+      "importance": 0.0093000703149958,
+      "test_year": 2024,
+      "country": "TW"
+    },
+    {
+      "feature": "urbanization",
+      "importance": 0.002959879651916507,
+      "test_year": 2024,
+      "country": "TW"
+    }
+  ],
+  "conformal": {
+    "calibration_year": 2020,
+    "test_year": 2024,
+    "alpha": 0.1,
+    "quantile": 0.10840270304544689,
+    "coverage": 0.008152173913043478,
+    "avg_width": 0.21680540609089374,
+    "n_train": 598,
+    "n_calib": 368,
+    "n_test": 368,
+    "target_coverage": 0.9
+  },
+  "n_harmonized": 1459,
+  "years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ]
+}

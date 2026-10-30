@@ -1,0 +1,15 @@
+country,election_year,simple_poll_average_dpp_2p,historical_turnout,turnout_adjusted_sketch,turnout_adjusted_note,actual_dpp_valid_share,simple_poll_average_dem_2p,actual_dem_2p_unweighted_county_mean
+TW,2000,0.499377,0.8269405097776089,0.412955,toy: poll_2p * turnout; NOT effective vote model,0.342608,,
+TW,2004,0.481243,0.8027852003058791,0.386335,toy: poll_2p * turnout; NOT effective vote model,0.448244,,
+TW,2008,0.351119,0.7633008617784177,0.268009,toy: poll_2p * turnout; NOT effective vote model,0.368546,,
+TW,2012,0.468578,0.7437618925322845,0.34851,toy: poll_2p * turnout; NOT effective vote model,0.408795,,
+TW,2016,0.671015,0.6627433298562513,0.444711,toy: poll_2p * turnout; NOT effective vote model,0.506694,,
+TW,2020,0.694185,0.7490286547559034,0.519964,toy: poll_2p * turnout; NOT effective vote model,0.517972,,
+TW,2024,0.566728,0.7186376817777254,0.407272,toy: poll_2p * turnout; NOT effective vote model,0.358334,,
+US,2000,,0.542,0.272999,toy: poll_2p * turnout; NOT effective vote model,,0.5036880927291886,
+US,2004,,0.601,0.295403,toy: poll_2p * turnout; NOT effective vote model,,0.4915184775082292,
+US,2008,,0.617,0.314451,toy: poll_2p * turnout; NOT effective vote model,,0.5096446700507614,0.422247
+US,2012,,0.585,0.294613,toy: poll_2p * turnout; NOT effective vote model,,0.5036119711042311,0.392304
+US,2016,,0.601,0.311137,toy: poll_2p * turnout; NOT effective vote model,,0.5176991150442477,0.333171
+US,2020,,0.666,0.362402,toy: poll_2p * turnout; NOT effective vote model,,0.5441477984436079,0.338672
+US,2024,,0.641,0.330398,toy: poll_2p * turnout; NOT effective vote model,,0.5154419671033704,0.321804

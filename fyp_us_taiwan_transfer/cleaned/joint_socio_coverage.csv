@@ -1,0 +1,13 @@
+country,column,non_null,n,frac
+US,prev_share_A,18673,21787,0.8570707302519851
+US,log_total_votes,21787,21787,1.0
+US,z_income,21779,21787,0.9996328085555607
+US,z_log_density,21779,21787,0.9996328085555607
+US,z_education,21783,21787,0.9998164042777803
+US,z_unemployment,21779,21787,0.9996328085555607
+TW,prev_share_A,132,154,0.8571428571428571
+TW,log_total_votes,154,154,1.0
+TW,z_income,154,154,1.0
+TW,z_log_density,154,154,1.0
+TW,z_education,0,154,0.0
+TW,z_unemployment,0,154,0.0

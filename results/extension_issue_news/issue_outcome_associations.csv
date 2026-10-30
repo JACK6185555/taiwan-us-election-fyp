@@ -1,0 +1,12 @@
+country,issue,n_elections_with_issue,corr_mean_sent_vs_outcome,corr_volshare_vs_outcome,mean_sent_by_year,n_posts_by_year,caveat
+TW,cross_strait,2,n<3_not_reported,n<3_not_reported,2020:-0.693;2024:-0.514,2020:16;2024:24,n 極細；相關唔等於因果；X 樣本有偏
+TW,economy,2,n<3_not_reported,n<3_not_reported,2020:-0.792;2024:-0.812,2020:23;2024:22,n 極細；相關唔等於因果；X 樣本有偏
+TW,energy,2,n<3_not_reported,n<3_not_reported,2020:-0.476;2024:-0.765,2020:22;2024:21,n 極細；相關唔等於因果；X 樣本有偏
+TW,housing,2,n<3_not_reported,n<3_not_reported,2020:-0.574;2024:-0.853,2020:9;2024:23,n 極細；相關唔等於因果；X 樣本有偏
+TW,pandemic,1,n<3_not_reported,n<3_not_reported,2020:-0.547,2020:19,n 極細；相關唔等於因果；X 樣本有偏
+US,abortion,2,n<3_not_reported,n<3_not_reported,2020:0.157;2024:0.270,2020:25;2024:23,n 極細；相關唔等於因果；X 樣本有偏
+US,democracy,2,n<3_not_reported,n<3_not_reported,2020:0.542;2024:0.243,2020:25;2024:23,n 極細；相關唔等於因果；X 樣本有偏
+US,economy,2,n<3_not_reported,n<3_not_reported,2020:-0.380;2024:-0.061,2020:22;2024:22,n 極細；相關唔等於因果；X 樣本有偏
+US,healthcare,2,n<3_not_reported,n<3_not_reported,2020:0.499;2024:0.591,2020:23;2024:22,n 極細；相關唔等於因果；X 樣本有偏
+US,immigration,2,n<3_not_reported,n<3_not_reported,2020:0.029;2024:-0.338,2020:17;2024:23,n 極細；相關唔等於因果；X 樣本有偏
+TW+US_pooled,economy,4,0.1217,n/a_mixed_denominators,TW2020:-0.792;TW2024:-0.812;US2020:-0.380;US2024:-0.061,TW2020:23;TW2024:22;US2020:22;US2024:22,跨國混合 DPP share 同 Dem two-party；只作敏感度

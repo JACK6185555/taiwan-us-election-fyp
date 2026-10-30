@@ -1,0 +1,4 @@
+metric,value,unit,time_span,source_type,source_name,source_url,notes
+hk_macao_immigrants_with_voting_rights_estimate,10000,persons_approx,2015-2022,secondary_media,Associated Press,https://apnews.com/article/hong-kong-taiwan-election-vote-immigrants-china-acd858e0f58c9a7d30f0ce95e95e2e09,AP 引述約 1 萬港澳移民取得投票權。非中選會官方「港裔選民」清冊；本專案不作精確點估計。
+presidential_electorate_approx,19500000,persons_approx,2024_election_order_of_magnitude,secondary_context_vs_AP,CEC election-scale (order of magnitude used in report),https://www.cec.gov.tw/,"用於對照「約 1 萬 vs 約 1,950 萬」數量級；非本 CSV 自算。精確選舉人數以中選會當屆公告為準。"
+share_of_electorate_order_of_magnitude,0.0005,fraction_approx,illustrative,derived,10000/19500000,,約 0.05% 數量級；僅說明直接選票體量極小，不是因果效應。

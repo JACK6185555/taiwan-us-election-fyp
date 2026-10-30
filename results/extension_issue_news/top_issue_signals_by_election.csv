@@ -1,0 +1,5 @@
+country,year,top_volume_issue,top_volume_n,top_volume_mean_sent,most_negative_or_polarized_issue,that_mean_sent,winner,outcome_share,interpretation
+TW,2020,經濟,23,-0.7921,經濟,-0.7921,蔡英文,0.571307,議題氣候 PROXY；唔等於中間選民個人轉向
+TW,2024,兩岸,24,-0.5145,居住,-0.8525,賴清德,0.400503,議題氣候 PROXY；唔等於中間選民個人轉向
+US,2020,abortion,25,0.1573,democracy,0.5417,Biden,0.522578,議題氣候 PROXY；唔等於中間選民個人轉向
+US,2024,abortion,23,0.2704,healthcare,0.5911,Trump,0.492378,議題氣候 PROXY；唔等於中間選民個人轉向

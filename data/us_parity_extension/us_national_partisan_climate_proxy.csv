@@ -1,0 +1,8 @@
+election_year,nat_dem_two_party_share,source,parallel_to_TW
+2000,0.503124416394333,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2004,0.48756597675121555,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2008,0.536854240272694,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2012,0.5200449727387475,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2016,0.5110426030536047,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2020,0.5225779374772233,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)
+2024,0.49237842510867225,MEDSL_county_president_aggregated,ESC_national_election_year_proxy (party climate side)

@@ -1,0 +1,15 @@
+{
+  "target": "swing",
+  "calibration_year": 2020,
+  "test_year": 2024,
+  "alpha": 0.1,
+  "quantile": 0.11252192537983897,
+  "coverage": 0.002717391304347826,
+  "avg_width": 0.22504385075967798,
+  "n_train": 598,
+  "n_calib": 368,
+  "n_test": 368,
+  "target_coverage": 0.9,
+  "mean_actual_swing": -0.14872504338071132,
+  "mean_pred_swing": 0.07604373100063153
+}

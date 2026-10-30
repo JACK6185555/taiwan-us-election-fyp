@@ -1,0 +1,11 @@
+item,value
+shared_features_history,"prev_share_A,log_total_votes"
+shared_features_socio,"z_income,z_log_density"
+shared_features_full,"prev_share_A,log_total_votes,z_income,z_log_density"
+us_socio_sources,ERS_unemp+ERS_edu+ERS_income2022+ACS2020_density_income_edu
+tw_socio_sources,tax_mean_income_static+pop_density_static
+construct_warning,TW income ≠ US median HH; z-score within country only
+us_n,21787
+tw_n,154
+us_z_income_frac,1.000
+tw_z_income_frac,1.000

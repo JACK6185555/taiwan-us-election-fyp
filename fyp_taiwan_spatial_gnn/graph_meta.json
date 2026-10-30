@@ -1,0 +1,9 @@
+{
+  "adjacency": "same-county complete graph + self-loops",
+  "shapefile": "NOT used — no township boundary file in dataset; county clique proxy",
+  "n_nodes_2024": 368,
+  "n_undirected_edges_excl_self_2024": 4155,
+  "avg_degree_excl_self": 22.581521739130434,
+  "example_county": "高雄市",
+  "example_nodes": 38
+}

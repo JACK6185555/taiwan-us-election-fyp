@@ -1,0 +1,8 @@
+feature,importance,test_year,country,target
+median_income,0.4198431711979912,2024,TW,swing
+prev_swing,0.29680442300159615,2024,TW,swing
+prev_vote_share,0.10296444938312271,2024,TW,swing
+urbanization,0.05141529141436594,2024,TW,swing
+education_rate,0.048323906038509536,2024,TW,swing
+prev_turnout,0.04555929914011285,2024,TW,swing
+log_people,0.03508945982430156,2024,TW,swing

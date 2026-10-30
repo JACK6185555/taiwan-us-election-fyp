@@ -1,0 +1,17 @@
+suite,test_year,spec,feature,factor_group,permutation_mae_increase,permutation_std
+TW_county,2012,Prev+Education+Economic,prev_DPP_vote_share,previous,0.08808316468965154,0.009910607435445726
+TW_county,2012,Prev+Education+Economic,lag_education_rate,education,8.483168463690727e-05,0.001586969813156128
+TW_county,2012,Prev+Education+Economic,lag_unemployment_pct,economic,0.0,0.0
+TW_county,2012,Prev+Education+Economic,lag_log_mean_income,economic,0.0,0.0
+TW_county,2016,Prev+Education+Economic,prev_DPP_vote_share,previous,0.060034499662249184,0.011500552855077622
+TW_county,2016,Prev+Education+Economic,lag_education_rate,education,-0.0008829468884129834,0.0006519268026410705
+TW_county,2016,Prev+Education+Economic,lag_unemployment_pct,economic,0.0003919235565787565,0.00017946021754400776
+TW_county,2016,Prev+Education+Economic,lag_log_mean_income,economic,0.0,0.0
+TW_county,2020,Prev+Education+Economic,prev_DPP_vote_share,previous,0.05642291164112576,0.01441761927234297
+TW_county,2020,Prev+Education+Economic,lag_education_rate,education,-1.97781080299488e-05,0.00025223678395216585
+TW_county,2020,Prev+Education+Economic,lag_unemployment_pct,economic,0.0036858609932648475,0.0034563941609774863
+TW_county,2020,Prev+Education+Economic,lag_log_mean_income,economic,0.0,0.0
+TW_county,2024,Prev+Education+Economic,prev_DPP_vote_share,previous,0.026540945906614488,0.008303433350507762
+TW_county,2024,Prev+Education+Economic,lag_education_rate,education,0.000331263834007188,0.000649447510430596
+TW_county,2024,Prev+Education+Economic,lag_unemployment_pct,economic,-0.0002970576373135479,0.00016761292016841627
+TW_county,2024,Prev+Education+Economic,lag_log_mean_income,economic,6.172284685972372e-05,0.00013075796679280516

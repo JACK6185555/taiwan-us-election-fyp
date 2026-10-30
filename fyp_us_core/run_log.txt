@@ -1,0 +1,5 @@
+backtest fold 2012: n_train=3110 n_test=3111
+backtest fold 2016: n_train=6221 n_test=3111
+backtest fold 2020: n_train=9332 n_test=3111
+backtest fold 2024: n_train=12443 n_test=3112
+ablation...

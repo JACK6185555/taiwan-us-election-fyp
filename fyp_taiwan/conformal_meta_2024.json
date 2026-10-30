@@ -1,0 +1,12 @@
+{
+  "calibration_year": 2020,
+  "test_year": 2024,
+  "alpha": 0.1,
+  "quantile": 0.10840270304544689,
+  "coverage": 0.008152173913043478,
+  "avg_width": 0.21680540609089374,
+  "n_train": 598,
+  "n_calib": 368,
+  "n_test": 368,
+  "target_coverage": 0.9
+}

@@ -1,0 +1,10 @@
+family,model,adjacency,mean_mae
+baseline,PreviousShare,none,0.031437281283584154
+SGC_diffusion,SGC_L1+RandomForest,knn,0.04212590663940107
+NonSpatial,RandomForest,none,0.042355195028199545
+SGC_diffusion,SGC_L1+RandomForest,queen,0.04345695736834674
+NonSpatial,Ridge,none,0.04565464567425419
+SGC_diffusion,SGC_L1+Ridge,queen,0.051679442919144995
+SGC_diffusion,SGC_L1+Ridge,knn,0.05295316225301517
+trainable_gnn,ResidualGCN_L1,queen,0.0568811592446343
+trainable_gnn,TrainableGCN_L1,queen,0.0685232184226825

@@ -1,0 +1,125 @@
+{
+  "target": "swing",
+  "backtest_mae_pivot": {
+    "2016": {
+      "HistGB": 0.049467,
+      "PreviousSwing": 0.06241,
+      "RandomForest": 0.049312,
+      "Ridge": 0.048667,
+      "ZeroSwing": 0.08997
+    },
+    "2020": {
+      "HistGB": 0.090029,
+      "PreviousSwing": 0.089277,
+      "RandomForest": 0.084705,
+      "Ridge": 0.083553,
+      "ZeroSwing": 0.021965
+    },
+    "2024": {
+      "HistGB": 0.213401,
+      "PreviousSwing": 0.148974,
+      "RandomForest": 0.204357,
+      "Ridge": 0.238131,
+      "ZeroSwing": 0.148725
+    }
+  },
+  "ablation_2024": [
+    {
+      "features": "History+Economy",
+      "MAE": 0.200014
+    },
+    {
+      "features": "History+Economy+Demo",
+      "MAE": 0.204314
+    },
+    {
+      "features": "All_available",
+      "MAE": 0.204357
+    },
+    {
+      "features": "History",
+      "MAE": 0.216208
+    },
+    {
+      "features": "History+Demographics",
+      "MAE": 0.221866
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "median_income",
+      "importance": 0.4198431711979912,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "prev_swing",
+      "importance": 0.29680442300159615,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "prev_vote_share",
+      "importance": 0.10296444938312271,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "urbanization",
+      "importance": 0.05141529141436594,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "education_rate",
+      "importance": 0.048323906038509536,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "prev_turnout",
+      "importance": 0.04555929914011285,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    },
+    {
+      "feature": "log_people",
+      "importance": 0.03508945982430156,
+      "test_year": 2024,
+      "country": "TW",
+      "target": "swing"
+    }
+  ],
+  "conformal": {
+    "target": "swing",
+    "calibration_year": 2020,
+    "test_year": 2024,
+    "alpha": 0.1,
+    "quantile": 0.11252192537983897,
+    "coverage": 0.002717391304347826,
+    "avg_width": 0.22504385075967798,
+    "n_train": 598,
+    "n_calib": 368,
+    "n_test": 368,
+    "target_coverage": 0.9,
+    "mean_actual_swing": -0.14872504338071132,
+    "mean_pred_swing": 0.07604373100063153
+  },
+  "n_rows": 1334,
+  "years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "baselines": {
+    "ZeroSwing": "predict \u0394V=0",
+    "PreviousSwing": "predict \u0394V(t)=prev_swing=\u0394V(t-1)"
+  }
+}

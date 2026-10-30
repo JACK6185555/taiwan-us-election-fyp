@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "panel": "/workspace/taiwan-election-github/data/county_panel_features_2000_2024.csv",
+  "test_years": [
+    2012,
+    2016,
+    2020,
+    2024
+  ],
+  "protocol": "expanding window: train year < test_year",
+  "unit": "county (22)",
+  "targets": [
+    "target_DPP_vote_share",
+    "target_KMT_vote_share"
+  ],
+  "gnn": {
+    "hidden": 32,
+    "dropout": 0.15,
+    "lr": 0.005,
+    "weight_decay": 0.0001,
+    "max_epochs": 300,
+    "patience": 40,
+    "gat_heads": 2,
+    "residual": "ResidualGCN concatenates diffused hidden with raw input"
+  },
+  "graphs": {
+    "n_counties": 22,
+    "counties": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園市",
+      "澎湖縣",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "queen_n_edges": 33,
+    "queen_avg_degree": 3.0,
+    "queen_islands": [
+      "澎湖縣",
+      "連江縣",
+      "金門縣"
+    ],
+    "knn_k": 3,
+    "knn_n_edges": 44,
+    "knn_avg_degree": 4.0,
+    "dist_sigma_km": 80.0,
+    "dist_n_edges": 183,
+    "dist_avg_degree": 16.636363636363637,
+    "crs_projected": "EPSG:3826",
+    "geo_source": "/workspace/taiwan-election-data/raw/geo/town-2025-03-18.geojson"
+  },
+  "note": "Township MAE must not be mixed into Family A / this county RQ2 table."
+}

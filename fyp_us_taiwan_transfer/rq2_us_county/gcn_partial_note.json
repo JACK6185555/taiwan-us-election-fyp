@@ -1,0 +1,12 @@
+{
+  "note": "Full-US trainable GCN deferred for runtime. Partial 2012 OOT MAE from capped run (max_epochs=40, queen only).",
+  "2012": {
+    "TrainableGCN_L1_queen": 0.086,
+    "ResidualGCN_L1_queen": 0.0721
+  },
+  "2016_attempted": {
+    "TrainableGCN_L1_queen": 0.1039,
+    "ResidualGCN_L1_queen": 0.0762,
+    "source": "earlier longer run log"
+  }
+}

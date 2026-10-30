@@ -1,0 +1,5 @@
+country,election_year,metric,diff,dpp_mean,kmt_mean,dpp_n,kmt_n,dem_mean,gop_mean,dem_n,gop_n,person_dpp_mean,person_kmt_mean,national_winner_side,national_winner,dpp_vote_share,kmt_vote_share,dem_two_party_actual,diff_sign_matches_winner,note
+TW,2020,mean_sent_DPP_minus_KMT_volume_weighted,0.0109,-0.468,-0.4789,36,23,,,,,-0.4867,,DPP,蔡英文,0.571307,0.386137,,True,Pilot sample (≤2 pages/entity); X TW user base skewed; not causal
+TW,2024,mean_sent_DPP_minus_KMT_volume_weighted,-0.0257,-0.536,-0.5103,84,76,,,,,-0.4031,-0.2712,DPP,賴清德,0.400503,0.3349,,False,Pilot sample (≤2 pages/entity); X TW user base skewed; not causal
+US,2020,mean_sent_DEM_minus_GOP_volume_weighted,0.1211,,,,,0.0762,-0.0448,38,43,,,DEM,Biden,,,0.522578,True,Pilot sample; English VADER; X platform skew; not causal
+US,2024,mean_sent_DEM_minus_GOP_volume_weighted,-0.0747,,,,,0.0868,0.1616,71,73,,,GOP,Trump,,,0.492378,True,Pilot sample; English VADER; X platform skew; not causal

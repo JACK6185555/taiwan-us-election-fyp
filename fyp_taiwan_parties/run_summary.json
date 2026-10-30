@@ -1,0 +1,89 @@
+{
+  "unit": "township x year",
+  "parties": {
+    "DPP": "party_code 16 — all years",
+    "KMT": "party_code 1 — all years",
+    "TPP": "party_code 350 — presidential ONLY 2024 (founded 2019; no 2020 presidential ticket)",
+    "PFP": "party 90 / 999 — used as third-party geography proxy, not a modeled target"
+  },
+  "national_verification_2024": {
+    "expected": {
+      "dpp": 0.400503,
+      "kmt": 0.3349,
+      "tpp": 0.264597,
+      "pfp": null
+    },
+    "note": "see national_share_verification.csv"
+  },
+  "n_rows_harmonized": 1459,
+  "tpp_caveat": "TPP has only one presidential election (2024). True out-of-time TPP share forecasting from prior TPP presidential results is impossible. We report ZeroTPP / PrevThirdPartyProxy baselines, PFP→TPP transfer proxies, and leave-one-county-out within 2024 clearly labeled NOT temporal.",
+  "literature_vs_ecological": "Literature individual-level weights (party ID, unification-independence) are NOT in this ecological township model; TEDS microdata not included. See docs for contrast.",
+  "top_importance": {
+    "DPP": [
+      {
+        "feature": "prev_dpp_share",
+        "importance": 0.8918534482678079
+      },
+      {
+        "feature": "urbanization",
+        "importance": 0.024154896660080364
+      },
+      {
+        "feature": "prev_kmt_share",
+        "importance": 0.02341127941527266
+      },
+      {
+        "feature": "prev_third_share",
+        "importance": 0.02183082673481504
+      },
+      {
+        "feature": "median_income",
+        "importance": 0.010390530353349378
+      }
+    ],
+    "KMT": [
+      {
+        "feature": "prev_dpp_share",
+        "importance": 0.7080799159008385
+      },
+      {
+        "feature": "prev_kmt_swing",
+        "importance": 0.10330101824861689
+      },
+      {
+        "feature": "prev_third_share",
+        "importance": 0.06867265818317869
+      },
+      {
+        "feature": "prev_kmt_share",
+        "importance": 0.03707849931187871
+      },
+      {
+        "feature": "urbanization",
+        "importance": 0.02810362801585356
+      }
+    ],
+    "TPP": [
+      {
+        "feature": "prev_third_share",
+        "importance": 0.6714692228463329
+      },
+      {
+        "feature": "education_rate",
+        "importance": 0.0627370988194556
+      },
+      {
+        "feature": "prev_turnout",
+        "importance": 0.05791983214281006
+      },
+      {
+        "feature": "prev_dpp_share",
+        "importance": 0.04206470344523981
+      },
+      {
+        "feature": "median_income",
+        "importance": 0.041066185803862905
+      }
+    ]
+  }
+}

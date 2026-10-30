@@ -1,0 +1,34 @@
+{
+  "n_rows": 1047,
+  "n_townships": 354,
+  "years": [
+    2016,
+    2020,
+    2024
+  ],
+  "features": [
+    "lag_dpp_share",
+    "lag_kmt_share",
+    "dpp_kmt_margin_lag",
+    "log_mean_income",
+    "log_pop_density",
+    "log_people",
+    "log_tax_units",
+    "log_pop15",
+    "region_central",
+    "region_south",
+    "region_east",
+    "region_islands"
+  ],
+  "n_train": 693,
+  "n_test": 354,
+  "lasso_alpha": 0.00020624713061733632,
+  "lasso_test_mae": 0.20188199530146286,
+  "lasso_test_r2": -1.691645512945871,
+  "ols_test_mae": 0.20322308427378277,
+  "ols_test_r2": -1.7334873916836888,
+  "rf_test_mae": 0.2040937376748178,
+  "rf_test_r2": -1.8182812699510071,
+  "baseline_lag_only_test_mae": 0.14795532276425682,
+  "weights_path": "/workspace/taiwan-election-data/analysis/feature_weights.csv"
+}

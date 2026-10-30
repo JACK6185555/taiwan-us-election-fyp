@@ -1,0 +1,8 @@
+year,votes,turnout_rate,vep_proxy,electorate_change_pct,new_voters_stock_change_proxy,country,note,family_a
+2000,,,,,,US,GAP — US Family A county panel starts 2008,NOT_INCLUDED
+2004,,,,,,US,GAP — US Family A county panel starts 2008,NOT_INCLUDED
+2008,130675529.99999999,0.617,211791782.82009724,,,US,PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP,NOT_INCLUDED
+2012,128604475.0,0.585,219836709.4017094,0.037985074182248946,0.037985074182248946,US,PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP,NOT_INCLUDED
+2016,136044040.0,0.601,226362795.3410982,0.029686060881959575,0.029686060881959575,US,PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP,NOT_INCLUDED
+2020,157982033.0,0.666,237210259.75975975,0.04792070358698264,0.04792070358698264,US,PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP,NOT_INCLUDED
+2024,154750199.0,0.641,241419967.23868954,0.01774673440850849,0.01774673440850849,US,PROXY — VEP≈sum(exp(log_total_votes))/turnout_rate from Family A panel + fundamentals turnout; NOT first-time voter registry; panel starts 2008 so 2000/2004 GAP,NOT_INCLUDED

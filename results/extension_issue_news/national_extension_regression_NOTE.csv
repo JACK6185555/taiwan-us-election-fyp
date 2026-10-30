@@ -1,0 +1,3 @@
+country,n_years,note,features_available,outcomes
+TW,2,n_years<=2 → 唔做多特徵 Ridge 擬合；只報相關／描述。若強行擬合會過擬合。,"volshare_cross_strait,volshare_economy,volshare_energy,volshare_housing,volshare_pandemic,mean_tone_all","2020:0.5713,2024:0.4005"
+US,2,n_years<=2 → 唔做多特徵 Ridge 擬合；只報相關／描述。若強行擬合會過擬合。,"volshare_abortion,volshare_democracy,volshare_economy,volshare_healthcare,volshare_immigration,mean_tone_all","2020:0.5226,2024:0.4924"

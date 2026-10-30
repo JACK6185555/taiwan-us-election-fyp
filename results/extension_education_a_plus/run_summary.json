@@ -1,0 +1,30 @@
+{
+  "built_at": "2026-10-30 14:05 Asia/Hong_Kong (UTC+8)",
+  "poll_2004": {
+    "as_of_date": "2004-11-02",
+    "dem_pct": 46.982615,
+    "gop_pct": 48.604056,
+    "dem_two_party_share_poll": 0.4915184775082292
+  },
+  "poll_mae": 0.014206951985720584,
+  "poll_prev_mae": 0.0220655311959758,
+  "education_a_plus_mean": [
+    {
+      "model": "Previous-election baseline",
+      "mae": 0.0792648157080057
+    },
+    {
+      "model": "Random Forest",
+      "mae": 0.1059453098313345
+    },
+    {
+      "model": "HistGradientBoosting",
+      "mae": 0.11951266332682497
+    },
+    {
+      "model": "Ridge",
+      "mae": 0.1421879054599534
+    }
+  ],
+  "family_a_locked_prev_mae": 0.0792648157080057
+}

@@ -1,0 +1,42 @@
+{
+  "family": "US Family A",
+  "target": "target_dem_two_party_share",
+  "mean_metrics": [
+    {
+      "model": "Previous-election baseline",
+      "mae": 0.03448407878659069,
+      "rmse": 0.04315114769941057,
+      "mae_4dp": 0.0345,
+      "rmse_4dp": 0.0432
+    },
+    {
+      "model": "Random Forest",
+      "mae": 0.052935954805753194,
+      "rmse": 0.06262154938639614,
+      "mae_4dp": 0.0529,
+      "rmse_4dp": 0.0626
+    },
+    {
+      "model": "Ridge",
+      "mae": 0.053871805843102506,
+      "rmse": 0.06310687886536775,
+      "mae_4dp": 0.0539,
+      "rmse_4dp": 0.0631
+    },
+    {
+      "model": "HistGradientBoosting",
+      "mae": 0.055366750366228325,
+      "rmse": 0.06540087834715502,
+      "mae_4dp": 0.0554,
+      "rmse_4dp": 0.0654
+    }
+  ],
+  "conformal_mean_coverage": {
+    "HistGradientBoosting": 0.8809687106893552,
+    "Previous-election baseline": 0.8342520679447696,
+    "Random Forest": 0.8734683739623091,
+    "Ridge": 0.9098952854632799
+  },
+  "poll_index": "NOT AVAILABLE",
+  "socio_gap": "ACS key; ERS/BLS bulk blocked; yearly unemployment OK"
+}

@@ -1,0 +1,41 @@
+{
+  "source_geojson": "/workspace/taiwan-election-data/raw/geo/town-2025-03-18.geojson",
+  "official_release": "TOWN_MOI_1140318 (via pdmaptw v2.4.0 GeoJSON)",
+  "dataset_url": "https://data.gov.tw/dataset/7441",
+  "contiguity": "Queen (libpysal)",
+  "n_polygons": 368,
+  "n_undirected_edges_excl_self_full": 968,
+  "avg_degree_excl_self_full": 5.260869565217392,
+  "n_islands_full": 11,
+  "island_names": [
+    "臺東縣綠島鄉",
+    "臺東縣蘭嶼鄉",
+    "連江縣南竿鄉",
+    "連江縣莒光鄉",
+    "金門縣烏坵鄉",
+    "屏東縣琉球鄉",
+    "澎湖縣望安鄉",
+    "澎湖縣七美鄉",
+    "連江縣北竿鄉",
+    "連江縣東引鄉",
+    "金門縣烈嶼鄉"
+  ],
+  "n_components_reported_by_libpysal": 14,
+  "simplification_note": "pdmaptw simplifies rings for web use; contiguity may miss thin shared edges. Islands listed are mostly true offshore islands.",
+  "year_2024_induced": {
+    "n_nodes": 368,
+    "n_matched": 368,
+    "n_unmatched": 0,
+    "match_rate": 1.0,
+    "unmatched": [],
+    "n_undirected_edges_excl_self": 968,
+    "avg_degree_excl_self": 5.260869565217392,
+    "n_isolates_degree0_excl_self": 11
+  },
+  "year_2024_county_clique": {
+    "n_nodes": 368,
+    "n_undirected_edges_excl_self": 4155,
+    "avg_degree_excl_self": 22.581521739130434
+  },
+  "method": "numpy SGC diffusion (NOT trainable PyTorch GCN / GAT)"
+}

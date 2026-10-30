@@ -1,0 +1,12 @@
+spec,model,mae
+PreviousShare_only,baseline,0.03448407878659069
+Prev+Education,Ridge,0.04242054096554361
+Prev+Education+Economic,Ridge,0.043831675999737314
+Prev+Economic,Ridge,0.04397208365735213
+Prev+Education,RandomForest,0.04510712550563719
+Prev+Economic,RandomForest,0.04631043159599922
+Prev+Education+Economic,RandomForest,0.04737875058762996
+Education_only,RandomForest,0.11794935709482952
+Economic_only,RandomForest,0.11972543863119382
+Economic_only,Ridge,0.12861182903455998
+Education_only,Ridge,0.13030623620660686

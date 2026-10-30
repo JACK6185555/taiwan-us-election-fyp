@@ -1,0 +1,105 @@
+﻿suite,test_year,feature,feature_label,standardized_coef_signed,standardized_coef_abs
+enriched_plus_education_EXTENSION,2012,prev_DPP_vote_share,Previous DPP share,0.01190635976339955,0.01190635976339955
+enriched_plus_education_EXTENSION,2012,prev_KMT_vote_share,Previous KMT share,-0.01190635976339955,0.01190635976339955
+enriched_plus_education_EXTENSION,2012,prev_Other_vote_share,Previous other share,0.0,0.0
+enriched_plus_education_EXTENSION,2012,prev2_DPP_vote_share,DPP share two elections ago,0.013513524324673563,0.013513524324673563
+enriched_plus_education_EXTENSION,2012,prev2_KMT_vote_share,KMT share two elections ago,-0.0032281984293920166,0.0032281984293920166
+enriched_plus_education_EXTENSION,2012,prev2_Other_vote_share,Other share two elections ago,-0.011491337982836828,0.011491337982836828
+enriched_plus_education_EXTENSION,2012,prev_turnout,Previous turnout,9.844692111458226e-05,9.844692111458226e-05
+enriched_plus_education_EXTENSION,2012,DPP_change_1,DPP previous swing,0.0010044775973525766,0.0010044775973525766
+enriched_plus_education_EXTENSION,2012,KMT_change_1,KMT previous swing,-0.010283495182522586,0.010283495182522586
+enriched_plus_education_EXTENSION,2012,Other_change_1,Other previous swing,0.011491337982836828,0.011491337982836828
+enriched_plus_education_EXTENSION,2012,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.01190635976339955,0.01190635976339955
+enriched_plus_education_EXTENSION,2012,prev_DPP_Other_margin,Previous DPP-other margin,0.01190635976339955,0.01190635976339955
+enriched_plus_education_EXTENSION,2012,DPP_KMT_margin_change_1,DPP-KMT margin change,0.009217956938762636,0.009217956938762636
+enriched_plus_education_EXTENSION,2012,previous_party_change_abs_mean,Mean party swing magnitude,-0.011491337982836832,0.011491337982836832
+enriched_plus_education_EXTENSION,2012,previous_party_change_std,Dispersion of party swings,-0.010782241028492368,0.010782241028492368
+enriched_plus_education_EXTENSION,2012,turnout_change_1,Turnout change,0.007217044479491802,0.007217044479491802
+enriched_plus_education_EXTENSION,2012,lag_unemployment_pct,Lag county unemployment %,0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_both_id_pct,Lag national both ID % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),0.0,0.0
+enriched_plus_education_EXTENSION,2012,lag_education_rate,Lag tertiary+ education rate % (MOI PROXY),-0.00249364879759804,0.00249364879759804
+enriched_plus_education_EXTENSION,2016,prev_DPP_vote_share,Previous DPP share,0.023244355343836186,0.023244355343836186
+enriched_plus_education_EXTENSION,2016,prev_KMT_vote_share,Previous KMT share,-0.02324435534383603,0.02324435534383603
+enriched_plus_education_EXTENSION,2016,prev_Other_vote_share,Previous other share,0.0,0.0
+enriched_plus_education_EXTENSION,2016,prev2_DPP_vote_share,DPP share two elections ago,0.027982578381405585,0.027982578381405585
+enriched_plus_education_EXTENSION,2016,prev2_KMT_vote_share,KMT share two elections ago,-0.014492384589146206,0.014492384589146206
+enriched_plus_education_EXTENSION,2016,prev2_Other_vote_share,Other share two elections ago,-0.005797519261874711,0.005797519261874711
+enriched_plus_education_EXTENSION,2016,prev_turnout,Previous turnout,0.0012333450696544578,0.0012333450696544578
+enriched_plus_education_EXTENSION,2016,DPP_change_1,DPP previous swing,-0.00804015588248633,0.00804015588248633
+enriched_plus_education_EXTENSION,2016,KMT_change_1,KMT previous swing,-0.0035846979622211465,0.0035846979622211465
+enriched_plus_education_EXTENSION,2016,Other_change_1,Other previous swing,0.005797519261874722,0.005797519261874722
+enriched_plus_education_EXTENSION,2016,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.023244355343836006,0.023244355343836006
+enriched_plus_education_EXTENSION,2016,prev_DPP_Other_margin,Previous DPP-other margin,0.023244355343836096,0.023244355343836096
+enriched_plus_education_EXTENSION,2016,DPP_KMT_margin_change_1,DPP-KMT margin change,-0.0011133096397293557,0.0011133096397293557
+enriched_plus_education_EXTENSION,2016,previous_party_change_abs_mean,Mean party swing magnitude,-0.005054776793340299,0.005054776793340299
+enriched_plus_education_EXTENSION,2016,previous_party_change_std,Dispersion of party swings,-0.0042592173841663784,0.0042592173841663784
+enriched_plus_education_EXTENSION,2016,turnout_change_1,Turnout change,0.0015277309227897764,0.0015277309227897764
+enriched_plus_education_EXTENSION,2016,lag_unemployment_pct,Lag county unemployment %,-0.002257459838521829,0.002257459838521829
+enriched_plus_education_EXTENSION,2016,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched_plus_education_EXTENSION,2016,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched_plus_education_EXTENSION,2016,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.0033741265083157266,0.0033741265083157266
+enriched_plus_education_EXTENSION,2016,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.0033741265083157322,0.0033741265083157322
+enriched_plus_education_EXTENSION,2016,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.003374126508315781,0.003374126508315781
+enriched_plus_education_EXTENSION,2016,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),-0.0033741265083157795,0.0033741265083157795
+enriched_plus_education_EXTENSION,2016,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.003374126508315718,0.003374126508315718
+enriched_plus_education_EXTENSION,2016,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.003374126508315734,0.003374126508315734
+enriched_plus_education_EXTENSION,2016,lag_education_rate,Lag tertiary+ education rate % (MOI PROXY),-0.003672487363449478,0.003672487363449478
+enriched_plus_education_EXTENSION,2020,prev_DPP_vote_share,Previous DPP share,0.024011174619947194,0.024011174619947194
+enriched_plus_education_EXTENSION,2020,prev_KMT_vote_share,Previous KMT share,-0.02450347077301861,0.02450347077301861
+enriched_plus_education_EXTENSION,2020,prev_Other_vote_share,Previous other share,0.0038336113079639506,0.0038336113079639506
+enriched_plus_education_EXTENSION,2020,prev2_DPP_vote_share,DPP share two elections ago,0.026534816033230064,0.026534816033230064
+enriched_plus_education_EXTENSION,2020,prev2_KMT_vote_share,KMT share two elections ago,-0.013763176565755353,0.013763176565755353
+enriched_plus_education_EXTENSION,2020,prev2_Other_vote_share,Other share two elections ago,-0.004420299387552874,0.004420299387552874
+enriched_plus_education_EXTENSION,2020,prev_turnout,Previous turnout,0.006315957627057386,0.006315957627057386
+enriched_plus_education_EXTENSION,2020,DPP_change_1,DPP previous swing,-0.005116449243854655,0.005116449243854655
+enriched_plus_education_EXTENSION,2020,KMT_change_1,KMT previous swing,-0.003278198037112957,0.003278198037112957
+enriched_plus_education_EXTENSION,2020,Other_change_1,Other previous swing,0.0045363994498158295,0.0045363994498158295
+enriched_plus_education_EXTENSION,2020,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.024289268305321954,0.024289268305321954
+enriched_plus_education_EXTENSION,2020,prev_DPP_Other_margin,Previous DPP-other margin,0.023278457799028825,0.023278457799028825
+enriched_plus_education_EXTENSION,2020,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0011856191115056324,0.0011856191115056324
+enriched_plus_education_EXTENSION,2020,previous_party_change_abs_mean,Mean party swing magnitude,-0.0032369840895296615,0.0032369840895296615
+enriched_plus_education_EXTENSION,2020,previous_party_change_std,Dispersion of party swings,-0.001686555044922478,0.001686555044922478
+enriched_plus_education_EXTENSION,2020,turnout_change_1,Turnout change,-0.0033479056257238555,0.0033479056257238555
+enriched_plus_education_EXTENSION,2020,lag_unemployment_pct,Lag county unemployment %,-0.0038762666764609577,0.0038762666764609577
+enriched_plus_education_EXTENSION,2020,lag_log_mean_income,Lag log mean income,0.0,0.0
+enriched_plus_education_EXTENSION,2020,lag_log_pop_density,Lag log pop density,0.0,0.0
+enriched_plus_education_EXTENSION,2020,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.012615615036135126,0.012615615036135126
+enriched_plus_education_EXTENSION,2020,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.010797475676507259,0.010797475676507259
+enriched_plus_education_EXTENSION,2020,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.013805815067439896,0.013805815067439896
+enriched_plus_education_EXTENSION,2020,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),0.011403884379518028,0.011403884379518028
+enriched_plus_education_EXTENSION,2020,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),0.004626263197574104,0.004626263197574104
+enriched_plus_education_EXTENSION,2020,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.011004773826187721,0.011004773826187721
+enriched_plus_education_EXTENSION,2020,lag_education_rate,Lag tertiary+ education rate % (MOI PROXY),-0.0005973280704464265,0.0005973280704464265
+enriched_plus_education_EXTENSION,2024,prev_DPP_vote_share,Previous DPP share,0.025441990298104896,0.025441990298104896
+enriched_plus_education_EXTENSION,2024,prev_KMT_vote_share,Previous KMT share,-0.02073829374334208,0.02073829374334208
+enriched_plus_education_EXTENSION,2024,prev_Other_vote_share,Previous other share,-0.003794952134711992,0.003794952134711992
+enriched_plus_education_EXTENSION,2024,prev2_DPP_vote_share,DPP share two elections ago,0.02648358935422859,0.02648358935422859
+enriched_plus_education_EXTENSION,2024,prev2_KMT_vote_share,KMT share two elections ago,-0.015443621455398845,0.015443621455398845
+enriched_plus_education_EXTENSION,2024,prev2_Other_vote_share,Other share two elections ago,-0.0038267472241784793,0.0038267472241784793
+enriched_plus_education_EXTENSION,2024,prev_turnout,Previous turnout,0.008152099276403198,0.008152099276403198
+enriched_plus_education_EXTENSION,2024,DPP_change_1,DPP previous swing,-0.0006857320910097488,0.0006857320910097488
+enriched_plus_education_EXTENSION,2024,KMT_change_1,KMT previous swing,-0.0021709203304833523,0.0021709203304833523
+enriched_plus_education_EXTENSION,2024,Other_change_1,Other previous swing,0.0023306773291412075,0.0023306773291412075
+enriched_plus_education_EXTENSION,2024,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02329500392013842,0.02329500392013842
+enriched_plus_education_EXTENSION,2024,prev_DPP_Other_margin,Previous DPP-other margin,0.02684141901282657,0.02684141901282657
+enriched_plus_education_EXTENSION,2024,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0017755373638005123,0.0017755373638005123
+enriched_plus_education_EXTENSION,2024,previous_party_change_abs_mean,Mean party swing magnitude,-0.0059207445041854975,0.0059207445041854975
+enriched_plus_education_EXTENSION,2024,previous_party_change_std,Dispersion of party swings,-0.004280730294679952,0.004280730294679952
+enriched_plus_education_EXTENSION,2024,turnout_change_1,Turnout change,0.0026978817919677787,0.0026978817919677787
+enriched_plus_education_EXTENSION,2024,lag_unemployment_pct,Lag county unemployment %,-0.002898138834970256,0.002898138834970256
+enriched_plus_education_EXTENSION,2024,lag_log_mean_income,Lag log mean income,0.003926842934916023,0.003926842934916023
+enriched_plus_education_EXTENSION,2024,lag_log_pop_density,Lag log pop density,0.004206448596465813,0.004206448596465813
+enriched_plus_education_EXTENSION,2024,lag_taiwanese_id_pct,Lag national Taiwanese ID % (ESC PROXY),0.019546977631340726,0.019546977631340726
+enriched_plus_education_EXTENSION,2024,lag_chinese_id_pct,Lag national Chinese ID % (ESC PROXY),-0.013365676270978238,0.013365676270978238
+enriched_plus_education_EXTENSION,2024,lag_both_id_pct,Lag national both ID % (ESC PROXY),-0.024649165392934914,0.024649165392934914
+enriched_plus_education_EXTENSION,2024,lag_indep_lean_pct,Lag national indep-lean % (ESC PROXY),-0.0070556821107257625,0.0070556821107257625
+enriched_plus_education_EXTENSION,2024,lag_status_quo_forever_pct,Lag national SQ-forever % (ESC PROXY),-0.006038422293717127,0.006038422293717127
+enriched_plus_education_EXTENSION,2024,lag_unif_lean_pct,Lag national unif-lean % (ESC PROXY),-0.006339245841101772,0.006339245841101772
+enriched_plus_education_EXTENSION,2024,lag_education_rate,Lag tertiary+ education rate % (MOI PROXY),-0.0012023782060102957,0.0012023782060102957

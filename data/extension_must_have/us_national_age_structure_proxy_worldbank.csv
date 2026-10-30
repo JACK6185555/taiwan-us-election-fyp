@@ -1,0 +1,22 @@
+country,election_year,age_band,share_pct,share,wb_year_used,grain,source,family_a,note
+US,2000,0_14,21.1634,0.211634,2000,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2000,15_64,66.6507,0.666507,2000,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2000,65plus,12.1858,0.121858,2000,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2004,0_14,20.548,0.20548,2004,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2004,15_64,67.341,0.67341,2004,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2004,65plus,12.111,0.12111,2004,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2008,0_14,19.9087,0.199087,2008,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2008,15_64,67.6047,0.676047,2008,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2008,65plus,12.4867,0.124867,2008,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2012,0_14,19.5064,0.195064,2012,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2012,15_64,67.117,0.67117,2012,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2012,65plus,13.3766,0.133766,2012,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2016,0_14,19.0672,0.190672,2016,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2016,15_64,66.318,0.66318,2016,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2016,65plus,14.6147,0.146147,2016,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2020,0_14,18.3929,0.183929,2020,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2020,15_64,65.5352,0.655352,2020,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2020,65plus,16.0719,0.160719,2020,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2024,0_14,17.3246,0.173246,2024,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2024,15_64,64.7467,0.647467,2024,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population
+US,2024,65plus,17.9287,0.179287,2024,national,World Bank WDI SP.POP.*TO.ZS,NOT_INCLUDED,PROXY national age structure; NOT ACS county election-year panel; scale=percent of population

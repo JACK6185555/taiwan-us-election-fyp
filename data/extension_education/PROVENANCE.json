@@ -1,0 +1,9 @@
+{
+  "built_at": "2026-10-30 14:05 Asia/Hong_Kong (UTC+8)",
+  "dataset": "data.gov.tw 14219 / MOI micst funid=c0110405",
+  "definition": "15歲以上大專以上比率(%) by county, sex=總計",
+  "download": "https://statis.moi.gov.tw/micst/webMain.aspx?sys=220&kind=21&type=1&funid=c0110405&cycle=4&outmode=12&utf=1&compmode=0&outkind=3&fldspc=0,5,&codspc0=0,2,3,2,6,1,9,1,12,1,15,16,&codlst1=111&ym=8600&ymt=11300",
+  "opdadm_resource_note": "opdadm download URL returned small binary (not used as primary); micst CSV used instead",
+  "family_a": "NOT modified; Extension / A+ education PROXY only",
+  "alignment": "Intended parallel to US ERS education_rate (population attainment), NOT education-bureau politics"
+}

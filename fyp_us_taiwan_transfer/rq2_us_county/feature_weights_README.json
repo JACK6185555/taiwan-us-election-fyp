@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "arm": "NonSpatial only (US RQ2)",
+  "interpretation": "Ridge on StandardScaler features; RF impurity train-only; permutation OOT MAE. Not causal.",
+  "files": [
+    "feature_weights_nonspatial_ridge.csv",
+    "feature_importance_nonspatial_rf.csv",
+    "feature_perm_importance_nonspatial_oot.csv",
+    "feature_weights_ridge_summary.csv",
+    "feature_importance_rf_summary.csv"
+  ]
+}

@@ -1,0 +1,45 @@
+suite,grain,test_year,spec,features,model,mae,n_train,n_test,delta_mae_vs_prev,note
+TW_county,county,2012,PreviousShare_only,prev_DPP_vote_share,baseline,0.040249295646983874,44,22,0.0,baseline
+TW_county,county,2012,Prev+Education,"prev_DPP_vote_share,lag_education_rate",Ridge,0.05953249740433868,44,22,0.019283201757354804,negative delta = better than PreviousShare
+TW_county,county,2012,Prev+Education,"prev_DPP_vote_share,lag_education_rate",RandomForest,0.04468223336473299,44,22,0.004432937717749115,negative delta = better than PreviousShare
+TW_county,county,2012,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",Ridge,0.04455500643771888,44,22,0.0043057107907350095,negative delta = better than PreviousShare
+TW_county,county,2012,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.04019817582306091,44,22,-5.111982392296682e-05,negative delta = better than PreviousShare
+TW_county,county,2012,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",Ridge,0.05953249740433868,44,22,0.019283201757354804,negative delta = better than PreviousShare
+TW_county,county,2012,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.04474929898166771,44,22,0.004500003334683839,negative delta = better than PreviousShare
+TW_county,county,2012,Education_only,lag_education_rate,Ridge,0.11277459752888158,44,22,0.07252530188189771,negative delta = better than PreviousShare
+TW_county,county,2012,Education_only,lag_education_rate,RandomForest,0.11539697937588485,44,22,0.07514768372890097,negative delta = better than PreviousShare
+TW_county,county,2012,Economic_only,"lag_unemployment_pct,lag_log_mean_income",Ridge,0.10579666812075539,44,22,0.06554737247377151,negative delta = better than PreviousShare
+TW_county,county,2012,Economic_only,"lag_unemployment_pct,lag_log_mean_income",RandomForest,0.10587096187359628,44,22,0.0656216662266124,negative delta = better than PreviousShare
+TW_county,county,2016,PreviousShare_only,prev_DPP_vote_share,baseline,0.09789898667754059,66,22,0.0,baseline
+TW_county,county,2016,Prev+Education,"prev_DPP_vote_share,lag_education_rate",Ridge,0.09982369267372032,66,22,0.0019247059961797347,negative delta = better than PreviousShare
+TW_county,county,2016,Prev+Education,"prev_DPP_vote_share,lag_education_rate",RandomForest,0.09944647419744941,66,22,0.0015474875199088245,negative delta = better than PreviousShare
+TW_county,county,2016,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",Ridge,0.046358838891745566,66,22,-0.05154014778579502,negative delta = better than PreviousShare
+TW_county,county,2016,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.08638566214872499,66,22,-0.011513324528815594,negative delta = better than PreviousShare
+TW_county,county,2016,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",Ridge,0.04628060764727135,66,22,-0.05161837903026924,negative delta = better than PreviousShare
+TW_county,county,2016,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.0969127154149872,66,22,-0.0009862712625533926,negative delta = better than PreviousShare
+TW_county,county,2016,Education_only,lag_education_rate,Ridge,0.1656453740876436,66,22,0.06774638741010301,negative delta = better than PreviousShare
+TW_county,county,2016,Education_only,lag_education_rate,RandomForest,0.15769374866159938,66,22,0.059794761984058795,negative delta = better than PreviousShare
+TW_county,county,2016,Economic_only,"lag_unemployment_pct,lag_log_mean_income",Ridge,0.08499565033609237,66,22,-0.012903336341448218,negative delta = better than PreviousShare
+TW_county,county,2016,Economic_only,"lag_unemployment_pct,lag_log_mean_income",RandomForest,0.10271104783477551,66,22,0.004812061157234926,negative delta = better than PreviousShare
+TW_county,county,2020,PreviousShare_only,prev_DPP_vote_share,baseline,0.019272789977491236,88,22,0.0,baseline
+TW_county,county,2020,Prev+Education,"prev_DPP_vote_share,lag_education_rate",Ridge,0.018263887558287194,88,22,-0.001008902419204042,negative delta = better than PreviousShare
+TW_county,county,2020,Prev+Education,"prev_DPP_vote_share,lag_education_rate",RandomForest,0.04580796119554323,88,22,0.026535171218051993,negative delta = better than PreviousShare
+TW_county,county,2020,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",Ridge,0.02506897456950877,88,22,0.005796184592017535,negative delta = better than PreviousShare
+TW_county,county,2020,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.05390856409948037,88,22,0.034635774121989135,negative delta = better than PreviousShare
+TW_county,county,2020,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",Ridge,0.027755106130560314,88,22,0.008482316153069078,negative delta = better than PreviousShare
+TW_county,county,2020,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.05458271156283414,88,22,0.03530992158534291,negative delta = better than PreviousShare
+TW_county,county,2020,Education_only,lag_education_rate,Ridge,0.14132942035274032,88,22,0.12205663037524908,negative delta = better than PreviousShare
+TW_county,county,2020,Education_only,lag_education_rate,RandomForest,0.1476579388383132,88,22,0.12838514886082197,negative delta = better than PreviousShare
+TW_county,county,2020,Economic_only,"lag_unemployment_pct,lag_log_mean_income",Ridge,0.1187377227762225,88,22,0.09946493279873127,negative delta = better than PreviousShare
+TW_county,county,2020,Economic_only,"lag_unemployment_pct,lag_log_mean_income",RandomForest,0.10143951174169485,88,22,0.08216672176420362,negative delta = better than PreviousShare
+TW_county,county,2024,PreviousShare_only,prev_DPP_vote_share,baseline,0.15963819053000716,110,22,0.0,baseline
+TW_county,county,2024,Prev+Education,"prev_DPP_vote_share,lag_education_rate",Ridge,0.1785167181301385,110,22,0.01887852760013134,negative delta = better than PreviousShare
+TW_county,county,2024,Prev+Education,"prev_DPP_vote_share,lag_education_rate",RandomForest,0.1810854445984268,110,22,0.02144725406841963,negative delta = better than PreviousShare
+TW_county,county,2024,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",Ridge,0.1741396486628482,110,22,0.014501458132841039,negative delta = better than PreviousShare
+TW_county,county,2024,Prev+Economic,"prev_DPP_vote_share,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.17217288826051344,110,22,0.012534697730506278,negative delta = better than PreviousShare
+TW_county,county,2024,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",Ridge,0.17668493274165498,110,22,0.017046742211647814,negative delta = better than PreviousShare
+TW_county,county,2024,Prev+Education+Economic,"prev_DPP_vote_share,lag_education_rate,lag_unemployment_pct,lag_log_mean_income",RandomForest,0.18217810103652268,110,22,0.02253991050651552,negative delta = better than PreviousShare
+TW_county,county,2024,Education_only,lag_education_rate,Ridge,0.1125104772707683,110,22,-0.04712771325923887,negative delta = better than PreviousShare
+TW_county,county,2024,Education_only,lag_education_rate,RandomForest,0.15378682383529807,110,22,-0.0058513666947090925,negative delta = better than PreviousShare
+TW_county,county,2024,Economic_only,"lag_unemployment_pct,lag_log_mean_income",Ridge,0.11368271080517132,110,22,-0.04595547972483584,negative delta = better than PreviousShare
+TW_county,county,2024,Economic_only,"lag_unemployment_pct,lag_log_mean_income",RandomForest,0.17453921658685087,110,22,0.014901026056843708,negative delta = better than PreviousShare

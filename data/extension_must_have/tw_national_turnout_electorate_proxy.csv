@@ -1,0 +1,8 @@
+year,electorate,votes_cast,valid,turnout_rate,electorate_change_pct,new_voters_stock_change_proxy,country,note,family_a
+2000,15462625.0,12786671.0,12664393.0,0.8269405097776089,,,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2004,16507179.0,13251719.0,12914422.0,0.8027852003058791,0.06755347167767445,0.06755347167767445,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2008,17321622.0,13221609.0,13104503.0,0.7633008617784177,0.04933871499182274,0.04933871499182274,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2012,18086455.0,13452016.0,13354305.0,0.7437618925322845,0.04415481413923006,0.04415481413923006,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2016,18782991.0,12448302.0,12284970.0,0.6627433298562513,0.03851147170631286,0.03851147170631286,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2020,19311105.0,14464571.0,14300940.0,0.7490286547559034,0.028116608265424725,0.028116608265424725,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED
+2024,19548531.0,14048311.0,13947506.0,0.7186376817777254,0.01229479100237918,0.01229479100237918,TW,new_voters PROXY = national electorate % change vs prior presidential cycle (not first-time voter registry),NOT_INCLUDED

@@ -1,0 +1,20 @@
+{
+  "built_at_tz": "Asia/Hong_Kong",
+  "seed": 42,
+  "sources": [
+    "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/2024-averages/presidential_general_averages_2024-09-12_uncorrected.csv",
+    "Wikipedia Nationwide opinion polling pages (MediaWiki API wikitext)",
+    "MEDSL county-president.csv (already in repo)",
+    "American Presidency Project party platform index (URLs + published word counts)",
+    "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/pres_pollaverages_1968-2016.csv"
+  ],
+  "not_used": [
+    "Cook PVI subscriber spreadsheets",
+    "FiveThirtyEight projects.fivethirtyeight.com live CSVs (blocked/HTML)",
+    "ANES microdata (login/application)",
+    "Full copyrighted platform body text"
+  ],
+  "family_a": "NOT modified; Extension only",
+  "updated_at": "2026-10-30 14:05 Asia/Hong_Kong (UTC+8)",
+  "notes_2004_fill": "2004 National filled from last modeldate in pres_pollaverages_1968-2016.csv (2004-11-02); archive truncates ~Sep 9 each cycle."
+}

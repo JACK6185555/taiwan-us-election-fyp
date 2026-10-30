@@ -1,0 +1,5 @@
+election_year,proxy_window,dpp_pid_pct,kmt_pid_pct,tpp_pid_pct,ind_pid_pct,indep_lean_pct,unif_lean_pct,source_note,proxy_quality
+2012,2011_year_PROXY_chart,25.0,33.0,0.0,38.0,20.0,10.0,"Chart read of Party/Tondu PNGs near 2011; ±2pp approximate",approximate_chart
+2016,2015_year_PROXY_chart_news,28.0,25.0,0.0,42.0,22.0,9.0,"Chart read near 2015 + secondary reports; ±2pp; TPP not yet founded",approximate_chart
+2020,2019_year_PROXY_chart_news,29.0,22.0,2.4,42.0,24.0,8.0,"TPP founded 2019 (~2.4% at founding per NOWnews citing ESC); chart approx for others",mixed_news_chart
+2024,2023_midyear_PUBLISHED,28.3,19.4,14.3,36.9,25.0,8.0,"NOWnews/LTN citing ESC 2023 mid-year merge: DPP28.3 KMT19.4 TPP14.3 IND36.9; 統獨 lean chart approx",published_news_cite

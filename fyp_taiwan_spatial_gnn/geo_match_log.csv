@@ -1,0 +1,5 @@
+year,n_nodes,n_matched,n_unmatched,match_rate,unmatched
+2012,355,355,0,1.0,
+2016,368,368,0,1.0,
+2020,368,368,0,1.0,
+2024,368,368,0,1.0,

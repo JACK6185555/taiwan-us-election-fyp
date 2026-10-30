@@ -1,0 +1,8 @@
+country,election_year,presidential_approval,source,note,family_a
+US,2000,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED
+US,2004,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED
+US,2008,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED
+US,2012,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED
+US,2016,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED
+US,2020,43.84,datahub 538 trump approval_topline,election-eve window voters subgroup,NOT_INCLUDED
+US,2024,,,GAP — Gallup/538 election-eve historical series not systematically ingested (projects HTML-blocked; UCSB JS-only),NOT_INCLUDED

@@ -1,0 +1,14 @@
+{
+  "unit": "township",
+  "n_complete_rows": 1047,
+  "n_townships": 354,
+  "years": [
+    2016,
+    2020,
+    2024
+  ],
+  "note_2024": "2024 three-candidate race; level models underperform lag baseline on holdout because national DPP share fell ~17pp.",
+  "primary_ranking_file": "/workspace/taiwan-election-data/analysis/feature_weights_loeo_mean_dpp_share.csv",
+  "delta_ranking_file": "/workspace/taiwan-election-data/analysis/feature_weights_loeo_mean_delta_dpp.csv",
+  "county_ranking_file": "/workspace/taiwan-election-data/analysis/county_feature_weights_loeo_mean.csv"
+}

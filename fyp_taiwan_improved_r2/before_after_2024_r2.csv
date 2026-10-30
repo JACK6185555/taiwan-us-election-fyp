@@ -1,0 +1,17 @@
+race,party,target,best_baseline,baseline_MAE,best_r2_model,r2_MAE,delta_MAE_baseline_minus_r2,r2_wins
+legislative_district,DPP,demeaned,PreviousDemeaned,0.1043625278273825,Ridge,0.13477883454107029,-0.03041630671368778,False
+legislative_district,DPP,level,PreviousShare,0.10479403416640194,Ridge,0.12996200320723847,-0.025167969040836527,False
+legislative_district,DPP,swing,ZeroSwing,0.10479403416640194,HistGB,0.13568324086907826,-0.030889206702676322,False
+legislative_district,KMT,demeaned,PreviousDemeaned,0.13301746073089396,Ridge,0.1371137454032537,-0.004096284672359729,False
+legislative_district,KMT,level,PreviousShare,0.13295209736444247,Ridge,0.134812360887763,-0.0018602635233205267,False
+legislative_district,KMT,swing,ZeroSwing,0.13295209736444247,RandomForest,0.13277071660556336,0.0001813807588791072,True
+legislative_district,TPP,demeaned,PreviousDemeaned,0.046545065184667715,HistGB,0.048253211982264906,-0.0017081467975971903,False
+legislative_district,TPP,level,PreviousShare,0.03888618494685047,HistGB,0.04152977894991148,-0.002643594003061009,False
+legislative_district,TPP,swing,ZeroSwing,0.03888618494685047,,,,
+presidential,DPP,demeaned,PreviousDemeaned,0.036486006062170166,RandomForest,0.040964567770578386,-0.00447856170840822,False
+presidential,DPP,level,PreviousShare,0.14872504338071132,Ridge,0.07127127912130533,0.07745376425940599,True
+presidential,DPP,swing,ZeroSwing,0.14872504338071132,Ridge,0.040258221066410235,0.10846682231430109,True
+presidential,KMT,demeaned,PreviousDemeaned,0.024669601060199258,RandomForest,0.041997316459720574,-0.017327715399521316,False
+presidential,KMT,level,PreviousShare,0.05981585439374408,RandomForest,0.05482446064827883,0.004991393745465249,True
+presidential,KMT,swing,ZeroSwing,0.05981585439374408,RandomForest,0.08452441210045204,-0.024708557706707962,False
+presidential,TPP,demeaned,ZeroDemeaned,0.03893896524617767,,,,

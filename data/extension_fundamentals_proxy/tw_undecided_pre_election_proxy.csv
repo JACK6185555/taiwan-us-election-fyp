@@ -1,0 +1,7 @@
+country,year,undecided_pct_mean_window,undecided_pct_last,n_polls,asof_last,window,note
+TW,2000,29.942,25.0,19,2000-03-07,2000-02-01..2000-03-18,Extension PROXY from taiwan_polls_long
+TW,2008,23.307,20.0,27,2008-03-21,2008-02-06..2008-03-22,Extension PROXY from taiwan_polls_long
+TW,2012,16.118,11.5,60,2012-01-02,2011-11-30..2012-01-14,Extension PROXY from taiwan_polls_long
+TW,2016,24.117,18.0,46,2016-01-14,2015-12-01..2016-01-16,Extension PROXY from taiwan_polls_long
+TW,2020,,,0,,2019-10-01..2020-01-11,no undecided target in window (2020 near-election tickets only; 2024 blackout)
+TW,2024,17.387,14.7,62,2023-11-20,2023-10-01..2024-01-02,Extension PROXY from taiwan_polls_long

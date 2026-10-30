@@ -1,0 +1,5 @@
+country,year,media_top_issue,media_top_issue_sentiment,media_top_issue_volume_share,media_top_issue_n_posts
+TW,2020,economy,-0.7921,0.2584,23
+TW,2024,cross_strait,-0.5145,0.2667,24
+US,2020,abortion,0.1573,0.2232,25
+US,2024,abortion,0.2704,0.2035,23

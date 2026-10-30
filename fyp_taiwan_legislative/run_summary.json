@@ -1,0 +1,46 @@
+{
+  "unit": "township (鄉鎮市區)",
+  "race": "regional district legislator (區域立委)",
+  "years": [
+    2016,
+    2020,
+    2024
+  ],
+  "parties": {
+    "DPP": 16,
+    "KMT": 1,
+    "TPP": 350
+  },
+  "tpp_note": "No TPP in 2016; 2020+2024 district presence; party-list national only in elretks",
+  "n_rows_harmonized": 1104,
+  "district_national_2024": {
+    "dpp": 0.45166644467358785,
+    "kmt": 0.4042219342132241,
+    "tpp": 0.029723177125034982
+  },
+  "partylist_national_elretks": {
+    "2016": {
+      "dpp": 0.440598,
+      "kmt": 0.269148,
+      "tpp": null
+    },
+    "2020": {
+      "dpp": 0.339774,
+      "kmt": 0.333578,
+      "tpp": 0.112203
+    },
+    "2024": {
+      "dpp": 0.361629,
+      "kmt": 0.345842,
+      "tpp": 0.220706
+    }
+  },
+  "mae_2024_level": {
+    "DPP_PreviousShare": 0.10479403416640194,
+    "DPP_RandomForest": 0.1642244850908119,
+    "KMT_PreviousShare": 0.13295209736444247,
+    "KMT_RandomForest": 0.1392836621706922,
+    "TPP_PreviousShare": 0.03888618494685047,
+    "TPP_RandomForest": 0.021493937793795815
+  }
+}

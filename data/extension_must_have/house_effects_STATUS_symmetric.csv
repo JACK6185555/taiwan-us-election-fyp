@@ -1,0 +1,15 @@
+country,election_year,formal_house_effects_model,sketch_available,sketch_path,note,family_a
+TW,2000,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2000.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2000,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2004,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2004.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2004,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2008,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2008.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2008,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2012,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2012.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2012,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2016,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2016.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2016,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2020,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2020.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2020,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED
+TW,2024,兩邊皆缺,True,data/extension_must_have/tw_house_effects_sketch_2024.csv,pollster mean − overall DPP mean in 45d window; NOT Bayesian house effects,NOT_INCLUDED
+US,2024,兩邊皆缺,False,,538 national daily in repo is already averaged (pollster=FiveThirtyEight_poll_average); raw pollster CSV HTML-blocked this session — sketch deferred; layer marked 兩邊皆缺 for formal model,NOT_INCLUDED

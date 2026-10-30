@@ -1,0 +1,16 @@
+{
+  "source": "Grok Bot built-in X MCP search_posts_all (full archive); platform tags from extension_poll_platform / us_parity_extension",
+  "not_html_scrape": true,
+  "windows_utc": {
+    "TW2024": "2023-12-01..2024-01-12",
+    "TW2020": "2019-12-01..2020-01-10",
+    "US2024": "2024-10-01..2024-11-04",
+    "US2020": "2020-10-01..2020-11-02"
+  },
+  "sentiment": {
+    "TW": "SnowNLP+lexicon nudge",
+    "US": "VADER compound"
+  },
+  "gdelt": "429 failed",
+  "family_a": "NOT modified"
+}

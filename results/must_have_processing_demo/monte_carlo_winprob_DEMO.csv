@@ -1,0 +1,15 @@
+country,election_year,poll_mean_2p,sigma_used,mc_p_dpp_2p_gt_0_5,actual_dpp_share_all_parties,abs_error_poll_vs_actual_raw_dpp,note,mc_p_dem_2p_gt_0_5,actual_dem_2p_unweighted_county_mean,abs_error_poll_vs_county_mean
+TW,2000,0.499377,0.0207,0.4858,0.342608,0.15677,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2004,0.481243,0.0221,0.2013,0.448244,0.033,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2008,0.351119,0.0596,0.0061,0.368546,0.01743,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2012,0.468578,0.0266,0.1186,0.408795,0.05978,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2016,0.671015,0.0542,0.999,0.506694,0.16432,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2020,0.694185,0.0456,1.0,0.517972,0.17621,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+TW,2024,0.566728,0.0466,0.9244,0.358334,0.20839,ILLUSTRATION only — independent normal; NOT 538-grade; TW 2p poll vs all-party DPP share,,,
+US,2000,0.5036880927291886,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.596,,
+US,2004,0.4915184775082292,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.2927,,
+US,2008,0.5096446700507614,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.7375,0.422247,0.0874
+US,2012,0.5036119711042311,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.5979,0.392304,0.11131
+US,2016,0.5176991150442477,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.8837,0.333171,0.18453
+US,2020,0.5441477984436079,0.015,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.9987,0.338672,0.20548
+US,2024,0.5154419671033704,0.008,,,,ILLUSTRATION only — independent normal national Dem 2p; NOT EC/state Monte Carlo; NOT 538-grade,0.9751,0.321804,0.19364

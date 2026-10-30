@@ -1,0 +1,5 @@
+country,year,media_camp_sentiment_gap,media_n_posts_camp,media_mean_sentiment_all
+TW,2020,0.00824999999999998,59,-0.4734
+TW,2024,-0.03720000000000001,176,-0.4476800000000001
+US,2020,0.09885,81,0.008125
+US,2024,-0.07505,144,0.111125

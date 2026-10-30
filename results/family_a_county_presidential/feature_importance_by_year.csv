@@ -1,0 +1,257 @@
+﻿test_year,model,feature,feature_label,permutation_mae_increase,permutation_std
+2012,Ridge,prev_DPP_vote_share,Previous DPP share,0.009037440197704158,0.001993693549895301
+2012,Ridge,prev_KMT_vote_share,Previous KMT share,0.009037440197704093,0.001993693549895291
+2012,Ridge,prev_Other_vote_share,Previous other share,0.0,0.0
+2012,Ridge,prev2_DPP_vote_share,DPP share two elections ago,0.012712278102883886,0.002863332049361323
+2012,Ridge,prev2_KMT_vote_share,KMT share two elections ago,0.014479316267506355,0.0031982016402247494
+2012,Ridge,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2012,Ridge,prev_turnout,Previous turnout,-0.000150558520217584,0.0002900977928379641
+2012,Ridge,DPP_change_1,DPP previous swing,-0.00043685166139509856,0.0003746229614640891
+2012,Ridge,KMT_change_1,KMT previous swing,-0.00041231527981088503,0.0003498187168789401
+2012,Ridge,Other_change_1,Other previous swing,0.0,0.0
+2012,Ridge,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.009037440197704135,0.001993693549895299
+2012,Ridge,prev_DPP_Other_margin,Previous DPP-other margin,0.009037440197704139,0.0019936935498953
+2012,Ridge,DPP_KMT_margin_change_1,DPP-KMT margin change,-0.000590606008295428,0.0005552134835937557
+2012,Ridge,previous_party_change_abs_mean,Mean party swing magnitude,-0.0004939824760274971,0.00043612831419489415
+2012,Ridge,previous_party_change_std,Dispersion of party swings,-0.0004625046890485783,0.0004017923334735199
+2012,Ridge,turnout_change_1,Turnout change,-0.0016823155932762586,0.00229600144650118
+2012,Ridge standardized coefficient,prev_DPP_vote_share,Previous DPP share,0.012013948957625894,
+2012,Ridge standardized coefficient,prev_KMT_vote_share,Previous KMT share,0.012013948957625814,
+2012,Ridge standardized coefficient,prev_Other_vote_share,Previous other share,0.0,
+2012,Ridge standardized coefficient,prev2_DPP_vote_share,DPP share two elections ago,0.013428021432333207,
+2012,Ridge standardized coefficient,prev2_KMT_vote_share,KMT share two elections ago,0.0031639130796422676,
+2012,Ridge standardized coefficient,prev2_Other_vote_share,Other share two elections ago,0.0114268181760714,
+2012,Ridge standardized coefficient,prev_turnout,Previous turnout,0.0010657037172345037,
+2012,Ridge standardized coefficient,DPP_change_1,DPP previous swing,0.0019483897885970345,
+2012,Ridge standardized coefficient,KMT_change_1,KMT previous swing,0.010391766733336642,
+2012,Ridge standardized coefficient,Other_change_1,Other previous swing,0.011426818176071411,
+2012,Ridge standardized coefficient,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.012013948957625862,
+2012,Ridge standardized coefficient,prev_DPP_Other_margin,Previous DPP-other margin,0.012013948957625866,
+2012,Ridge standardized coefficient,DPP_KMT_margin_change_1,DPP-KMT margin change,0.009458821109755777,
+2012,Ridge standardized coefficient,previous_party_change_abs_mean,Mean party swing magnitude,0.011426818176071359,
+2012,Ridge standardized coefficient,previous_party_change_std,Dispersion of party swings,0.010747226006381859,
+2012,Ridge standardized coefficient,turnout_change_1,Turnout change,0.007141478878273328,
+2012,Random Forest,prev_DPP_vote_share,Previous DPP share,0.003985089559798225,0.0009455884906401505
+2012,Random Forest,prev_KMT_vote_share,Previous KMT share,0.012604849426088882,0.0020466071034165273
+2012,Random Forest,prev_Other_vote_share,Previous other share,5.181040781584064e-17,3.163269830756128e-17
+2012,Random Forest,prev2_DPP_vote_share,DPP share two elections ago,0.007485151871091198,0.0015535057951145648
+2012,Random Forest,prev2_KMT_vote_share,KMT share two elections ago,5.134781488891349e-17,3.085532967212348e-17
+2012,Random Forest,prev2_Other_vote_share,Other share two elections ago,5.3198186596622086e-17,3.2265649397607397e-17
+2012,Random Forest,prev_turnout,Previous turnout,6.106226635438361e-17,3.115555635791419e-17
+2012,Random Forest,DPP_change_1,DPP previous swing,4.6721885619642005e-17,2.8096570697911225e-17
+2012,Random Forest,KMT_change_1,KMT previous swing,4.94974431812049e-17,2.4218849356935498e-17
+2012,Random Forest,Other_change_1,Other previous swing,4.625929269271486e-17,2.896289845455152e-17
+2012,Random Forest,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.006052256330316233,0.0011145307603063635
+2012,Random Forest,prev_DPP_Other_margin,Previous DPP-other margin,0.006100592976902369,0.0011833711535593858
+2012,Random Forest,DPP_KMT_margin_change_1,DPP-KMT margin change,-0.0006888821246931922,0.00037467548004186887
+2012,Random Forest,previous_party_change_abs_mean,Mean party swing magnitude,4.3483735131151964e-17,2.815363508009879e-17
+2012,Random Forest,previous_party_change_std,Dispersion of party swings,5.2273000742767786e-17,2.9696160060070244e-17
+2012,Random Forest,turnout_change_1,Turnout change,-0.00013590450719439123,6.199462470116966e-05
+2012,HistGradientBoosting,prev_DPP_vote_share,Previous DPP share,0.019405607666972576,0.008460601742437892
+2012,HistGradientBoosting,prev_KMT_vote_share,Previous KMT share,0.0,0.0
+2012,HistGradientBoosting,prev_Other_vote_share,Previous other share,0.0,0.0
+2012,HistGradientBoosting,prev2_DPP_vote_share,DPP share two elections ago,0.005746969884720015,0.0017082496107710277
+2012,HistGradientBoosting,prev2_KMT_vote_share,KMT share two elections ago,0.0,0.0
+2012,HistGradientBoosting,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2012,HistGradientBoosting,prev_turnout,Previous turnout,0.002695904386820812,0.0014516524347631399
+2012,HistGradientBoosting,DPP_change_1,DPP previous swing,0.0,0.0
+2012,HistGradientBoosting,KMT_change_1,KMT previous swing,0.0,0.0
+2012,HistGradientBoosting,Other_change_1,Other previous swing,0.0,0.0
+2012,HistGradientBoosting,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.0,0.0
+2012,HistGradientBoosting,prev_DPP_Other_margin,Previous DPP-other margin,0.0,0.0
+2012,HistGradientBoosting,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0,0.0
+2012,HistGradientBoosting,previous_party_change_abs_mean,Mean party swing magnitude,0.0,0.0
+2012,HistGradientBoosting,previous_party_change_std,Dispersion of party swings,0.0,0.0
+2012,HistGradientBoosting,turnout_change_1,Turnout change,-0.0001291271793453665,0.0005496528230732853
+2016,Ridge,prev_DPP_vote_share,Previous DPP share,0.0007325760577101191,0.0007761394491771064
+2016,Ridge,prev_KMT_vote_share,Previous KMT share,0.0005842868441160414,0.000607855146518989
+2016,Ridge,prev_Other_vote_share,Previous other share,0.0,0.0
+2016,Ridge,prev2_DPP_vote_share,DPP share two elections ago,0.002442441191150124,0.0018953009048519082
+2016,Ridge,prev2_KMT_vote_share,KMT share two elections ago,-3.191891195797325e-17,1.3478849781065493e-17
+2016,Ridge,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2016,Ridge,prev_turnout,Previous turnout,-3.0068540250264654e-17,1.0187552443097789e-17
+2016,Ridge,DPP_change_1,DPP previous swing,-2.590520390792032e-17,1.8526832285445188e-17
+2016,Ridge,KMT_change_1,KMT previous swing,-3.14563190310461e-17,1.7892242877860987e-17
+2016,Ridge,Other_change_1,Other previous swing,-2.6830389761774617e-17,1.6394335099357976e-17
+2016,Ridge,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.0006584314509130685,0.0006903057607599947
+2016,Ridge,prev_DPP_Other_margin,Previous DPP-other margin,0.0008979643081474253,0.0009408147779246122
+2016,Ridge,DPP_KMT_margin_change_1,DPP-KMT margin change,-3.0993726104118954e-17,1.3730518647666083e-17
+2016,Ridge,previous_party_change_abs_mean,Mean party swing magnitude,-2.7292982688701764e-17,1.3636687124862467e-17
+2016,Ridge,previous_party_change_std,Dispersion of party swings,-2.544261098099317e-17,1.5237504861580307e-17
+2016,Ridge,turnout_change_1,Turnout change,-2.544261098099317e-17,1.5237504861580307e-17
+2016,Ridge standardized coefficient,prev_DPP_vote_share,Previous DPP share,0.02270704064718711,
+2016,Ridge standardized coefficient,prev_KMT_vote_share,Previous KMT share,0.02270704064718699,
+2016,Ridge standardized coefficient,prev_Other_vote_share,Previous other share,0.0,
+2016,Ridge standardized coefficient,prev2_DPP_vote_share,DPP share two elections ago,0.030874490464884056,
+2016,Ridge standardized coefficient,prev2_KMT_vote_share,KMT share two elections ago,0.013109019763630745,
+2016,Ridge standardized coefficient,prev2_Other_vote_share,Other share two elections ago,0.008757004374886041,
+2016,Ridge standardized coefficient,prev_turnout,Previous turnout,0.0005338867233652317,
+2016,Ridge standardized coefficient,DPP_change_1,DPP previous swing,0.013420131142650395,
+2016,Ridge standardized coefficient,KMT_change_1,KMT previous swing,0.004700048476211391,
+2016,Ridge standardized coefficient,Other_change_1,Other previous swing,0.008757004374886053,
+2016,Ridge standardized coefficient,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02270704064718696,
+2016,Ridge standardized coefficient,prev_DPP_Other_margin,Previous DPP-other margin,0.022707040647187048,
+2016,Ridge standardized coefficient,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0034132090402708005,
+2016,Ridge standardized coefficient,previous_party_change_abs_mean,Mean party swing magnitude,0.006941624131413959,
+2016,Ridge standardized coefficient,previous_party_change_std,Dispersion of party swings,0.00594070976828878,
+2016,Ridge standardized coefficient,turnout_change_1,Turnout change,0.0001197476226267964,
+2016,Random Forest,prev_DPP_vote_share,Previous DPP share,0.000974686061142004,0.0004658287222327284
+2016,Random Forest,prev_KMT_vote_share,Previous KMT share,0.0006074137189990031,0.0005172621902927497
+2016,Random Forest,prev_Other_vote_share,Previous other share,-2.590520390792032e-17,2.94900723294952e-17
+2016,Random Forest,prev2_DPP_vote_share,DPP share two elections ago,0.033675743560635324,0.012825474026013731
+2016,Random Forest,prev2_KMT_vote_share,KMT share two elections ago,6.251789493518696e-05,0.0002357236109514253
+2016,Random Forest,prev2_Other_vote_share,Other share two elections ago,-3.9782991715734776e-17,2.7461037295332172e-17
+2016,Random Forest,prev_turnout,Previous turnout,-0.0008185874052767994,0.0004536725905845597
+2016,Random Forest,DPP_change_1,DPP previous swing,-3.515706244646329e-17,3.985822640187878e-17
+2016,Random Forest,KMT_change_1,KMT previous swing,-3.793262000802618e-17,3.2434329560937696e-17
+2016,Random Forest,Other_change_1,Other previous swing,-3.793262000802618e-17,3.163269830756129e-17
+2016,Random Forest,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.00056822162180969,0.0003906674291033599
+2016,Random Forest,prev_DPP_Other_margin,Previous DPP-other margin,0.0011297853454448124,0.0003786982780598756
+2016,Random Forest,DPP_KMT_margin_change_1,DPP-KMT margin change,-4.070817756958907e-17,3.1017881992964086e-17
+2016,Random Forest,previous_party_change_abs_mean,Mean party swing magnitude,1.0365993269562113e-05,1.0221512429960341e-05
+2016,Random Forest,previous_party_change_std,Dispersion of party swings,-3.608224830031759e-17,3.448102017538132e-17
+2016,Random Forest,turnout_change_1,Turnout change,-0.0008330958252737913,0.0003641960662051764
+2016,HistGradientBoosting,prev_DPP_vote_share,Previous DPP share,0.005410033543624196,0.0020984714412145685
+2016,HistGradientBoosting,prev_KMT_vote_share,Previous KMT share,0.006470766793337344,0.002060775996403632
+2016,HistGradientBoosting,prev_Other_vote_share,Previous other share,0.0,0.0
+2016,HistGradientBoosting,prev2_DPP_vote_share,DPP share two elections ago,0.026089269010683907,0.009138757495388209
+2016,HistGradientBoosting,prev2_KMT_vote_share,KMT share two elections ago,-0.0006196034939917199,0.0002457673745434222
+2016,HistGradientBoosting,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2016,HistGradientBoosting,prev_turnout,Previous turnout,-0.0007494761775194499,0.0004187312300456453
+2016,HistGradientBoosting,DPP_change_1,DPP previous swing,0.0,0.0
+2016,HistGradientBoosting,KMT_change_1,KMT previous swing,0.0,0.0
+2016,HistGradientBoosting,Other_change_1,Other previous swing,0.0,0.0
+2016,HistGradientBoosting,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.0,0.0
+2016,HistGradientBoosting,prev_DPP_Other_margin,Previous DPP-other margin,0.0,0.0
+2016,HistGradientBoosting,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0,0.0
+2016,HistGradientBoosting,previous_party_change_abs_mean,Mean party swing magnitude,0.0,0.0
+2016,HistGradientBoosting,previous_party_change_std,Dispersion of party swings,0.0,0.0
+2016,HistGradientBoosting,turnout_change_1,Turnout change,-0.00023391481264995462,0.0001935462754417855
+2020,Ridge,prev_DPP_vote_share,Previous DPP share,-1.1102230246251566e-17,4.154074181055225e-17
+2020,Ridge,prev_KMT_vote_share,Previous KMT share,3.7007434154171884e-18,4.517333031985021e-17
+2020,Ridge,prev_Other_vote_share,Previous other share,5.551115123125783e-18,3.611781484251626e-17
+2020,Ridge,prev2_DPP_vote_share,DPP share two elections ago,5.551115123125783e-18,3.885780586188048e-17
+2020,Ridge,prev2_KMT_vote_share,KMT share two elections ago,-2.590520390792032e-17,4.2356944404722246e-17
+2020,Ridge,prev2_Other_vote_share,Other share two elections ago,0.0,3.7921335575229097e-17
+2020,Ridge,prev_turnout,Previous turnout,-1.1102230246251566e-17,4.394389329101677e-17
+2020,Ridge,DPP_change_1,DPP previous swing,-1.4802973661668754e-17,3.491274355562848e-17
+2020,Ridge,KMT_change_1,KMT previous swing,-2.0354088784794535e-17,3.920867353090513e-17
+2020,Ridge,Other_change_1,Other previous swing,-2.4054832200211726e-17,3.705366457089037e-17
+2020,Ridge,prev_DPP_KMT_margin,Previous DPP-KMT margin,-3.700743415417188e-17,2.6168207644729584e-17
+2020,Ridge,prev_DPP_Other_margin,Previous DPP-other margin,-1.8503717077085942e-18,4.640708633664708e-17
+2020,Ridge,DPP_KMT_margin_change_1,DPP-KMT margin change,-1.4802973661668754e-17,2.8425949549284484e-17
+2020,Ridge,previous_party_change_abs_mean,Mean party swing magnitude,-9.25185853854297e-18,4.319736246456708e-17
+2020,Ridge,previous_party_change_std,Dispersion of party swings,-1.1102230246251566e-17,3.898975125298516e-17
+2020,Ridge,turnout_change_1,Turnout change,-1.1102230246251566e-17,4.394389329101677e-17
+2020,Ridge standardized coefficient,prev_DPP_vote_share,Previous DPP share,0.023350534031574523,
+2020,Ridge standardized coefficient,prev_KMT_vote_share,Previous KMT share,0.02695876252930687,
+2020,Ridge standardized coefficient,prev_Other_vote_share,Previous other share,0.033935508392327535,
+2020,Ridge standardized coefficient,prev2_DPP_vote_share,DPP share two elections ago,0.028215119138599074,
+2020,Ridge standardized coefficient,prev2_KMT_vote_share,KMT share two elections ago,0.009937655989834591,
+2020,Ridge standardized coefficient,prev2_Other_vote_share,Other share two elections ago,0.00921051136726355,
+2020,Ridge standardized coefficient,prev_turnout,Previous turnout,0.003642762789458083,
+2020,Ridge standardized coefficient,DPP_change_1,DPP previous swing,0.009411240810829885,
+2020,Ridge standardized coefficient,KMT_change_1,KMT previous swing,0.009390839181987262,
+2020,Ridge standardized coefficient,Other_change_1,Other previous swing,0.01115883893776314,
+2020,Ridge standardized coefficient,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02518470921497478,
+2020,Ridge standardized coefficient,prev_DPP_Other_margin,Previous DPP-other margin,0.019565348539503317,
+2020,Ridge standardized coefficient,DPP_KMT_margin_change_1,DPP-KMT margin change,0.005678028012658795,
+2020,Ridge standardized coefficient,previous_party_change_abs_mean,Mean party swing magnitude,0.004460757792480004,
+2020,Ridge standardized coefficient,previous_party_change_std,Dispersion of party swings,0.0005111371543661185,
+2020,Ridge standardized coefficient,turnout_change_1,Turnout change,0.004745417976876076,
+2020,Random Forest,prev_DPP_vote_share,Previous DPP share,0.003788208408875286,0.0008539747598500996
+2020,Random Forest,prev_KMT_vote_share,Previous KMT share,0.01840823123099305,0.005320721400473459
+2020,Random Forest,prev_Other_vote_share,Previous other share,1.1564823173178713e-18,3.2942495740429215e-17
+2020,Random Forest,prev2_DPP_vote_share,DPP share two elections ago,0.03657911643515017,0.007454180176441177
+2020,Random Forest,prev2_KMT_vote_share,KMT share two elections ago,5.1936464977038696e-05,8.674656405649965e-05
+2020,Random Forest,prev2_Other_vote_share,Other share two elections ago,-3.7007434154171884e-18,2.9040374023513656e-17
+2020,Random Forest,prev_turnout,Previous turnout,8.605934419546949e-05,4.399825825155886e-05
+2020,Random Forest,DPP_change_1,DPP previous swing,-1.3152691683144627e-05,7.03697871884395e-05
+2020,Random Forest,KMT_change_1,KMT previous swing,-1.61907524424502e-18,2.3061312948766184e-17
+2020,Random Forest,Other_change_1,Other previous swing,-2.544261098099317e-18,2.4135871853387193e-17
+2020,Random Forest,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.003921243887862175,0.0013031436345445138
+2020,Random Forest,prev_DPP_Other_margin,Previous DPP-other margin,0.0017609133523554502,0.00036101005473602776
+2020,Random Forest,DPP_KMT_margin_change_1,DPP-KMT margin change,-4.625929269271486e-19,2.98686047327855e-17
+2020,Random Forest,previous_party_change_abs_mean,Mean party swing magnitude,8.389258610149256e-05,5.0165235053347925e-05
+2020,Random Forest,previous_party_change_std,Dispersion of party swings,0.0002926628775457495,0.00010686347048706174
+2020,Random Forest,turnout_change_1,Turnout change,7.864079757761525e-18,2.8425949549284484e-17
+2020,HistGradientBoosting,prev_DPP_vote_share,Previous DPP share,0.012289616059126755,0.002026305297306418
+2020,HistGradientBoosting,prev_KMT_vote_share,Previous KMT share,0.024561264526909328,0.007107502095528118
+2020,HistGradientBoosting,prev_Other_vote_share,Previous other share,0.0,0.0
+2020,HistGradientBoosting,prev2_DPP_vote_share,DPP share two elections ago,0.023450174649896446,0.0053592794791283305
+2020,HistGradientBoosting,prev2_KMT_vote_share,KMT share two elections ago,-0.0003736182458951076,0.00019935022894873095
+2020,HistGradientBoosting,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2020,HistGradientBoosting,prev_turnout,Previous turnout,0.002206146389057323,0.0006297883351635719
+2020,HistGradientBoosting,DPP_change_1,DPP previous swing,2.12703144290588e-05,9.512373793235882e-06
+2020,HistGradientBoosting,KMT_change_1,KMT previous swing,0.0,0.0
+2020,HistGradientBoosting,Other_change_1,Other previous swing,0.0,0.0
+2020,HistGradientBoosting,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.000613921705172551,0.0001492353438501031
+2020,HistGradientBoosting,prev_DPP_Other_margin,Previous DPP-other margin,0.0009580425936141599,0.00035987938614188546
+2020,HistGradientBoosting,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0,0.0
+2020,HistGradientBoosting,previous_party_change_abs_mean,Mean party swing magnitude,0.0,0.0
+2020,HistGradientBoosting,previous_party_change_std,Dispersion of party swings,0.0,0.0
+2020,HistGradientBoosting,turnout_change_1,Turnout change,0.0,0.0
+2024,Ridge,prev_DPP_vote_share,Previous DPP share,-9.25185853854297e-18,2.983634727541207e-17
+2024,Ridge,prev_KMT_vote_share,Previous KMT share,-2.0354088784794535e-17,3.1995917888846967e-17
+2024,Ridge,prev_Other_vote_share,Previous other share,-8.326672684688674e-18,2.7894008272968644e-17
+2024,Ridge,prev2_DPP_vote_share,DPP share two elections ago,-1.295260195396016e-17,2.6557830183917777e-17
+2024,Ridge,prev2_KMT_vote_share,KMT share two elections ago,-7.401486830834377e-18,2.5772695602081544e-17
+2024,Ridge,prev2_Other_vote_share,Other share two elections ago,-1.2027416100105863e-17,2.4495594987357335e-17
+2024,Ridge,prev_turnout,Previous turnout,-1.0177044392397268e-17,2.909558740885311e-17
+2024,Ridge,DPP_change_1,DPP previous swing,-6.47630097698008e-18,2.650944053512443e-17
+2024,Ridge,KMT_change_1,KMT previous swing,-4.625929269271485e-18,2.4911391501174237e-17
+2024,Ridge,Other_change_1,Other previous swing,-1.0177044392397268e-17,2.909558740885311e-17
+2024,Ridge,prev_DPP_KMT_margin,Previous DPP-KMT margin,-3.7007434154171884e-18,2.235812641248164e-17
+2024,Ridge,prev_DPP_Other_margin,Previous DPP-other margin,-9.25185853854297e-18,2.41258953748256e-17
+2024,Ridge,DPP_KMT_margin_change_1,DPP-KMT margin change,-6.47630097698008e-18,3.1794641507449894e-17
+2024,Ridge,previous_party_change_abs_mean,Mean party swing magnitude,-1.8503717077085942e-18,2.3696319859777822e-17
+2024,Ridge,previous_party_change_std,Dispersion of party swings,2.7755575615628915e-18,1.494683490070454e-17
+2024,Ridge,turnout_change_1,Turnout change,-3.7007434154171884e-18,2.5572645780745644e-17
+2024,Ridge standardized coefficient,prev_DPP_vote_share,Previous DPP share,0.024869036981180488,
+2024,Ridge standardized coefficient,prev_KMT_vote_share,Previous KMT share,0.021951377017963934,
+2024,Ridge standardized coefficient,prev_Other_vote_share,Previous other share,0.0009958685702741977,
+2024,Ridge standardized coefficient,prev2_DPP_vote_share,DPP share two elections ago,0.0252127284537041,
+2024,Ridge standardized coefficient,prev2_KMT_vote_share,KMT share two elections ago,0.006076875347450491,
+2024,Ridge standardized coefficient,prev2_Other_vote_share,Other share two elections ago,0.012345459058490051,
+2024,Ridge standardized coefficient,prev_turnout,Previous turnout,0.004456098586717164,
+2024,Ridge standardized coefficient,DPP_change_1,DPP previous swing,0.000597737245708824,
+2024,Ridge standardized coefficient,KMT_change_1,KMT previous swing,0.011727159713422615,
+2024,Ridge standardized coefficient,Other_change_1,Other previous swing,0.011116946457096311,
+2024,Ridge standardized coefficient,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.02368416841308253,
+2024,Ridge standardized coefficient,prev_DPP_Other_margin,Previous DPP-other margin,0.024313724154198305,
+2024,Ridge standardized coefficient,DPP_KMT_margin_change_1,DPP-KMT margin change,0.01099686548209392,
+2024,Ridge standardized coefficient,previous_party_change_abs_mean,Mean party swing magnitude,0.010749245824779381,
+2024,Ridge standardized coefficient,previous_party_change_std,Dispersion of party swings,0.004000851038053925,
+2024,Ridge standardized coefficient,turnout_change_1,Turnout change,0.012268443531360633,
+2024,Random Forest,prev_DPP_vote_share,Previous DPP share,-0.0026141105189333566,0.00097431644457154
+2024,Random Forest,prev_KMT_vote_share,Previous KMT share,-0.002197438397383908,0.0009021873533896377
+2024,Random Forest,prev_Other_vote_share,Previous other share,-3.942566096525509e-06,4.058558025626742e-06
+2024,Random Forest,prev2_DPP_vote_share,DPP share two elections ago,0.0016385202845144923,0.0007945094756721362
+2024,Random Forest,prev2_KMT_vote_share,KMT share two elections ago,-6.225496061061467e-05,4.6309887429113294e-05
+2024,Random Forest,prev2_Other_vote_share,Other share two elections ago,2.2467524293888022e-05,6.62216976017258e-06
+2024,Random Forest,prev_turnout,Previous turnout,0.00030176192291963275,0.00020248028037922106
+2024,Random Forest,DPP_change_1,DPP previous swing,7.525141806345263e-06,6.820240348637008e-05
+2024,Random Forest,KMT_change_1,KMT previous swing,0.00014211788564169326,0.00029993475128557327
+2024,Random Forest,Other_change_1,Other previous swing,-5.891602707695324e-06,3.7492017230551724e-06
+2024,Random Forest,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.0005827317003931104,0.0002333319945582529
+2024,Random Forest,prev_DPP_Other_margin,Previous DPP-other margin,-0.0013231020263631285,0.0005212355470009876
+2024,Random Forest,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0004138872799122571,0.000258934907677021
+2024,Random Forest,previous_party_change_abs_mean,Mean party swing magnitude,0.00022306276970025796,0.0001741347997502827
+2024,Random Forest,previous_party_change_std,Dispersion of party swings,0.0008315920437079507,0.00044322438860004134
+2024,Random Forest,turnout_change_1,Turnout change,-2.4054832200211726e-17,4.9512572413366976e-17
+2024,HistGradientBoosting,prev_DPP_vote_share,Previous DPP share,0.001303267131900651,0.0014277071978536127
+2024,HistGradientBoosting,prev_KMT_vote_share,Previous KMT share,0.0018856603847904542,0.0011249819616838525
+2024,HistGradientBoosting,prev_Other_vote_share,Previous other share,0.0,0.0
+2024,HistGradientBoosting,prev2_DPP_vote_share,DPP share two elections ago,0.003754582037866739,0.0008054781192331806
+2024,HistGradientBoosting,prev2_KMT_vote_share,KMT share two elections ago,4.7451486927010957e-05,0.00011485640559885057
+2024,HistGradientBoosting,prev2_Other_vote_share,Other share two elections ago,0.0,0.0
+2024,HistGradientBoosting,prev_turnout,Previous turnout,0.0003784495005765128,0.0005811971410195977
+2024,HistGradientBoosting,DPP_change_1,DPP previous swing,0.0,0.0
+2024,HistGradientBoosting,KMT_change_1,KMT previous swing,-0.0005124654249048639,0.0003268989398903013
+2024,HistGradientBoosting,Other_change_1,Other previous swing,0.0,0.0
+2024,HistGradientBoosting,prev_DPP_KMT_margin,Previous DPP-KMT margin,-0.0008832818497593949,0.00046556950193406006
+2024,HistGradientBoosting,prev_DPP_Other_margin,Previous DPP-other margin,-0.0005602273466766589,0.00036816759297213106
+2024,HistGradientBoosting,DPP_KMT_margin_change_1,DPP-KMT margin change,0.0008352741425766049,0.0003541955668175002
+2024,HistGradientBoosting,previous_party_change_abs_mean,Mean party swing magnitude,0.0013734252083174054,0.0007068243254338848
+2024,HistGradientBoosting,previous_party_change_std,Dispersion of party swings,0.00018087177911095266,0.0002400294231060072
+2024,HistGradientBoosting,turnout_change_1,Turnout change,0.0,0.0

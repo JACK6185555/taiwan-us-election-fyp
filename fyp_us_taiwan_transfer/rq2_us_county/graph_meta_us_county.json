@@ -1,0 +1,16 @@
+{
+  "n_counties": 3111,
+  "geo_source": "/workspace/taiwan-election-data/raw/geo/us_county/counties.geojson",
+  "geo_note": "plotly geojson-counties-fips; Census TIGER 403",
+  "queen_n_edges": 9072,
+  "queen_avg_degree": 5.832208293153327,
+  "queen_islands_n": 7,
+  "knn_k": 5,
+  "knn_n_edges": 8779,
+  "knn_avg_degree": 5.643844423015108,
+  "dist_sigma_km": 80.0,
+  "dist_n_edges": 152057,
+  "dist_avg_degree": 97.75441980070717,
+  "trainable_gcn": "deferred \u2014 full-US PyG GCN runtime-capped; partial 2012 numbers in gcn_partial_note.json",
+  "crs_projected": "EPSG:5070"
+}

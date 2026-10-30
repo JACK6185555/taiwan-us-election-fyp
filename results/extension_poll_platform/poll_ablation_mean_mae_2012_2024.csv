@@ -1,0 +1,10 @@
+experiment,model,MAE,window,family
+History,HistGradientBoosting,0.1257,2012-2024 OOT mean,Extension (not Family A)
+History,PreviousElectionBaseline,0.0793,2012-2024 OOT mean,Extension (not Family A)
+History,RandomForest,0.1041,2012-2024 OOT mean,Extension (not Family A)
+History,Ridge,0.1776,2012-2024 OOT mean,Extension (not Family A)
+History+Poll,HistGradientBoosting,0.1235,2012-2024 OOT mean,Extension (not Family A)
+History+Poll,PreviousElectionBaseline,0.0793,2012-2024 OOT mean,Extension (not Family A)
+History+Poll,RandomForest,0.1036,2012-2024 OOT mean,Extension (not Family A)
+History+Poll,Ridge,0.0611,2012-2024 OOT mean,Extension (not Family A)
+UniformPollSwing,prev_DPP+poll_swing,0.0266,2012-2024 OOT mean,Extension (not Family A)

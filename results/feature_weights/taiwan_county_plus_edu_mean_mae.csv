@@ -1,0 +1,5 @@
+﻿suite,model,mae,rmse
+extension_a_plus_education,Previous-election baseline,0.0792648157080057,0.08141650539817602
+extension_a_plus_education,Random Forest,0.10559378594961508,0.11752689722552732
+extension_a_plus_education,HistGradientBoosting,0.11951266332682496,0.12822150500269447
+extension_a_plus_education,Ridge,0.1421879054599537,0.14765263668253642

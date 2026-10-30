@@ -1,0 +1,6 @@
+year,vote,prev,country,unrate,cpi_yoy_pct,umcsent,presidential_approval,media_camp_sentiment_gap,media_n_posts_camp,media_mean_sentiment_all,media_top_issue,media_top_issue_sentiment,media_top_issue_volume_share,media_top_issue_n_posts,media_issue_mean_sentiment,media_issue_total_posts
+2008,0.4222469102390506,0.3913270332983256,US,6.5,3.731,57.6,,,,,,,,,,
+2012,0.3923044053300333,0.4222908562129107,US,7.8,2.156,82.6,,,,,,,,,,
+2016,0.3331713998890061,0.3923044053300333,US,4.9,1.686,87.2,,,,,,,,,,
+2020,0.33867226158671343,0.3331713998890061,US,6.9,1.23,81.8,43.84,0.09885,81.0,0.008125,abortion,0.1573,0.2232,25.0,0.16928,112.0
+2024,0.3218040222512739,0.3388542404239513,US,4.1,2.579,70.5,,-0.07505,144.0,0.111125,abortion,0.2704,0.2035,23.0,0.14104,113.0

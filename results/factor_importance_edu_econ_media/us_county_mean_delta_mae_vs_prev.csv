@@ -1,0 +1,11 @@
+spec,model,delta_mae_vs_prev
+Prev+Education,Ridge,0.007936462178952918
+Prev+Education+Economic,Ridge,0.009347597213146621
+Prev+Economic,Ridge,0.009488004870761438
+Prev+Education,RandomForest,0.010623046719046497
+Prev+Economic,RandomForest,0.011826352809408528
+Prev+Education+Economic,RandomForest,0.012894671801039266
+Education_only,RandomForest,0.08346527830823883
+Economic_only,RandomForest,0.08524135984460313
+Economic_only,Ridge,0.09412775024796928
+Education_only,Ridge,0.09582215742001615

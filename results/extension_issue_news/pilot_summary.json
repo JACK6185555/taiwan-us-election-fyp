@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Hong_Kong",
+  "n_posts_scored": 404,
+  "n_issue_year_cells": 19,
+  "x_api_calls_this_extension": 19,
+  "gdelt": "HTTP 429 — not used; see data/extension_issue_news/gdelt/GDELT_STATUS.md",
+  "family_a_unchanged": true,
+  "top_signals": [
+    {
+      "country": "TW",
+      "year": 2020,
+      "top_volume_issue": "經濟",
+      "top_volume_n": 23,
+      "top_volume_mean_sent": -0.7921,
+      "most_negative_or_polarized_issue": "經濟",
+      "that_mean_sent": -0.7921,
+      "winner": "蔡英文",
+      "outcome_share": 0.571307,
+      "interpretation": "議題氣候 PROXY；唔等於中間選民個人轉向"
+    },
+    {
+      "country": "TW",
+      "year": 2024,
+      "top_volume_issue": "兩岸",
+      "top_volume_n": 24,
+      "top_volume_mean_sent": -0.5145,
+      "most_negative_or_polarized_issue": "居住",
+      "that_mean_sent": -0.8525,
+      "winner": "賴清德",
+      "outcome_share": 0.400503,
+      "interpretation": "議題氣候 PROXY；唔等於中間選民個人轉向"
+    },
+    {
+      "country": "US",
+      "year": 2020,
+      "top_volume_issue": "abortion",
+      "top_volume_n": 25,
+      "top_volume_mean_sent": 0.1573,
+      "most_negative_or_polarized_issue": "democracy",
+      "that_mean_sent": 0.5417,
+      "winner": "Biden",
+      "outcome_share": 0.522578,
+      "interpretation": "議題氣候 PROXY；唔等於中間選民個人轉向"
+    },
+    {
+      "country": "US",
+      "year": 2024,
+      "top_volume_issue": "abortion",
+      "top_volume_n": 23,
+      "top_volume_mean_sent": 0.2704,
+      "most_negative_or_polarized_issue": "healthcare",
+      "that_mean_sent": 0.5911,
+      "winner": "Trump",
+      "outcome_share": 0.492378,
+      "interpretation": "議題氣候 PROXY；唔等於中間選民個人轉向"
+    }
+  ],
+  "regression_note": [
+    {
+      "country": "TW",
+      "n_years": 2,
+      "note": "n_years<=2 → 唔做多特徵 Ridge 擬合；只報相關／描述。若強行擬合會過擬合。",
+      "features_available": "volshare_cross_strait,volshare_economy,volshare_energy,volshare_housing,volshare_pandemic,mean_tone_all",
+      "outcomes": "2020:0.5713,2024:0.4005"
+    },
+    {
+      "country": "US",
+      "n_years": 2,
+      "note": "n_years<=2 → 唔做多特徵 Ridge 擬合；只報相關／描述。若強行擬合會過擬合。",
+      "features_available": "volshare_abortion,volshare_democracy,volshare_economy,volshare_healthcare,volshare_immigration,mean_tone_all",
+      "outcomes": "2020:0.5226,2024:0.4924"
+    }
+  ],
+  "caveat": "National Extension PROXY for campaign issue climate; cannot ID individual swing voters"
+}

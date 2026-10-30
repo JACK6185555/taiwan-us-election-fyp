@@ -1,0 +1,40 @@
+country,level,spec,model,mean_mae,delta_vs_PreviousShare,PreviousShare_mae,interpretation
+TW,county,Prev+Education,Ridge,0.08903419894162118,0.009769383233615467,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Prev+Education,RandomForest,0.0927555283390381,0.013490712631032395,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Prev+Economic,Ridge,0.07253061714045536,-0.006734198567550351,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Prev+Economic,RandomForest,0.08816632258294493,0.008901506874939222,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Prev+Education+Economic,Ridge,0.07756328598095633,-0.0017015297270493862,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Prev+Education+Economic,RandomForest,0.09460570674900293,0.015340891040997215,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Education_only,Ridge,0.13306496731000844,0.05380015160200273,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Education_only,RandomForest,0.1436338726777739,0.06436905696976818,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Economic_only,Ridge,0.1058031880095604,0.02653837230155469,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county,Economic_only,RandomForest,0.12114018450922938,0.04187536880122367,0.07926481570800571,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+TW,county_group_permutation,group:previous,RandomForest,,0.054830694664296784,0.07926481570800571,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+TW,county_group_permutation,group:economic,RandomForest,,0.0005649059593638489,0.07926481570800571,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+TW,county_group_permutation,group:education,RandomForest,,-0.00019996952026974562,0.07926481570800571,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+US,county,Prev+Education,Ridge,0.04242054096554361,0.00793646217895292,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Prev+Education,RandomForest,0.04510712550563719,0.0106230467190465,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Prev+Economic,Ridge,0.04397208365735213,0.009488004870761443,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Prev+Economic,RandomForest,0.04631043159599922,0.011826352809408532,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Prev+Education+Economic,Ridge,0.043831675999737314,0.009347597213146625,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Prev+Education+Economic,RandomForest,0.04737875058762996,0.012894671801039273,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Education_only,Ridge,0.13030623620660686,0.09582215742001618,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Education_only,RandomForest,0.11794935709482952,0.08346527830823883,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Economic_only,Ridge,0.12861182903455998,0.0941277502479693,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county,Economic_only,RandomForest,0.11972543863119382,0.08524135984460313,0.03448407878659069,ΔMAE>0 means worse than PreviousShare in OOT; NOT causal
+US,county_group_permutation,group:previous,RandomForest,,0.1283895272816044,0.03448407878659069,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+US,county_group_permutation,group:economic,RandomForest,,0.001362715900979171,0.03448407878659069,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+US,county_group_permutation,group:education,RandomForest,,0.0007060515699529623,0.03448407878659069,group permutation MAE increase on Prev+Edu+Econ RF; higher=more predictive dependence; NOT causal
+TW,national_PROXY,PreviousShare_only,Ridge_LOO,0.08239980128608658,0.0,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+TW,national_PROXY,Prev+EconNational,Ridge_LOO,0.08428973298235011,0.0018899316962635304,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+TW,national_PROXY,EconNational_only,Ridge_LOO,0.07475846802104169,-0.007641333265044889,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+TW,national_PROXY,Prev+MediaCampGap,Ridge_LOO,0.15963819053000716,0.07723838924392058,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+TW,national_PROXY,MediaCampGap_only,Ridge_LOO,0.15963819053000716,0.07723838924392058,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+TW,national_PROXY,Prev+MediaIssueSent,Ridge_LOO,0.15963819053000716,0.07723838924392058,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,PreviousShare_only,Ridge_LOO,0.02851808262700285,0.0,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,Prev+EconNational,Ridge_LOO,0.022274226099246675,-0.006243856527756175,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,EconNational_only,Ridge_LOO,0.020697255567485296,-0.007820827059517553,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,Prev+EconNational+CCI,Ridge_LOO,0.01931665167575559,-0.009201430951247258,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,Prev+MediaCampGap,Ridge_LOO,0.016868239335439517,-0.011649843291563333,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,MediaCampGap_only,Ridge_LOO,0.016868239335439517,-0.011649843291563333,,national leave-one-year; media tiny n; NOT Family A; NOT causal
+US,national_PROXY,Prev+MediaIssueSent,Ridge_LOO,0.016868239335439517,-0.011649843291563333,,national leave-one-year; media tiny n; NOT Family A; NOT causal

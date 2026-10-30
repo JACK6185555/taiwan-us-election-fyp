@@ -1,0 +1,5 @@
+suite,test_year,feature,ridge_coef_std
+extension_a_plus_education,2012,lag_education_rate,-0.00249364879759804
+extension_a_plus_education,2016,lag_education_rate,-0.0036724873634494636
+extension_a_plus_education,2020,lag_education_rate,-0.0005973280704464207
+extension_a_plus_education,2024,lag_education_rate,-0.001202378206010328

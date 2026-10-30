@@ -1,0 +1,8 @@
+year,proxy_window,dpp_pid_pct,kmt_pid_pct,tpp_pid_pct,independent_pct,source_url,provenance_note,quality
+1992,1992_first_wave,3.3,34.4,,62.3,https://www.nownews.com/news/6370321,NOWnews citing ESC historical; TPP N/A,published_news_cite_of_ESC
+2011,2011_year,,,,30.4,https://www.nownews.com/news/6370321,NOWnews citing ESC: independent 30.4 only,published_news_cite_of_ESC
+2018,2018_year,,,,49.1,https://www.nownews.com/news/6370321,NOWnews citing ESC: independent 49.1 only,published_news_cite_of_ESC
+2019,2019_TPP_founding,,,2.4,,https://www.nownews.com/news/6370321,NOWnews citing ESC: TPP at founding 2.4,published_news_cite_of_ESC
+2020,2020_year,34.0,,,,https://www.nownews.com/news/6370321,NOWnews citing ESC: DPP peak 34.0,published_news_cite_of_ESC
+2022,2022_year,30.0,15.0,8.3,45.4,https://www.voachinese.com/a/new-poll-showed-lowest-level-of-chinese-identity-among-taiwanese-20240223/7500775.html,VOA citing ESC year-before comparison (2022): IND45.4 DPP30.0 KMT15.0 TPP8.3,published_news_cite_of_ESC
+2023,2023_year_end_merge,28.3,19.4,14.3,36.9,https://www.nownews.com/news/6370321,NOWnews/CNA wave citing ESC through Dec 2023 merge,published_news_cite_of_ESC
