@@ -1,0 +1,9 @@
+country,experiment,mode,model,mae,rmse,mae_4dp,rmse_4dp,locked_prev,delta_vs_locked_prev,beats_locked_prev
+TW,UniformPollSwing_ablation_def,prev_plus_poll_swing,prev+national_poll_swing,0.023313986188797223,0.027470891836673943,0.0233,0.0275,0.0793,-0.05598601381120277,True
+TW,Residual_on_Prev__poll_swing_ablation,residual,Ridge,0.03415164694334932,0.038516023664892096,0.0342,0.0385,0.0793,-0.04514835305665067,True
+TW,Residual_on_Prev__poll_swing_pct,residual,Ridge,0.040329453225597924,0.04404811433823723,0.0403,0.044,0.0793,-0.03897054677440207,True
+TW,Residual_on_Prev__poll_swing_ablation,residual,HistGradientBoosting,0.04750900773042477,0.05153503898463005,0.0475,0.0515,0.0793,-0.03179099226957523,True
+TW,Residual_on_Prev__poll_swing_pct,residual,HistGradientBoosting,0.04750900773042477,0.05153503898463005,0.0475,0.0515,0.0793,-0.03179099226957523,True
+TW,Residual_on_Prev__poll_swing_ablation,residual,RandomForest,0.04764385979469139,0.05167317796902059,0.0476,0.0517,0.0793,-0.0316561402053086,True
+TW,Residual_on_Prev__poll_swing_pct,residual,RandomForest,0.04764385979469139,0.05167317796902059,0.0476,0.0517,0.0793,-0.0316561402053086,True
+US,UniformPollSwing,prev_plus_poll_swing,prev+national_poll_swing,0.033308344516423394,0.04149703091956943,0.0333,0.0415,0.0345,-0.0011916554835766091,True

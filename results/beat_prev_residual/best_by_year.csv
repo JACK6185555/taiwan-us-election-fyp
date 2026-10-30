@@ -1,0 +1,9 @@
+country,experiment,model,test_year,mae,rmse,features
+TW,UniformPollSwing_ablation_def,prev+national_poll_swing,2012,0.028971729327025176,0.029532861602956855,poll=0.4268|prev_nat=0.4155|swing=0.0113
+TW,UniformPollSwing_ablation_def,prev+national_poll_swing,2016,0.020201993048761843,0.026246893888213156,poll=0.5732|prev_nat=0.4563|swing=0.1169
+TW,UniformPollSwing_ablation_def,prev+national_poll_swing,2020,0.019690116677870562,0.02317559508485599,poll=0.5844|prev_nat=0.5612|swing=0.0231
+TW,UniformPollSwing_ablation_def,prev+national_poll_swing,2024,0.024392105701531316,0.030928216770669762,poll=0.4077|prev_nat=0.5713|swing=-0.1636
+US,UniformPollSwing,prev+national_poll_swing,2012,0.0245894895884087,0.0315732309112541,poll=0.5036|prev_nat=0.5368|swing=-0.0332
+US,UniformPollSwing,prev+national_poll_swing,2016,0.06425165777040187,0.07718364936772505,poll=0.5177|prev_nat=0.5200|swing=-0.0023
+US,UniformPollSwing,prev+national_poll_swing,2020,0.03021114158149405,0.037796150094039055,poll=0.5441|prev_nat=0.5110|swing=0.0331
+US,UniformPollSwing,prev+national_poll_swing,2024,0.014181089125388959,0.019435093305259502,poll=0.5154|prev_nat=0.5226|swing=-0.0071
