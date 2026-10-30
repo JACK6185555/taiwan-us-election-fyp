@@ -480,6 +480,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   <button type="button" class="nav-btn" data-target="sentiment"><span class="ic">💬</span>社交媒體情緒</button>
   <button type="button" class="nav-btn" data-target="factors"><span class="ic">⚖️</span>影響因素比較</button>
   <button type="button" class="nav-btn" data-target="education"><span class="ic">🎓</span>教育程度分析</button>
+  <button type="button" class="nav-btn" data-target="weights"><span class="ic">🧮</span>特徵權重重算</button>
   <button type="button" class="nav-btn" data-target="limits"><span class="ic">⚠️</span>限制說明</button>
 </nav>
 <main class="main">
@@ -504,7 +505,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   內容係台灣同美國總統選舉研究真實公開數據：歷屆得票、模型 MAE、人口結構 PROXY、經濟、X 情緒、教育／經濟／媒體因素。
   <b>唔依賴 Chart.js</b>——離線都可以睇到全部內容。Family A（台灣縣市主模型）未改動。</p>
   <div class="stat-grid">
-    <div class="stat-card"><div class="stat-num">9</div><div class="stat-label">個分析部分</div></div>
+    <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">個分析部分</div></div>
     <div class="stat-card"><div class="stat-num">2000–2024</div><div class="stat-label">歷屆總統選舉年份</div></div>
     <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW Family A · Prev MAE</div></div>
     <div class="stat-card"><div class="stat-num">0.0345</div><div class="stat-label">US Core · Prev MAE</div></div>
@@ -518,6 +519,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
     <li><b>社交媒體情緒</b> —— X（Twitter）實體淨情緒（Extension，全國小樣本）</li>
     <li><b>影響因素比較</b> —— 教育／經濟／媒體增量；Prev＝預測代理 ≠ 因果</li>
     <li><b>教育程度分析</b> —— lag 高等教育率同加入教育後 MAE</li>
+    <li><b>特徵權重重算</b> —— Ridge／RF／HGB 依賴；歷史票主導；ML 未贏 Prev</li>
     <li><b>限制說明</b> —— 缺縣市民調、申請微資料、媒體無地理標籤等</li>
   </ul>
   <div class="two-col">
@@ -655,14 +657,14 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
   </div>
   <h3>主模型 MAE 比較</h3>
   <div class="css-chart">
-<div class="row"><div class="lab">TW Prev</div><div class="track"><div class="fill green" style="width:39.65%"></div></div><div class="val">0.1%</div></div>
-<div class="row"><div class="lab">TW RF</div><div class="track"><div class="fill gold" style="width:51.65%"></div></div><div class="val">0.1%</div></div>
-<div class="row"><div class="lab">TW HGB</div><div class="track"><div class="fill other" style="width:59.45%"></div></div><div class="val">0.1%</div></div>
-<div class="row"><div class="lab">TW Ridge</div><div class="track"><div class="fill kmt" style="width:89.30%"></div></div><div class="val">0.2%</div></div>
-<div class="row"><div class="lab">US Prev</div><div class="track"><div class="fill green" style="width:17.25%"></div></div><div class="val">0.0%</div></div>
-<div class="row"><div class="lab">US RF</div><div class="track"><div class="fill gold" style="width:26.25%"></div></div><div class="val">0.1%</div></div>
-<div class="row"><div class="lab">US Ridge</div><div class="track"><div class="fill other" style="width:26.95%"></div></div><div class="val">0.1%</div></div>
-<div class="row"><div class="lab">US HGB</div><div class="track"><div class="fill kmt" style="width:28.05%"></div></div><div class="val">0.1%</div></div>
+<div class="row"><div class="lab">TW Prev</div><div class="track"><div class="fill green" style="width:39.65%"></div></div><div class="val">0.0793</div></div>
+<div class="row"><div class="lab">TW RF</div><div class="track"><div class="fill gold" style="width:51.65%"></div></div><div class="val">0.1033</div></div>
+<div class="row"><div class="lab">TW HGB</div><div class="track"><div class="fill other" style="width:59.45%"></div></div><div class="val">0.1189</div></div>
+<div class="row"><div class="lab">TW Ridge</div><div class="track"><div class="fill kmt" style="width:89.30%"></div></div><div class="val">0.1786</div></div>
+<div class="row"><div class="lab">US Prev</div><div class="track"><div class="fill green" style="width:17.25%"></div></div><div class="val">0.0345</div></div>
+<div class="row"><div class="lab">US RF</div><div class="track"><div class="fill gold" style="width:26.25%"></div></div><div class="val">0.0525</div></div>
+<div class="row"><div class="lab">US Ridge</div><div class="track"><div class="fill other" style="width:26.95%"></div></div><div class="val">0.0539</div></div>
+<div class="row"><div class="lab">US HGB</div><div class="track"><div class="fill kmt" style="width:28.05%"></div></div><div class="val">0.0561</div></div>
 </div>
   <h3>因素增量（台灣 Ridge）</h3>
   <div class="css-chart">
@@ -912,6 +914,68 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
 </section>
 
 
+
+<section class="panel" id="weights">
+  <h2>特徵權重重算（2026-10-31）</h2>
+  <p class="lede">用現有面板按 Core specification 管道重算模型依賴（predictive importance）。
+  <b>權重 ≠ 因果</b>；ML 旁證 MAE <b>未贏</b> 鎖定 Prev——唔當 Core 主結果改寫。</p>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-num">0.0793</div><div class="stat-label">TW 鎖定 Prev MAE</div></div>
+    <div class="stat-card"><div class="stat-num">0.0345</div><div class="stat-label">US 鎖定 Prev MAE</div></div>
+    <div class="stat-card"><div class="stat-num">RF 0.103</div><div class="stat-label">TW 旁證（輸 Prev）</div></div>
+    <div class="stat-card"><div class="stat-num">RF 0.052</div><div class="stat-label">US 旁證（輸 Prev）</div></div>
+  </div>
+
+  <h3>旁證 OOT MAE（唔取代鎖定主數字）</h3>
+  <div class="table-wrap"><table><thead><tr><th>側</th><th>模型</th><th>MAE</th><th>對 Prev</th></tr></thead><tbody>
+    <tr><td>TW Core</td><td>Prev（鎖定）</td><td><b>0.0793</b></td><td>基準</td></tr>
+    <tr><td>TW Core</td><td>Random Forest</td><td>0.1033</td><td>輸</td></tr>
+    <tr><td>TW Core</td><td>HistGradientBoosting</td><td>0.1189</td><td>輸</td></tr>
+    <tr><td>TW Core</td><td>Ridge</td><td>0.1786</td><td>輸</td></tr>
+    <tr><td>US Core</td><td>Prev（鎖定）</td><td><b>0.0345</b></td><td>基準</td></tr>
+    <tr><td>US Core</td><td>Random Forest</td><td>0.0525</td><td>輸</td></tr>
+    <tr><td>US Core</td><td>Ridge</td><td>0.0539</td><td>輸</td></tr>
+    <tr><td>US Core</td><td>HistGradientBoosting</td><td>0.0561</td><td>輸</td></tr>
+  </tbody></table></div>
+  <p class="note">旁證重 fit 確認 Prev ≈ 0.079265／0.034484；對外仍報鎖定 <b>0.0793</b>／<b>0.0345</b>。</p>
+
+  <h3>台灣 · RF 置換重要性（選舉史特徵，跨 OOT 平均）</h3>
+  <p class="lede" style="font-size:0.95rem;margin-top:0">數字＝打亂該特徵後 MAE 上升幅度；愈大＝模型愈依賴。主導係上屆／上上屆得票同 margin——預測重要性，唔係勝選原因。</p>
+  <div class="css-chart">
+<div class="row"><div class="lab">prev2_DPP</div><div class="track"><div class="fill dpp" style="width:100%"></div></div><div class="val">0.0200</div></div>
+<div class="row"><div class="lab">prev_KMT</div><div class="track"><div class="fill kmt" style="width:38.5%"></div></div><div class="val">0.0077</div></div>
+<div class="row"><div class="lab">prev_DPP−KMT</div><div class="track"><div class="fill gold" style="width:16.4%"></div></div><div class="val">0.0033</div></div>
+<div class="row"><div class="lab">prev_DPP−Other</div><div class="track"><div class="fill other" style="width:8.1%"></div></div><div class="val">0.0016</div></div>
+<div class="row"><div class="lab">prev_DPP</div><div class="track"><div class="fill dpp" style="width:7.5%"></div></div><div class="val">0.0015</div></div>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>排名</th><th>特徵</th><th>說明</th><th>置換 MAE↑</th></tr></thead><tbody>
+    <tr><td>1</td><td>prev2_DPP_vote_share</td><td>上上屆 DPP 得票</td><td>0.0200</td></tr>
+    <tr><td>2</td><td>prev_KMT_vote_share</td><td>上屆 KMT 得票</td><td>0.0077</td></tr>
+    <tr><td>3</td><td>prev_DPP_KMT_margin</td><td>上屆 DPP−KMT 差距</td><td>0.0033</td></tr>
+    <tr><td>4</td><td>prev_DPP_Other_margin</td><td>上屆 DPP−其他差距</td><td>0.0016</td></tr>
+    <tr><td>5</td><td>prev_DPP_vote_share</td><td>上屆 DPP 得票</td><td>0.0015</td></tr>
+  </tbody></table></div>
+
+  <h3>美國 · RF 置換重要性（2024 子樣本）</h3>
+  <div class="css-chart">
+<div class="row"><div class="lab">prev_GOP</div><div class="track"><div class="fill gop" style="width:100%"></div></div><div class="val">0.0623</div></div>
+<div class="row"><div class="lab">prev_DEM</div><div class="track"><div class="fill dem" style="width:19.4%"></div></div><div class="val">0.0121</div></div>
+<div class="row"><div class="lab">prev_margin</div><div class="track"><div class="fill gold" style="width:17.5%"></div></div><div class="val">0.0109</div></div>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>排名</th><th>特徵</th><th>說明</th><th>置換 MAE↑</th></tr></thead><tbody>
+    <tr><td>1</td><td>prev_gop_two_party_share</td><td>上屆 GOP 兩黨％</td><td>0.0623</td></tr>
+    <tr><td>2</td><td>prev_dem_two_party_share</td><td>上屆 DEM 兩黨％</td><td>0.0121</td></tr>
+    <tr><td>3</td><td>prev_dem_gop_margin</td><td>上屆 DEM−GOP 差距</td><td>0.0109</td></tr>
+  </tbody></table></div>
+
+  <ul class="toc-list">
+    <li><b>誠實框住：</b>重算證實模型依賴歷史得票；RF／HGB／Ridge 旁證全部輸鎖定 Prev。</li>
+    <li><b>唔改 Core：</b>對外主數字仍係 TW Prev <b>0.0793</b>、US Prev <b>0.0345</b>。</li>
+    <li><b>資料：</b><code>results/feature_weights/</code>；說明見 <code>docs/權重重算說明.md</code>。</li>
+  </ul>
+  <p class="note">Ridge 有號係數、置換重要性、MDI 都只係模型依賴——唔代表改特徵就會改得票。</p>
+</section>
+
 <section class="panel" id="limits">
   <h2>限制說明</h2>
   <p class="lede">唔申請治療／微資料嘅前提下，缺嘅用公開 PROXY；冇可靠替代就寫設計限制，唔捏造。</p>
@@ -921,6 +985,7 @@ tbody tr:hover { background: rgba(143,107,255,0.10); }
     <li>媒體／X 情緒：全國小樣本、無縣市 geo → 唔入 Family A。</li>
     <li>美國縣級投票率面板：本儀表板用州級兩黨％代替。</li>
     <li>Prev 強：文獻常見地理慣性；解釋選情變化靠經濟／議題／媒體增量。</li>
+    <li>特徵權重＝預測依賴：上屆得票主導；RF／HGB／Ridge 旁證輸鎖定 Prev，唔改 Core 主數字。</li>
   </ul>
   <p class="note">呢版儀表板係純 HTML／CSS（加極少導航／朗讀 JS），離線可開，唔再依賴 Chart.js 或動態 JSON.parse。</p>
 </section>
