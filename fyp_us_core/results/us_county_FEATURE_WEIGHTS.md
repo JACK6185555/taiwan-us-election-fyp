@@ -1,6 +1,6 @@
 # US Core specification — Feature weights (model dependence, not causal)
 
-Recomputed: 2026-10-30 14:24 Asia/Hong_Kong (UTC+8)
+Recomputed: 2026-10-31 03:19 Asia/Hong_Kong (UTC+8)
 
 Not causal. No county `poll_index` invented.
 

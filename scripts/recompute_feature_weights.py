@@ -497,6 +497,10 @@ def extension_national_weights():
     # TW national polls: last pre-election DPP vs KMT if available
     tw_polls = ROOT / "data" / "extension_poll_platform" / "taiwan_polls_long.csv"
     tw_nat = ROOT / "data" / "cec_president_national_totals.csv"
+    if not tw_nat.exists():
+        tw_nat = ROOT / "cleaned" / "cec_president_national_totals.csv"
+    if not tw_nat.exists():
+        tw_nat = DATA_TREE / "cleaned" / "cec_president_national_totals.csv"
     if tw_polls.exists() and tw_nat.exists():
         pl = pd.read_csv(tw_polls)
         # try to build election-year DPP/KMT poll averages
@@ -620,7 +624,12 @@ def extension_national_weights():
                     })
             else:
                 # TW: use national DPP share from cec
-                nat = pd.read_csv(ROOT / "data" / "cec_president_national_totals.csv")
+                cec_p = ROOT / "cleaned" / "cec_president_national_totals.csv"
+                if not cec_p.exists():
+                    cec_p = ROOT / "data" / "cec_president_national_totals.csv"
+                if not cec_p.exists():
+                    cec_p = DATA_TREE / "cleaned" / "cec_president_national_totals.csv"
+                nat = pd.read_csv(cec_p)
                 if {"DPP_votes", "valid_votes", "year"}.issubset(nat.columns):
                     nat = nat.copy()
                     nat["dpp_share"] = nat["DPP_votes"] / nat["valid_votes"]
@@ -984,12 +993,14 @@ Ridge 有號係數、置換重要性、MDI 都只係**模型依賴／預測重�
 
 
 def mirror():
-    # mirror feature_weights + docs into data tree
+    # mirror feature_weights + docs into data tree (best-effort)
+    if not DATA_TREE.exists():
+        print("DATA_TREE missing; skip mirror", flush=True)
+        return
     dst_fw = DATA_TREE / "results" / "feature_weights"
     if dst_fw.exists():
         shutil.rmtree(dst_fw)
     shutil.copytree(OUT_FW, dst_fw)
-    # also analysis path used earlier
     dst_an = DATA_TREE / "analysis" / "feature_weights"
     if dst_an.exists():
         shutil.rmtree(dst_an)
@@ -999,8 +1010,9 @@ def mirror():
         if s.exists():
             (DATA_TREE / "docs").mkdir(exist_ok=True)
             shutil.copy2(s, DATA_TREE / "docs" / name)
-    # sync script
-    shutil.copy2(Path(__file__), DATA_TREE / "scripts" / Path(__file__).name)
+    script_dst = DATA_TREE / "scripts"
+    if script_dst.exists():
+        shutil.copy2(Path(__file__), script_dst / Path(__file__).name)
 
 
 def main():
@@ -1044,6 +1056,8 @@ def main():
     mean_edu.to_csv(OUT_FW / "taiwan_county_plus_edu_mean_mae.csv", index=False, encoding="utf-8-sig")
 
     us_panel_path = ROOT / "data" / "us_county_panel_features_family_a.csv"
+    if not us_panel_path.exists():
+        us_panel_path = ROOT / "fyp_us_core" / "us_county_panel_features_family_a.csv"
     if not us_panel_path.exists():
         us_panel_path = DATA_TREE / "fyp_us_core" / "us_county_panel_features_family_a.csv"
     us_panel = pd.read_csv(us_panel_path)

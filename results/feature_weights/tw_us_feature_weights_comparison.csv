@@ -1,4 +1,4 @@
-side,model,feature,feature_label,weight,weight_kind
+﻿side,model,feature,feature_label,weight,weight_kind
 TW_Family_A_electoral,Ridge,prev2_DPP_vote_share,DPP share two elections ago,0.02443258987238011,standardized_coef_signed_mean_OOT
 TW_Family_A_electoral,Ridge,prev_KMT_vote_share,Previous KMT share,-0.020907782288020902,standardized_coef_signed_mean_OOT
 TW_Family_A_electoral,Ridge,prev_DPP_KMT_margin,Previous DPP-KMT margin,0.020897466808217535,standardized_coef_signed_mean_OOT
@@ -70,15 +70,15 @@ US_Core,Ridge,prev_log_total_votes,Previous log total votes,-0.00036089627104731
 US_Core,Ridge,abs_dem_change_1,Abs Dem previous swing,0.00018963478100562093,permutation_mae_increase_2024_subsample
 US_Core,Ridge,dem_change_1,Dem previous swing,-0.00010278003389488228,permutation_mae_increase_2024_subsample
 US_Core,Random Forest,prev_gop_two_party_share,Previous GOP two-party share,0.06226354425162724,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,prev_dem_two_party_share,Previous Dem two-party share,0.012085961180222208,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,prev_dem_gop_margin,Previous Dem–GOP margin,0.01087609785315106,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,prev2_gop_two_party_share,GOP share two elections ago,-0.0022367968125078497,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,prev2_dem_two_party_share,Dem share two elections ago,-0.0019576725460519464,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,log_votes_change_1,Log-votes change,-0.0006238085183153094,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,log_median_income,Log median income,-0.0005506752292691042,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,log_density,Log population density (ACS),0.000399014621449844,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,prev_log_total_votes,Previous log total votes,0.0002821821605456784,permutation_mae_increase_2024_subsample
-US_Core,Random Forest,education_rate,Bachelor's+ rate (ERS wave),0.00014891796739176024,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,prev_dem_two_party_share,Previous Dem two-party share,0.012085961180222201,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,prev_dem_gop_margin,Previous Dem–GOP margin,0.010876097853151053,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,prev2_gop_two_party_share,GOP share two elections ago,-0.0022367968125078567,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,prev2_dem_two_party_share,Dem share two elections ago,-0.001957672546051952,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,log_votes_change_1,Log-votes change,-0.0006238085183153129,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,log_median_income,Log median income,-0.0005506752292691105,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,log_density,Log population density (ACS),0.00039901462144983636,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,prev_log_total_votes,Previous log total votes,0.00028218216054567215,permutation_mae_increase_2024_subsample
+US_Core,Random Forest,education_rate,Bachelor's+ rate (ERS wave),0.00014891796739175192,permutation_mae_increase_2024_subsample
 US_Core,Ridge_coef,prev2_dem_two_party_share,Dem share two elections ago,0.028046979383474516,standardized_coefficient_signed_train_lt_2024
 US_Core,Ridge_coef,prev2_gop_two_party_share,GOP share two elections ago,-0.028046979383469565,standardized_coefficient_signed_train_lt_2024
 US_Core,Ridge_coef,prev_gop_two_party_share,Previous GOP two-party share,-0.02769127355782562,standardized_coefficient_signed_train_lt_2024
@@ -89,4 +89,3 @@ US_Core,Ridge_coef,education_rate,Bachelor's+ rate (ERS wave),0.0130893896910144
 US_Core,Ridge_coef,abs_dem_change_1,Abs Dem previous swing,-0.006409193762509483,standardized_coefficient_signed_train_lt_2024
 US_Core,Ridge_coef,gop_change_1,GOP previous swing,-0.005609114496967829,standardized_coefficient_signed_train_lt_2024
 US_Core,Ridge_coef,dem_gop_margin_change_1,Dem–GOP margin change,0.005609114496959758,standardized_coefficient_signed_train_lt_2024
-TW_US_issue_news_Extension,national_descriptive,issue_salience_tone_PROXY,新聞／政策議題顯著度＋語氣（全國×選年）,,see extension_issue_news_national_associations.csv; NOT Family A

@@ -1,0 +1,107 @@
+{
+  "recomputed_at": "2026-10-31 03:19 Asia/Hong_Kong (UTC+8)",
+  "script": "scripts/recompute_feature_weights.py",
+  "tw_family_a_prev_mae": 0.0792648157080057,
+  "tw_family_a_mean": [
+    {
+      "suite": "family_a_electoral",
+      "model": "Previous-election baseline",
+      "mae": 0.0792648157080057,
+      "rmse": 0.08141650539817602
+    },
+    {
+      "suite": "family_a_electoral",
+      "model": "Random Forest",
+      "mae": 0.1032768458764968,
+      "rmse": 0.11640258698692751
+    },
+    {
+      "suite": "family_a_electoral",
+      "model": "HistGradientBoosting",
+      "mae": 0.11886504466936916,
+      "rmse": 0.12677517955296846
+    },
+    {
+      "suite": "family_a_electoral",
+      "model": "Ridge",
+      "mae": 0.17857985899144863,
+      "rmse": 0.18548000544613086
+    }
+  ],
+  "tw_a_plus_mean": [
+    {
+      "suite": "family_a_plus_enriched",
+      "model": "Previous-election baseline",
+      "mae": 0.0792648157080057,
+      "rmse": 0.08141650539817602
+    },
+    {
+      "suite": "family_a_plus_enriched",
+      "model": "Random Forest",
+      "mae": 0.10491832528926284,
+      "rmse": 0.11736877498059216
+    },
+    {
+      "suite": "family_a_plus_enriched",
+      "model": "HistGradientBoosting",
+      "mae": 0.1188670921094203,
+      "rmse": 0.12657896177877875
+    },
+    {
+      "suite": "family_a_plus_enriched",
+      "model": "Ridge",
+      "mae": 0.14250033498938372,
+      "rmse": 0.14785863078266592
+    }
+  ],
+  "tw_a_plus_edu_mean": [
+    {
+      "suite": "extension_a_plus_education",
+      "model": "Previous-election baseline",
+      "mae": 0.0792648157080057,
+      "rmse": 0.08141650539817602
+    },
+    {
+      "suite": "extension_a_plus_education",
+      "model": "Random Forest",
+      "mae": 0.10559378594961508,
+      "rmse": 0.11752689722552732
+    },
+    {
+      "suite": "extension_a_plus_education",
+      "model": "HistGradientBoosting",
+      "mae": 0.11951266332682496,
+      "rmse": 0.12822150500269447
+    },
+    {
+      "suite": "extension_a_plus_education",
+      "model": "Ridge",
+      "mae": 0.1421879054599537,
+      "rmse": 0.14765263668253642
+    }
+  ],
+  "us_core_mean": [
+    {
+      "model": "Previous-election baseline",
+      "mae": 0.03448407878659069,
+      "rmse": 0.04315114769941057
+    },
+    {
+      "model": "Random Forest",
+      "mae": 0.052480215988179466,
+      "rmse": 0.062087100942984516
+    },
+    {
+      "model": "Ridge",
+      "mae": 0.053871805843102506,
+      "rmse": 0.06310687886536775
+    },
+    {
+      "model": "HistGradientBoosting",
+      "mae": 0.056068026857187356,
+      "rmse": 0.0661609008832387
+    }
+  ],
+  "interpretation": "weights = model dependence / predictive importance — NOT causal",
+  "outputs": "/workspace/taiwan-us-election-fyp-push/results/feature_weights"
+}
